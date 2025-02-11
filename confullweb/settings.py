@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'web.apps.WebConfig',
+    'rosetta', # 语言编辑三方库
 ]
 
 MIDDLEWARE = [
