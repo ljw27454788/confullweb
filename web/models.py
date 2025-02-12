@@ -83,17 +83,29 @@ def getNewsPicture(instance, filename):
 
 # Models
 class Product(models.Model):
-    name = models.CharField(max_length=100, unique=True)
-    # en_name = models.CharField(max_length=100, unique=True, null=True, blank=True)
+    name = models.CharField(max_length=100, unique=True) #chinese
     description = models.TextField(max_length=1000, null=True, blank=True)
-    # en_description = models.TextField(max_length=1000, null=True, blank=True)
-    pitch = models.CharField(max_length=100, choices=pitch, null=True, blank=True)
+    en_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #english
+    en_description = models.TextField(max_length=1000, null=True, blank=True)
+    es_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #spanish
+    es_description = models.TextField(max_length=1000, null=True, blank=True)
+    de_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #german
+    de_description = models.TextField(max_length=1000, null=True, blank=True)
+    fr_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #french
+    fr_description = models.TextField(max_length=1000, null=True, blank=True)
+    ja_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #japan
+    ja_description = models.TextField(max_length=1000, null=True, blank=True)
+    ko_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #korean
+    ko_description = models.TextField(max_length=1000, null=True, blank=True)
+    ru_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #russian
+    ru_description = models.TextField(max_length=1000, null=True, blank=True)
+    pitch = models.CharField(max_length=20, choices=pitch, null=True, blank=True)
     picture = models.FileField(upload_to=getProductPath, null=True, blank=True)
     picture2 = models.FileField(upload_to=getProductPath, null=True, blank=True)
     picture3 = models.FileField(upload_to=getProductPath, null=True, blank=True)
     blueprint = models.FileField(upload_to=getProductPath, null=True, blank=True)
     pdf = models.FileField(upload_to=getProductPath, null=True, blank=True)
-    product_type = models.CharField(max_length=100, choices=product_types, null=True, blank=True)
+    product_type = models.CharField(max_length=50, choices=product_types, null=True, blank=True)
     pheight = models.CharField(max_length=20, null=True, blank=True)
     row = models.CharField(max_length=10, null=True, blank=True, choices=row_num)
     pnum = models.CharField(max_length=10, null=True, blank=True, choices=pnum)
