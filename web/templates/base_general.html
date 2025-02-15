@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load i18n %}
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>深圳市超越世纪电子有限公司|20年专业连接器生产厂家 CYSJCONN</title>
+    
+        {% load static %}
+        <!-- Theme style -->
+        <link rel="stylesheet" href="{% static 'bootstrap5/css/bootstrap.min.css' %}">
+        <script src="{% static 'bootstrap5/js/bootstrap.bundle.min.js' %}"></script>
+    </head>
+    {% get_current_language as LANGUAGE_CODE %}
+
+    <body>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                {#logo#}
+                <a class="navbar-brand" href="{% url 'index' %}">
+                    <img src="{% static 'img/logo.png' %}" width="auto" height="30px" alt="">
+                </a>
+
+                {#语言下拉#}
+                <div class="dropdown">
+                    <button class="btn btn-secondary-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                        Language: {{ LANGUAGE_CODE }}
+                    </button>
+                    <div class="dropdown-menu">
+                        <form action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                            <input name="language" type="hidden" value="zh"/>
+                            <button class="dropdown-item" type="submit"><img src="{% static 'img/zhongguo.jpg' %}">中文</button>
+                        </form>
+                        <form action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                            <input name="language" type="hidden" value="en"/>
+                            <button class="dropdown-item" type="submit"><img src="{% static 'img/yingguo.jpg' %}">English
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                {#小屏下拉按钮#}
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {#页面导航#}
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'index' %}">
+                                {% trans "Home" %}
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a id="dropdownSubMenu1" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                               class="nav-link dropdown-toggle">{% trans "Products" %}</a>
+                            <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                                <li><a href="#" class="dropdown-item">
+                                    {% trans "Check All Products" %}</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a href="#" class="dropdown-item">
+                                    {% trans "Pin Header" %}</a></li>
+                                <li><a href="#" class="dropdown-item">
+                                    {% trans "Female Header" %}</a></li>
+                                <li><a href="#" class="dropdown-item">
+                                    {% trans "Box Header" %}</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" >{% trans "Contact Us" %}</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" >{% trans "Free Sample" %}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        </div>
+        <div id="content">
+            {% block content %} {% endblock %}
+        </div>
+
+    </body>
