@@ -9,6 +9,7 @@
         {% load static %}
         <!-- Theme style -->
         <link rel="stylesheet" href="{% static 'bootstrap5/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/standard.css' %}">
         <script src="{% static 'bootstrap5/js/bootstrap.bundle.min.js' %}"></script>
     </head>
     {% get_current_language as LANGUAGE_CODE %}
@@ -22,7 +23,7 @@
                 </a>
                 {#语言下拉#}
                 <div class="dropdown">
-                    <button class="btn btn-secondary-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    <button class="btn btn-secondary-outline btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                         Language
                     </button>
@@ -30,15 +31,57 @@
                         <form action="{% url 'set_language' %}" method="post">
                             {% csrf_token %}
                             <input name="next" type="hidden" value="{{ redirect_to }}"/>
-                            <input name="language" type="hidden" value="zh"/>
-                            <button class="dropdown-item" type="submit"><img src="{% static 'img/zhongguo.jpg' %}">中文</button>
+                            <input name="language" type="hidden" value="de"/>
+                            <button class="dropdown-item" type="submit"><img src="{% static 'img/de.png' %}">  Deutsch
+                            </button>
                         </form>
                         <form action="{% url 'set_language' %}" method="post">
                             {% csrf_token %}
                             <input name="next" type="hidden" value="{{ redirect_to }}"/>
                             <input name="language" type="hidden" value="en"/>
-                            <button class="dropdown-item" type="submit"><img src="{% static 'img/yingguo.jpg' %}">English
+                            <button class="dropdown-item" type="submit"><img src="{% static 'img/en.png' %}">  English
                             </button>
+                        </form>
+                        <form action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                            <input name="language" type="hidden" value="es"/>
+                            <button class="dropdown-item" type="submit"><img src="{% static 'img/es.png' %}">  Español
+                            </button>
+                        </form>
+                        <form action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                            <input name="language" type="hidden" value="fr"/>
+                            <button class="dropdown-item" type="submit"><img src="{% static 'img/fr.png' %}">  Française
+                            </button>
+                        </form>
+                        <form action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                            <input name="language" type="hidden" value="ru"/>
+                            <button class="dropdown-item" type="submit"><img src="{% static 'img/ru.png' %}">  Русский
+                            </button>
+                        </form>
+                        <form action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                            <input name="language" type="hidden" value="ko"/>
+                            <button class="dropdown-item" type="submit"><img src="{% static 'img/ko.png' %}">  한국인
+                            </button>
+                        </form>
+                        <form action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                            <input name="language" type="hidden" value="ja"/>
+                            <button class="dropdown-item" type="submit"><img src="{% static 'img/ja.png' %}">  日本語
+                            </button>
+                        </form>
+                        <form action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                            <input name="language" type="hidden" value="zh"/>
+                            <button class="dropdown-item" type="submit"><img src="{% static 'img/zh.png' %}">  中文</button>
                         </form>
                     </div>
                 </div>

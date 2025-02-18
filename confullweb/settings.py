@@ -124,6 +124,10 @@ LANGUAGES = (
     ('zh', _('Simplified Chinese')),
     ('fr', _('French')),
     ('es', _('Spanish')),
+    ('de', _('German')),
+    ('ru', _('Russian')),
+    ('ja', _('Japanese')),
+    ('ko', _('Korean')),
 )
 
 
