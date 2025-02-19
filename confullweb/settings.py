@@ -121,7 +121,7 @@ USE_TZ = True
 
 LANGUAGES = (
     ('en', _('English')),
-    ('zh', _('Simplified Chinese')),
+    ('zh-hans', _('Simplified Chinese')),
     ('fr', _('French')),
     ('es', _('Spanish')),
     ('de', _('German')),
