@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="{% static 'css/standard.css' %}">
         <link rel="stylesheet" href="{% static 'fontawesome/css/fontawesome.min.css' %}">
         <link rel="stylesheet" href="{% static 'fontawesome/css/brands.min.css' %}">
+        <link rel="stylesheet" href="{% static 'fontawesome/css/solid.min.css' %}">
         <script src="{% static 'bootstrap5/js/bootstrap.bundle.min.js' %}"></script>
     </head>
     {% get_current_language as LANGUAGE_CODE %}
@@ -25,9 +26,9 @@
                 </a>
                 {#语言下拉#}
                 <div class="dropdown">
-                    <button class="btn btn-secondary-outline btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    <button class="btn btn-secondary-outline  dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                        Language
+                        <i class="fa-solid fa-globe"></i> Language
                     </button>
                     <div class="dropdown-menu">
                         <form action="{% url 'set_language' %}" method="post">
@@ -82,6 +83,7 @@
                 {#小屏下拉按钮#}
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    {% trans "Menu" %}
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {#页面导航#}
@@ -122,79 +124,64 @@
             {% block content %} {% endblock %}
         </div>
 
+        <br><br>
         <footer class="bg-body-tertiary text-center">
             <!-- Grid container -->
-            <div class="container p-4 pb-0">
-              <!-- Section: Social media -->
-              <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;"
-                href="#!" role="button">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <!-- Twitter -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" 
-                href="#!" role="button">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <!-- Youtube -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;"
-                href="#!" role="button">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <!-- Instagram -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
-                href="#!" role="button">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <!-- Linkedin -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;"
-                href="#!" role="button">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <!-- Github -->
-                <a
-                  data-mdb-ripple-init
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #333333;"
-                  href="#!"
-                  role="button"
-                  ><i class="fab fa-weixin"></i
-                ></a>
-              </section>
-              <!-- Section: Social media -->
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-body-secondary">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-body-secondary">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-body-secondary">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-body-secondary">Free Sample</a>
+                </li>
+            </ul>
+            <div class="container p-1 pb-1 border-bottom">
+                <section class="mb-1">
+                    <!-- Facebook -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;"
+                    href="#!" role="button">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" 
+                    href="#!" role="button">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <!-- Youtube -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;"
+                    href="#!" role="button">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <!-- Linkedin -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;"
+                    href="#!" role="button">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <!-- wechat -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: green;"
+                        href="#!" role="button">
+                        <i class="fab fa-weixin"></i>
+                    </a>
+                </section>
             </div>
             <!-- Grid container -->
-          
             <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-              © 2020 Copyright:
-              <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            <div class="text-center pb-3 pt-3">
+                <div class="copyright">
+                    <span>@2023 深圳市超越世纪电子有限公司
+                    <a href="https://beian.miit.gov.cn/">粤ICP备</a></span>
+                </div>
             </div>
             <!-- Copyright -->
           </footer>
-
-        {% comment %} <footer class="py-3 my-4 bg-body-tertiary">
-            <div class="container">
-                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-body-secondary">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-body-secondary">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-body-secondary">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-body-secondary">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-body-secondary">home</a>
-                    </li>
-                </ul>
-            </div>
-        </footer> {% endcomment %}
-        
     </body>
 </html>
