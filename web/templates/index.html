@@ -1,15 +1,16 @@
 {% extends "base_general.html" %}
 {% block content %}
 {% load static %}
+{% load i18n %}
 
 <header class="py-5">
     <div class="container px-5">
         <div class="row align-items-center justify-content-center">
             <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <div class="text-center">
-                    <h2 class="fw-bolder mb-2">Board Connector Manufacturer with 25 Years' Experience</h2>
+                    <h2 class="fw-bolder mb-2">{% trans "Board Connector Manufacturer with 25 Years' Experience" %}</h2>
                     <div class="justify-content-center">
-                        <a class="btn btn-outline-primary px-4 me-sm-3" href="#features">Check Products</a>
+                        <a class="btn btn-outline-primary px-4 me-sm-3" href="#features">{% trans "Check Products" %}</a>
                     </div>
                 </div>
             </div>
@@ -22,11 +23,67 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-2">
-            <div class="card" style="width: 18rem;">
-                <img src="img/banner.jpg" class="card-img-top" alt="...">
+        <div class="col-6 col-lg-2 col-md-3 mb-2">
+            <div class="card h-100">
+                <img src="{% static 'img/banner.jpg' %}" class="card-img-top" alt="...">
                 <div class="card-body">
-                <p class="card-text fw-bolder text-center">Pin Header</p>
+                <p class="card-text fw-bolder text-center">{% trans "Pin Header" %}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-3 mb-2">
+            <div class="card h-100">
+                <img src="{% static 'img/banner.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-bolder text-center">{% trans "Female Header" %}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-3 mb-2">
+            <div class="card h-100">
+                <img src="{% static 'img/banner.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-bolder text-center">{% trans "Box Header" %}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-3 mb-2">
+            <div class="card h-100">
+                <img src="{% static 'img/banner.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-bolder text-center">{% trans "Ejector Header" %}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-3 mb-2">
+            <div class="card h-100">
+                <img src="{% static 'img/banner.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-bolder text-center">{% trans "Mini Jumper" %}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-3 mb-2">
+            <div class="card h-100">
+                <img src="{% static 'img/banner.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-bolder text-center">{% trans "Machined Header" %}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-3 mb-2">
+            <div class="card h-100">
+                <img src="{% static 'img/banner.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-bolder text-center">{% trans "IC Socket" %}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-3 mb-2">
+            <div class="card h-100">
+                <img src="{% static 'img/banner.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text fw-bolder text-center">{% trans "More" %}</p>
                 </div>
             </div>
         </div>
