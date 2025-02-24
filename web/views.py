@@ -32,9 +32,4 @@ class ProductListView(generic.ListView):
     def get_context_data(self, **kwargs):
         # Call the base implementation first to get a context
         context = super(ProductListView, self).get_context_data(**kwargs)
-        # Get the blog from id and add it to the context
-        context['some_data'] = 'This is just some data'
-        get_copy = self.request.GET.copy()
-        parameters = get_copy.pop('page', True) and get_copy.urlencode()
-        context['parameters'] = parameters
         return context
