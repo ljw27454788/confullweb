@@ -33,3 +33,30 @@ class ProductListView(generic.ListView):
         # Call the base implementation first to get a context
         context = super(ProductListView, self).get_context_data(**kwargs)
         return context
+
+#Pin Header
+class PinheaderListView(generic.ListView):
+    paginate_by = 8
+    model = Product
+    template_name = "Pin-Header.html"
+    context_object_name = 'pin_header'
+
+    def get_queryset(self):
+        return Product.objects.filter(product_type="pin_header")
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(PinheaderListView, self).get_context_data(*args, **kwargs)
+        return context
+    
+#product detail
+class PinHeaderDetailView(generic.DetailView):
+    model = Product
+    template_name = "products_detail.html"
+
+    def get_object(self, *args, **kwargs):
+        obj = super(PinHeaderDetailView, self).get_object(*args, **kwargs)
+        return obj
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(PinHeaderDetailView, self).get_context_data(*args, **kwargs)
+        return context

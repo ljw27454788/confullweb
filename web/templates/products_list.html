@@ -1,0 +1,73 @@
+{% load static %}
+{% load i18n %}
+{% load util %}
+{#product list#}
+<div class="row">
+    {% for obj in object_list %}
+        <div class="box col-6 col-md-3 col-lg-3 py-2">
+            <div class="card text-center h-100 bg-light zoom">
+                {% if obj.picture %}
+                    <img src="{{ obj.picture.url }}" class="img-fluid">
+                {% else %}
+                    <img src="{% static 'img/cysjconn.png' %}" class="img-fluid">
+                {% endif %}
+                <div class="card-body d-flex flex-column">
+                    <div class="mt-auto">
+                        <p>{{ obj|get_name:LANGUAGE_CODE }}</p>
+                        <a href="{{ obj.get_detail_url }}"
+                           class="btn btn-outline-success stretched-link">{% trans 'Check Detail' %}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+<br>
+{#page#}
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        {% if page_obj.has_previous %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ page_obj.previous_page_number }}&{{ parameters }}"
+                   tabindex="-1">Prev</a>
+            </li>
+        {% else %}
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Prev</a>
+            </li>
+        {% endif %}
+
+        {% if page_obj.number|add:'-3' > 1 %}
+            <li class="page-item"><a class="page-link"
+                                     href="?page={{ page_obj.number|add:'-4' }}&{{ parameters }}">&hellip;</a>
+            </li>
+        {% endif %}
+
+        {% for i in page_obj.paginator.page_range %}
+            {% if page_obj.number == i %}
+                <li class="page-item active"><a class="page-link" href="#">{{ i }}</a></li>
+            {% elif i > page_obj.number|add:'-4' and i < page_obj.number|add:'4' %}
+                <li class="page-item"><a class="page-link"
+                                         href="?page={{ i }}&{{ parameters }}">{{ i }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+
+        {% if page_obj.paginator.num_pages > page_obj.number|add:'3' %}
+            <li class="page-item"><a class="page-link"
+                                     href="?page={{ page_obj.number|add:'4' }}&{{ parameters }}">&hellip;</a>
+            </li>
+        {% endif %}
+
+        {% if page_obj.has_next %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ page_obj.next_page_number }}&{{ parameters }}">Next</a>
+            </li>
+        {% else %}
+            <li class="page-item disabled">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        {% endif %}
+    </ul>
+</nav>

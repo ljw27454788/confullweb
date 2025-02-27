@@ -84,21 +84,21 @@ def getNewsPicture(instance, filename):
 # Models
 class Product(models.Model):
     name = models.CharField(max_length=100, unique=True) #chinese
-    description = models.TextField(max_length=1000, null=True, blank=True)
+    description = models.TextField(max_length=500, null=True, blank=True)
     en_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #english
-    en_description = models.TextField(max_length=1000, null=True, blank=True)
+    en_description = models.TextField(max_length=500, null=True, blank=True)
     es_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #spanish
-    es_description = models.TextField(max_length=1000, null=True, blank=True)
+    es_description = models.TextField(max_length=500, null=True, blank=True)
     de_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #german
-    de_description = models.TextField(max_length=1000, null=True, blank=True)
+    de_description = models.TextField(max_length=500, null=True, blank=True)
     fr_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #french
-    fr_description = models.TextField(max_length=1000, null=True, blank=True)
+    fr_description = models.TextField(max_length=500, null=True, blank=True)
     ja_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #japan
-    ja_description = models.TextField(max_length=1000, null=True, blank=True)
+    ja_description = models.TextField(max_length=500, null=True, blank=True)
     ko_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #korean
-    ko_description = models.TextField(max_length=1000, null=True, blank=True)
+    ko_description = models.TextField(max_length=500, null=True, blank=True)
     ru_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #russian
-    ru_description = models.TextField(max_length=1000, null=True, blank=True)
+    ru_description = models.TextField(max_length=500, null=True, blank=True)
     pitch = models.CharField(max_length=20, choices=pitch, null=True, blank=True)
     picture = models.FileField(upload_to=getProductPath, null=True, blank=True)
     picture2 = models.FileField(upload_to=getProductPath, null=True, blank=True)
@@ -112,7 +112,7 @@ class Product(models.Model):
     shape = models.CharField(max_length=20, null=True, blank=True, choices=shape)
 
     def get_detail_url(self):
-        return reverse('products-detail', args=[str(self.id)])
+        return reverse(self.product_type+'_detail', args=[str(self.id)])
 
     def __str__(self):
         return '%s' % (self.name)
