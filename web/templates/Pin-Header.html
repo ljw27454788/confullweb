@@ -8,9 +8,9 @@
     <br>
     {#导航#}
     <div class="row">
-        <div class="col-lg-9 col-sm-12">
+        <div class="col-lg-9 col-md-9 col-5">
         </div>
-        <div class="col-lg-3 col-sm-12">
+        <div class="col-lg-3 col-md-3 col-7">
             <button class="btn btn-primary rounded-pill px-3 float-end w-100" data-bs-toggle="offcanvas" 
             data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                 {% trans "Product List" %} <i class="fa-solid fa-list"></i>
@@ -34,97 +34,68 @@
     </div>
 
     <br>
-
-    {% comment %} <form id="filter_form">
+    <form id="filter_form">
         <div class="card">
-            <div class="card-body card_over">
-                <div class="switch-field">
+            <div class="card-body overflow-auto">
+                <div class="mb-1">
                     <span><strong>{% trans 'Pitch' %}:&nbsp&nbsp</strong></span>
-                    <input type="radio" id="radio1" name="pitch" value="0.8"/>
-                    <label for="radio1">0.8</label>
-                    <input type="radio" id="radio2" name="pitch" value="1.0"/>
-                    <label for="radio2">1.0</label>
-                    <input type="radio" id="radio3" name="pitch" value="1.27"/>
-                    <label for="radio3">1.27</label>
-                    <input type="radio" id="radio4" name="pitch" value="2.0"/>
-                    <label for="radio4">2.0</label>
-                    <input type="radio" id="radio5" name="pitch" value="2.54"/>
-                    <label for="radio5">2.54</label>
-                    <input type="radio" id="radio6" name="pitch" value="5.08"/>
-                    <label for="radio6">5.08</label>
-                    <input type="radio" id="radio7" name="pitch" value="all" checked/>
-                    <label for="radio7">{% trans 'All' %}</label>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="pitch" id="pitch1">
+                        <label class="btn btn-outline-primary mb-1" for="pitch1">1.27</label>
+                        <input type="radio" class="btn-check" name="pitch" id="pitch2">
+                        <label class="btn btn-outline-primary mb-1" for="pitch2">2.0</label>
+                        <input type="radio" class="btn-check" name="pitch" id="pitch3">
+                        <label class="btn btn-outline-primary mb-1" for="pitch3">2.54</label>
+                        <input type="radio" class="btn-check" name="pitch" id="pitch4">
+                        <label class="btn btn-outline-primary mb-1" for="pitch4">5.08</label>
+                        <input type="radio" class="btn-check" name="pitch" id="pitch5" checked>
+                        <label class="btn btn-outline-primary mb-1" for="pitch5">All</label>
+                    </div>
                 </div>
-                <div class="switch-field">
-                    <span><strong>{% trans 'Row Number' %}:&nbsp&nbsp</strong></span>
-                    <input type="radio" id="row1" name="row" value="1"/>
-                    <label for="row1">{% trans '1' %}</label>
-                    <input type="radio" id="row2" name="row" value="2"/>
-                    <label for="row2">{% trans '2' %}</label>
-                    <input type="radio" id="row3" name="row" value="3"/>
-                    <label for="row3">{% trans '3' %}</label>
-                    <input type="radio" id="row4" name="row" value="4"/>
-                    <label for="row4">{% trans '4' %}</label>
-                    <input type="radio" id="row5" name="row" value="all" checked/>
-                    <label for="row5">{% trans 'All' %}</label>
+                <div class="mb-1">
+                    <span><strong>{% trans 'Row' %}:&nbsp&nbsp</strong></span>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="row" id="row1">
+                        <label class="btn btn-outline-primary mb-1" for="row1">1</label>
+                        <input type="radio" class="btn-check" name="row" id="row2">
+                        <label class="btn btn-outline-primary mb-1" for="row2">2</label>
+                        <input type="radio" class="btn-check" name="row" id="row3">
+                        <label class="btn btn-outline-primary mb-1" for="row3">2+</label>
+                        <input type="radio" class="btn-check" name="row" id="row4" checked>
+                        <label class="btn btn-outline-primary mb-1" for="row4">All</label>
+                    </div>
                 </div>
-                <div class="switch-field">
-                    <span><strong>{% trans 'Plastic Number' %}:&nbsp&nbsp</strong></span>
-                    <input type="radio" id="plastic1" name="plastic" value="1"/>
-                    <label for="plastic1">{% trans '1' %}</label>
-                    <input type="radio" id="plastic2" name="plastic" value="2"/>
-                    <label for="plastic2">{% trans '2' %}</label>
-                    <input type="radio" id="plastic3" name="plastic" value="3"/>
-                    <label for="plastic3">{% trans '3' %}</label>
-                    <input type="radio" id="plastic4" name="plastic" value="4"/>
-                    <label for="plastic4">{% trans '4' %}</label>
-                    <input type="radio" id="plastic5" name="plastic" value="all" checked/>
-                    <label for="plastic5">{% trans 'All' %}</label>
-                </div>
-                <div class="switch-field">
-                    <span><strong>{% trans 'Shape' %}:&nbsp&nbsp</strong></span>
-                    <input type="radio" id="shape1" name="shape" value="180"/>
-                    <label for="shape1">{% trans 'Straight' %}</label>
-                    <input type="radio" id="shape2" name="shape" value="90"/>
-                    <label for="shape2">{% trans 'Right Angle' %}</label>
-                    <input type="radio" id="shape3" name="shape" value="SMT"/>
-                    <label for="shape3">{% trans 'SMT' %}</label>
-                    <input type="radio" id="shape4" name="shape" value="HSMT"/>
-                    <label for="shape4">{% trans 'Horizontal SMT' %}</label>
-                    <input type="radio" id="shape5" name="shape" value="U"/>
-                    <label for="shape5">{% trans 'U shape' %}</label>
-                    <input type="radio" id="shape6" name="shape" value="straddle"/>
-                    <label for="shape6">{% trans 'Straddle' %}</label>
-                    <input type="radio" id="shape7" name="shape" value="CENT"/>
-                    <label for="shape7">{% trans 'Centipede Foot' %}</label>
-                    <input type="radio" id="shape8" name="shape" value="all" checked/>
-                    <label for="shape8">{% trans 'All' %}</label>
-                </div>
-                <input type="hidden" name="product_type" value="pin_header">
-                <input type="hidden" name="language_code" value="{{ LANGUAGE_CODE }}">
-                <div class="text-center">
-                    <button class="btn btn-outline-danger" onclick="window.location.reload();">Reset</button>
+                <div class="mb-1">
+                    <span><strong>{% trans 'Type' %}:&nbsp&nbsp</strong></span>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="product_type" id="ptype1">
+                        <label class="btn btn-outline-primary mb-1" for="ptype1">180°</label>
+                        <input type="radio" class="btn-check" name="product_type" id="ptype2">
+                        <label class="btn btn-outline-primary mb-1" for="ptype2">90°</label>
+                        <input type="radio" class="btn-check" name="product_type" id="ptype3">
+                        <label class="btn btn-outline-primary mb-1" for="ptype3">SMT</label>
+                        <input type="radio" class="btn-check" name="product_type" id="ptype4">
+                        <label class="btn btn-outline-primary mb-1" for="ptype4">Horizontal SMT</label>
+                        <input type="radio" class="btn-check" name="product_type" id="ptype5">
+                        <label class="btn btn-outline-primary mb-1" for="ptype5">U Shape</label>
+                        <input type="radio" class="btn-check" name="product_type" id="ptype6">
+                        <label class="btn btn-outline-primary mb-1" for="ptype6">Straddle</label>
+                        <input type="radio" class="btn-check" name="product_type" id="ptype7">
+                        <label class="btn btn-outline-primary mb-1" for="ptype7">Centipede Foot</label>
+                        <input type="radio" class="btn-check" name="product_type" id="ptype8" checked>
+                        <label class="btn btn-outline-primary mb-1" for="ptype8">All</label>
+                    </div>
                 </div>
             </div>
         </div>
-    </form> {% endcomment %}
-    <div class="card">
-        <div class="card-body">
-            <span><strong>{% trans 'Pitch' %}:&nbsp&nbsp</strong></span>
-            <div class="btn-group" role="group">
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked>
-                <label class="btn btn-outline-primary" for="btnradio1">1.27</label>
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio2">
-                <label class="btn btn-outline-primary" for="btnradio2">2.0</label>
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio3">
-                <label class="btn btn-outline-primary" for="btnradio3">2.54</label>
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio4">
-                <label class="btn btn-outline-primary" for="btnradio4">5.08</label>
-            </div>
-        </div>
-    </div>
+    </form>
 
     {% include 'products_list.html' %}
+
+    <script>
+        const product_filter_url = "{% url 'product_filter' %}";
+    </script>
+    <script src="{% static 'js/product_filter.js' %}"></script>
 
 </div>
 {% endblock %}
