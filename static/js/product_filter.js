@@ -1,5 +1,4 @@
-$('#filter_form').on('keyup change paste', 'input, select', function () {
-    console.log("AAA");
+$('#filter_form').on('change', 'input, select', function () {
     $.ajax({
         url: product_filter_url,
         data: $('#filter_form').serialize(),
@@ -12,12 +11,4 @@ $('#filter_form').on('keyup change paste', 'input, select', function () {
         complete: function (r) {
         },
     });
-});
-
-$('.pheight_select').change(function () {
-    if ($(this).val() == 'other') {
-        $('#other_pheight').show();
-    } else {
-        $('#other_pheight').hide();
-    }
 });

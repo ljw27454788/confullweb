@@ -1,43 +1,28 @@
 from django.shortcuts import render
+from web.models import Product
 
 def ProductFilterForm(request):
-    product_type = request.GET['product_type']
-    pitch = request.GET['pitch']
-    row = request.GET['row']
-    plastic = request.GET['plastic']
-    shape = request.GET['shape']
-    language_code = request.GET['language_code']
-    # product = Product.objects.filter(product_type=product_type)
-    # if pitch != "all":
-    #     product = product.filter(pitch=pitch)
-    # if row != "all":
-    #     product = product.filter(row__contains=row)
-    # if plastic != "all":
-    #     product = product.filter(pnum=plastic)
-    # if shape != "all":
-    #     if shape == "180" or shape == "90":
-    #         product = product.filter(Q(shape=shape) | Q(shape__contains=shape))
-    #     else:
-    #         product = product.filter(shape=shape)
-    # if 'pheight' in request.GET:
-    #     pheight = request.GET['pheight']
-    #     # other_pheight = request.GET['other_pheight']
-    #     if pheight != "all":
-    #         product = product.filter(pheight=pheight)
-    # if 'molex' in request.GET:
-    #     molex = request.GET['molex']
-    #     if molex != "all":
-    #         if molex == "0":
-    #             product = product.exclude(en_name__contains='Molex')
-    #         else:
-    #             product = product.filter(en_name__contains='Molex')
+    product_type = request.GET.get('product_type', 'all')
+    pitch = request.GET.get('pitch', 'all')
+    row = request.GET.get('row', 'all')
+    shape = request.GET.get('shape', 'all')
+    language_code = request.GET.get('language_code', 'en')
+    # print(product_type, pitch, row, shape, language_code)
+    if product_type != 'all':
+        product = Product.objects.filter(product_type=product_type)
+    if pitch != "all":
+        product = product.filter(pitch=pitch)
+    if row != "all":
+        product = product.filter(row__contains=row)
+    if shape != "all":
+        product = product.filter(shape=shape)
 
     # if queryset is empty
     if not product:
-        return render(request, 'product/product_message.html', context={
+        return render(request, 'products_filter_message.html', context={
             'LANGUAGE_CODE': language_code,
         })
-    return render(request, 'product/product_detail_list.html', context={
+    return render(request, 'products_list.html', context={
         'object_list': product,
         'LANGUAGE_CODE': language_code,
     })

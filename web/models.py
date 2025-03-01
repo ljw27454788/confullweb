@@ -29,7 +29,6 @@ pitch = (
     ('0.8', '0.8'),
     ('1.0', '1.0'),
     ('1.27', '1.27'),
-    ('1.27*2.54', '1.27*2.54'),
     ('2.0', '2.0'),
     ('2.54', '2.54'),
     ('3.81', '3.81'),
@@ -60,9 +59,7 @@ row_num = (
 pnum = (
     ('1', '单塑'),
     ('2', '双塑'),
-    ('3', '三塑'),
-    ('4', '四塑'),
-    ('5', '五塑'),
+    ('2+', '双塑以上'),
 )
 
 # Functions
@@ -106,7 +103,6 @@ class Product(models.Model):
     blueprint = models.FileField(upload_to=getProductPath, null=True, blank=True)
     pdf = models.FileField(upload_to=getProductPath, null=True, blank=True)
     product_type = models.CharField(max_length=50, choices=product_types, null=True, blank=True)
-    pheight = models.CharField(max_length=20, null=True, blank=True)
     row = models.CharField(max_length=10, null=True, blank=True, choices=row_num)
     pnum = models.CharField(max_length=10, null=True, blank=True, choices=pnum)
     shape = models.CharField(max_length=20, null=True, blank=True, choices=shape)
