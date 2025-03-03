@@ -24,34 +24,17 @@
         <div class="card">
             <div class="card-body overflow-auto">
                 <div class="mb-1">
-                    <span><strong>{% trans 'Pitch' %}:&nbsp&nbsp</strong></span>
-                    <div class="btn-group" role="group">
-                        <input type="radio" class="btn-check" name="pitch" id="pitch1" value="1.27">
-                        <label class="btn btn-outline-primary mb-1" for="pitch1">1.27</label>
-                        <input type="radio" class="btn-check" name="pitch" id="pitch2" value="2.0">
-                        <label class="btn btn-outline-primary mb-1" for="pitch2">2.0</label>
-                        <input type="radio" class="btn-check" name="pitch" id="pitch3" value="2.54">
-                        <label class="btn btn-outline-primary mb-1" for="pitch3">2.54</label>
-                        <input type="radio" class="btn-check" name="pitch" id="pitch5" value="all" checked>
-                        <label class="btn btn-outline-primary mb-1" for="pitch5">All</label>
-                    </div>
-                </div>
-                <div class="mb-1">
                     <span><strong>{% trans 'Type' %}:&nbsp&nbsp</strong></span>
                     <div class="btn-group" role="group">
                         <input type="radio" class="btn-check" name="shape" id="ptype1" value="180">
                         <label class="btn btn-outline-primary mb-1" for="ptype1">180°</label>
                         <input type="radio" class="btn-check" name="shape" id="ptype2" value="90">
                         <label class="btn btn-outline-primary mb-1" for="ptype2">90°</label>
-                        <input type="radio" class="btn-check" name="shape" id="ptype3" value="SMT">
-                        <label class="btn btn-outline-primary mb-1" for="ptype3">SMT</label>
-                        <input type="radio" class="btn-check" name="shape" id="ptype4" value="HSMT">
-                        <label class="btn btn-outline-primary mb-1" for="ptype4">Horizontal SMT</label>
                         <input type="radio" class="btn-check" name="shape" id="ptype8" value="all" checked>
                         <label class="btn btn-outline-primary mb-1" for="ptype8">All</label>
                     </div>
                 </div>
-                <input type="hidden" name="product_type" value="box_header">
+                <input type="hidden" name="product_type" value="edge">
                 <input type="hidden" name="language_code" value="{{ LANGUAGE_CODE }}">
             </div>
         </div>

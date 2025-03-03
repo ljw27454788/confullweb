@@ -106,8 +106,20 @@
                                     {% trans "Pin Header" %}</a></li>
                                 <li><a href="{% url 'female_header' %}" class="dropdown-item">
                                     {% trans "Female Header" %}</a></li>
-                                <li><a href="#" class="dropdown-item">
+                                <li><a href="{% url 'box_header' %}" class="dropdown-item">
                                     {% trans "Box Header" %}</a></li>
+                                <li><a href="{% url 'ejector_header' %}" class="dropdown-item">
+                                    {% trans "Ejector Header" %}</a></li>
+                                <li><a href="{% url 'round_header' %}" class="dropdown-item">
+                                    {% trans "Machined Pin Header" %}</a></li>
+                                <li><a href="{% url 'round_female_header' %}" class="dropdown-item">
+                                    {% trans "Machined Female Header" %}</a></li>
+                                <li><a href="{% url 'jumper' %}" class="dropdown-item">
+                                    {% trans "Jumper Cap" %}</a></li>
+                                <li><a href="{% url 'ic_socket' %}" class="dropdown-item">
+                                    {% trans "IC Socket" %}</a></li>
+                                <li><a href="{% url 'edge' %}" class="dropdown-item">
+                                    {% trans "EDGE Card Connector" %}</a></li>
                             </ul>
                         </li>
                         <li class="nav-item active">
