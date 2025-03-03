@@ -6,9 +6,33 @@ id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
         <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <ul class="navbar-nav text-center list-group">
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'pin_header' %}">{% trans 'Pin Header' %}</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link " href="{% url 'female_header' %}">{% trans 'Female Header' %}</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link " href="{% url 'box_header' %}">{% trans 'Box Header' %}</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'ejector_header' %}">{% trans 'Ejector Header' %}</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'jumper' %}">{% trans 'Jumper Cap' %}</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'round_header' %}">{% trans 'Machined Pin Header' %}</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'round_female_header' %}">{% trans 'Machined Female Header' %}</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'ic_socket' %}">{% trans 'IC Socket' %}</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'edge' %}">{% trans 'EDGE Card Connector' %}</a>
             </li>
         </ul>
     </div>
