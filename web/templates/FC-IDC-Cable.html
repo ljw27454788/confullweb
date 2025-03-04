@@ -1,0 +1,57 @@
+{% extends "base_general.html" %}
+{% block content %}
+{% load static %}
+{% load i18n %}
+
+<div class="container">
+    <br>
+    {#导航#}
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-5">
+        </div>
+        <div class="col-lg-3 col-md-3 col-7">
+            <button class="btn btn-primary rounded-pill px-3 float-end w-100" data-bs-toggle="offcanvas" 
+            data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                {% trans "Product List" %} <i class="fa-solid fa-list"></i>
+            </button>
+        </div>
+    </div>
+    {#边目录#}
+    {% include 'products_sidebar.html' %}
+
+    <br>
+    <form id="filter_form">
+        <div class="card">
+            <div class="card-body overflow-auto">
+                <div class="mb-1">
+                    <span><strong>{% trans 'Pitch' %}:&nbsp&nbsp</strong></span>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="pitch" id="pitch1" value="1.27">
+                        <label class="btn btn-outline-primary mb-1" for="pitch1">1.27</label>
+                        <input type="radio" class="btn-check" name="pitch" id="pitch2" value="2.0">
+                        <label class="btn btn-outline-primary mb-1" for="pitch2">2.0</label>
+                        <input type="radio" class="btn-check" name="pitch" id="pitch3" value="2.54">
+                        <label class="btn btn-outline-primary mb-1" for="pitch3">2.54</label>
+                        <input type="radio" class="btn-check" name="pitch" id="pitch5" value="all" checked>
+                        <label class="btn btn-outline-primary mb-1" for="pitch5">All</label>
+                    </div>
+                </div>
+                <input type="hidden" name="product_type" value="fc">
+                <input type="hidden" name="language_code" value="{{ LANGUAGE_CODE }}">
+            </div>
+        </div>
+    </form>
+
+    <div id="product_list">
+        {% include 'products_list.html' %}
+    </div>
+
+    
+
+    <script>
+        const product_filter_url = "{% url 'product_filter' %}";
+    </script>
+    <script src="{% static 'js/product_filter.js' %}"></script>
+
+</div>
+{% endblock %}

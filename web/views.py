@@ -284,3 +284,31 @@ class EdgeDetailView(generic.DetailView):
     def get_context_data(self, *args, **kwargs):
         context = super(EdgeDetailView, self).get_context_data(*args, **kwargs)
         return context
+    
+
+#IDC FC
+class FcListView(generic.ListView):
+    paginate_by = 8
+    model = Product
+    template_name = "FC-IDC-Cable.html"
+    context_object_name = 'fc'
+
+    def get_queryset(self):
+        return Product.objects.filter(product_type="fc")
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(FcListView, self).get_context_data(*args, **kwargs)
+        return context
+    
+#IDC FC detail
+class FcDetailView(generic.DetailView):
+    model = Product
+    template_name = "products_detail.html"
+
+    def get_object(self, *args, **kwargs):
+        obj = super(FcDetailView, self).get_object(*args, **kwargs)
+        return obj
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(FcDetailView, self).get_context_data(*args, **kwargs)
+        return context
