@@ -2,10 +2,10 @@
 {% block content %}
 {% load static %}
 {% load i18n %}
-<nav aria-label="breadcrumb" style="background-color: #e3f2fd;">
+<nav aria-label="breadcrumb" class="bg-secondary-subtle">
     <ol class="breadcrumb justify-content-center">
-        <li class="breadcrumb-item nav-link"><a href="{% url 'index' %}">{% trans 'Home' %}</a></li>
-        <li class="breadcrumb-item nav-link active" aria-current="page">{%trans 'Pin Header' %}</li>
+        <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}">{% trans 'Home' %}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{%trans 'Pin Header' %}</li>
     </ol>
 </nav>
 

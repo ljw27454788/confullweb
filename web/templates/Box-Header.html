@@ -3,6 +3,13 @@
 {% load static %}
 {% load i18n %}
 
+<nav aria-label="breadcrumb" class="bg-secondary-subtle">
+    <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}">{% trans 'Home' %}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{%trans 'Box Header' %}</li>
+    </ol>
+</nav>
+
 <div class="container">
     <br>
     {#导航#}
