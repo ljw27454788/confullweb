@@ -2,8 +2,15 @@
 {% block content %}
 {% load static %}
 {% load i18n %}
+
 <div class="container">
     <br>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+    </nav>
     {#导航#}
     <div class="row text-center"><h1><strong>{%trans 'Product List' %}</strong></h1></div>
     <div class="row">

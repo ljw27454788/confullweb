@@ -10,7 +10,7 @@
                 <div class="text-center">
                     <h2 class="fw-bolder mb-2">{% trans "Board Connector Manufacturer with 25 Years' Experience" %}</h2>
                     <div class="justify-content-center">
-                        <a class="btn btn-outline-primary px-4 me-sm-3" href="{% url 'products' %}">{% trans "Check Products" %}</a>
+                        <button class="btn btn-outline-primary px-4 me-sm-3" onclick="location.href='#products_list'">{% trans "Check Products" %}</button>
                     </div>
                 </div>
             </div>
@@ -22,10 +22,11 @@
 </header>
 
 <div class="container">
-    <div class="row">
+    <div class="row" id="products_list">
         <div class="col-6 col-lg-2 col-md-3 mb-2">
             <div class="card h-100">
-                <img src="{% static 'img/banner.jpg' %}" class="card-img-top" alt="...">
+                <img src="{% static 'img/banner.jpg' %}" class="card-img-top" 
+                alt="{% trans 'pin header connector, gold plated' %}">
                 <a href="{% url 'pin_header' %}" class="stretched-link"></a>
                 <div class="card-body">
                 <p class="card-text fw-bolder text-center">{% trans "Pin Header" %}</p>

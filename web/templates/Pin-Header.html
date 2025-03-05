@@ -2,9 +2,16 @@
 {% block content %}
 {% load static %}
 {% load i18n %}
+<nav aria-label="breadcrumb" style="background-color: #e3f2fd;">
+    <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item nav-link"><a href="{% url 'index' %}">{% trans 'Home' %}</a></li>
+        <li class="breadcrumb-item nav-link active" aria-current="page">{%trans 'Pin Header' %}</li>
+    </ol>
+</nav>
 
 <div class="container">
     <br>
+
     {#导航#}
     <div class="row">
         <div class="col-lg-9 col-md-9 col-5">
