@@ -108,12 +108,11 @@ class Product(models.Model):
     shape = models.CharField(max_length=20, null=True, blank=True, choices=shape)
 
     def save(self, *args, **kwargs):
-        if not self.slug:
-            self.slug = slugify(self.en_name, allow_unicode=True)
+        self.slug = slugify(self.en_name, allow_unicode=True)
         super().save(*args, **kwargs)
 
     def get_detail_url(self):
-        return reverse(self.product_type+'_detail', args=[str(self.id)])
+        return reverse(self.product_type+'_detail', args=[str(self.slug)])
 
     def __str__(self):
         return '%s' % (self.name)
