@@ -1,4 +1,5 @@
 from django import template
+from django.utils.translation import gettext
 
 register = template.Library()
 
@@ -24,6 +25,22 @@ description_code = {
     'ru':'ru_description',
 }
 
+product_name = {
+    'pin_header': 'Pin Header',
+    'female_header': 'Female Header',
+    'box_header': 'Box Header',
+    'ejector_header': 'Ejector Header',
+    'socket': 'RJ45',
+    'jumper': 'Pin Header Jumper',
+    'fc': 'IDC Connector & Cable',
+    'round_header': 'Machined Pin Header',
+    'round_female_header': 'Machined Female Header',
+    'ic_socket': 'IC Socket',
+    'din': 'Din41612',
+    'plcc': 'PLCC',
+    'edge': 'EDGE Card Connector',
+}
+
 @register.filter
 def get_name(product, code):
     code = name_code[code]
@@ -34,3 +51,8 @@ def get_name(product, code):
 def get_description(product, code):
     code = description_code[code]
     return getattr(product, code)
+
+@register.filter
+def get_general_name(input):
+    p_name = product_name[input]
+    return gettext(p_name)

@@ -2,6 +2,7 @@ from django.db import models
 from django.conf import settings
 from django.urls import reverse
 from django.dispatch import receiver
+from django.utils.text import slugify
 
 import os
 import uuid
@@ -94,6 +95,7 @@ class Product(models.Model):
     ko_description = models.TextField(max_length=500, null=True, blank=True)
     ru_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #russian
     ru_description = models.TextField(max_length=500, null=True, blank=True)
+    slug = models.SlugField(max_length=150, unique=True, blank=True, verbose_name="URL Slug")
     pitch = models.CharField(max_length=20, choices=pitch, null=True, blank=True)
     picture = models.FileField(upload_to=getProductPath, null=True, blank=True)
     picture2 = models.FileField(upload_to=getProductPath, null=True, blank=True)
@@ -104,6 +106,11 @@ class Product(models.Model):
     row = models.CharField(max_length=10, null=True, blank=True, choices=row_num)
     pnum = models.CharField(max_length=10, null=True, blank=True, choices=pnum)
     shape = models.CharField(max_length=20, null=True, blank=True, choices=shape)
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.en_name, allow_unicode=True)
+        super().save(*args, **kwargs)
 
     def get_detail_url(self):
         return reverse(self.product_type+'_detail', args=[str(self.id)])

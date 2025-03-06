@@ -26,8 +26,8 @@ urlpatterns = [
     re_path(r'^ic-socket$', views.IcsocketListView.as_view(), name='ic_socket'),
     re_path(r'^edge-card-connector/(?P<pk>[-\w]+)$', views.EdgeDetailView.as_view(), name='edge_detail'),
     re_path(r'^edge-card-connector$', views.EdgeListView.as_view(), name='edge'),
-    re_path(r'^idc-cable-connector-fc/(?P<pk>[-\w]+)$', views.FcDetailView.as_view(), name='fc_detail'),
-    re_path(r'^idc-cable-connector-fc$', views.FcListView.as_view(), name='fc'),
+    re_path(r'^idc-connector-cable-fc/(?P<pk>[-\w]+)$', views.FcDetailView.as_view(), name='fc_detail'),
+    re_path(r'^idc-connector-cable-fc$', views.FcListView.as_view(), name='fc'),
 
     re_path(r'^product_filter', ajax.ProductFilterForm, name='product_filter'),
 ]

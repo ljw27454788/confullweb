@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 17:29+0800\n"
+"POT-Creation-Date: 2025-03-06 15:14+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,182 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: .\confullweb\settings.py:122
+
+#: .\confullweb\settings.py:123
 msgid "English"
 msgstr ""
 
-#: .\confullweb\settings.py:123
+#: .\confullweb\settings.py:124
 msgid "Simplified Chinese"
 msgstr ""
 
-#: .\confullweb\settings.py:124
+#: .\confullweb\settings.py:125
 msgid "French"
 msgstr ""
 
-#: .\confullweb\settings.py:125
+#: .\confullweb\settings.py:126
 msgid "Spanish"
+msgstr ""
+
+#: .\confullweb\settings.py:127
+msgid "German"
+msgstr ""
+
+#: .\confullweb\settings.py:128
+msgid "Russian"
+msgstr ""
+
+#: .\confullweb\settings.py:129
+msgid "Japanese"
+msgstr ""
+
+#: .\confullweb\settings.py:130
+msgid "Korean"
+msgstr ""
+
+#: .\web\templates\Box-Header.html:8 .\web\templates\EDGE-Card-Connector.html:8
+#: .\web\templates\Ejector-Header.html:8 .\web\templates\FC-IDC-Cable.html:7
+#: .\web\templates\Female-Header.html:8 .\web\templates\IC-Socket.html:8
+#: .\web\templates\Machined-Female-Header.html:7
+#: .\web\templates\Machined-Pin-Header.html:7
+#: .\web\templates\Pin-Header-Jumper.html:7 .\web\templates\Pin-Header.html:7
+#: .\web\templates\base_general.html:95 .\web\templates\products_detail.html:8
+msgid "Home"
+msgstr ""
+
+#: .\web\templates\Box-Header.html:9 .\web\templates\base_general.html:110
+#: .\web\templates\index.html:50 .\web\templates\products_sidebar.html:17
+msgid "Box Header"
+msgstr ""
+
+#: .\web\templates\Box-Header.html:22
+#: .\web\templates\EDGE-Card-Connector.html:22
+#: .\web\templates\Ejector-Header.html:22 .\web\templates\FC-IDC-Cable.html:21
+#: .\web\templates\Female-Header.html:22 .\web\templates\IC-Socket.html:22
+#: .\web\templates\Machined-Female-Header.html:21
+#: .\web\templates\Machined-Pin-Header.html:20
+#: .\web\templates\Pin-Header-Jumper.html:20 .\web\templates\Pin-Header.html:22
+#: .\web\templates\products.html:15 .\web\templates\products_sidebar.html:5
+msgid "Product List"
+msgstr ""
+
+#: .\web\templates\Box-Header.html:34 .\web\templates\Ejector-Header.html:34
+#: .\web\templates\FC-IDC-Cable.html:33 .\web\templates\Female-Header.html:34
+#: .\web\templates\Machined-Female-Header.html:33
+#: .\web\templates\Machined-Pin-Header.html:32
+#: .\web\templates\Pin-Header-Jumper.html:32 .\web\templates\Pin-Header.html:34
+msgid "Pitch"
+msgstr ""
+
+#: .\web\templates\Box-Header.html:47
+#: .\web\templates\EDGE-Card-Connector.html:34
+#: .\web\templates\Ejector-Header.html:47 .\web\templates\Female-Header.html:60
+#: .\web\templates\Machined-Female-Header.html:46
+#: .\web\templates\Machined-Pin-Header.html:45
+#: .\web\templates\Pin-Header.html:62
+msgid "Type"
+msgstr ""
+
+#: .\web\templates\EDGE-Card-Connector.html:9
+#: .\web\templates\base_general.html:124 .\web\templates\index.html:113
+#: .\web\templates\products_sidebar.html:38
+msgid "EDGE Card Connector"
+msgstr ""
+
+#: .\web\templates\Ejector-Header.html:9 .\web\templates\base_general.html:112
+#: .\web\templates\index.html:59 .\web\templates\products_sidebar.html:20
+msgid "Ejector Header"
+msgstr ""
+
+#: .\web\templates\FC-IDC-Cable.html:8 .\web\templates\base_general.html:120
+#: .\web\templates\index.html:95 .\web\templates\products_sidebar.html:26
+msgid "IDC Connector & Cable"
+msgstr ""
+
+#: .\web\templates\Female-Header.html:9 .\web\templates\base_general.html:108
+#: .\web\templates\index.html:41 .\web\templates\products_sidebar.html:14
+msgid "Female Header"
+msgstr ""
+
+#: .\web\templates\Female-Header.html:47 .\web\templates\Pin-Header.html:49
+msgid "Row"
+msgstr ""
+
+#: .\web\templates\IC-Socket.html:9 .\web\templates\base_general.html:122
+#: .\web\templates\index.html:104 .\web\templates\products_detail.html:12
+#: .\web\templates\products_sidebar.html:35
+msgid "IC Socket"
+msgstr ""
+
+#: .\web\templates\Machined-Female-Header.html:8
+#: .\web\templates\base_general.html:116 .\web\templates\index.html:86
+#: .\web\templates\products_sidebar.html:32
+msgid "Machined Female Header"
+msgstr ""
+
+#: .\web\templates\Machined-Pin-Header.html:8
+#: .\web\templates\base_general.html:114 .\web\templates\index.html:77
+#: .\web\templates\products_sidebar.html:29
+msgid "Machined Pin Header"
+msgstr ""
+
+#: .\web\templates\Pin-Header-Jumper.html:8
+#: .\web\templates\base_general.html:118 .\web\templates\index.html:68
+#: .\web\templates\products_sidebar.html:23
+msgid "Pin Header Jumper"
+msgstr ""
+
+#: .\web\templates\Pin-Header.html:8 .\web\templates\base_general.html:106
+#: .\web\templates\index.html:32 .\web\templates\products_sidebar.html:11
+msgid "Pin Header"
+msgstr ""
+
+#: .\web\templates\base_general.html:87
+msgid "Menu"
+msgstr ""
+
+#: .\web\templates\base_general.html:100
+msgid "Products"
+msgstr ""
+
+#: .\web\templates\base_general.html:103
+msgid "Check All Products"
+msgstr ""
+
+#: .\web\templates\base_general.html:128
+msgid "Contact Us"
+msgstr ""
+
+#: .\web\templates\base_general.html:131
+msgid "Free Sample"
+msgstr ""
+
+#: .\web\templates\base_general.html:148
+msgid ""
+"Address: Building B10, Hengfeng Industrial City, Baoan District, Shenzhen, "
+"518100"
+msgstr ""
+
+#: .\web\templates\base_general.html:152
+msgid "Email: confull@confull.com"
+msgstr ""
+
+#: .\web\templates\index.html:11
+msgid "Board Connector Manufacturer with 25 Years' Experience"
+msgstr ""
+
+#: .\web\templates\index.html:13
+msgid "Check Products"
+msgstr ""
+
+#: .\web\templates\index.html:29
+msgid "pin header connector, gold plated"
+msgstr ""
+
+#: .\web\templates\index.html:122
+msgid "More"
+msgstr ""
+
+#: .\web\templates\products_list.html:18
+msgid "Get Detail"
 msgstr ""

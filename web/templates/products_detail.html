@@ -2,5 +2,14 @@
 {% block content %}
 {% load static %}
 {% load i18n %}
-
+{% load util %}
+<nav aria-label="breadcrumb" class="bg-secondary-subtle">
+    <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}">{% trans 'Home' %}</a></li>
+        <li class="breadcrumb-item"><a class="no-line" href="{% url ''|add:product.product_type %}">
+            {{ product.product_type|get_general_name }}
+        </a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ product|get_name:LANGUAGE_CODE }}</li>
+    </ol>
+</nav>
 {% endblock %}
