@@ -90,18 +90,15 @@
                 {#页面导航#}
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item active me-3">
                             <a class="nav-link" href="{% url 'index' %}">
                                 {% trans "Home" %}
                             </a>
                         </li>
-                        <li class="nav-item dropdown active">
+                        <li class="nav-item dropdown active me-3">
                             <a id="dropdownSubMenu1" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                               class="nav-link dropdown-toggle">{% trans "Products" %}</a>
+                               class="nav-link dropdown-toggle">{% trans "Products List" %}</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-                                <li><a href="{% url 'products' %}" class="dropdown-item">
-                                    {% trans "Check All Products" %}</a></li>
-                                <li class="dropdown-divider"></li>
                                 <li><a href="{% url 'pin_header' %}" class="dropdown-item">
                                     {% trans "Pin Header" %}</a></li>
                                 <li><a href="{% url 'female_header' %}" class="dropdown-item">
@@ -124,11 +121,14 @@
                                     {% trans "EDGE Card Connector" %}</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" >{% trans "Contact Us" %}</a>
+                        <li class="nav-item active me-3">
+                            <a class="nav-link" href="{% url 'contact' %}">{% trans "Contact Us" %}</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" >{% trans "Free Sample" %}</a>
+                        <li class="nav-item active me-3">
+                            <a class="nav-link" href="{% url 'contact' %}">{% trans "Company Info" %}</a>
+                        </li>
+                        <li class="nav-item active me-3">
+                            <a class="nav-link" href="{% url 'contact' %}">{% trans "Know Products" %}</a>
                         </li>
                     </ul>
                 </div>

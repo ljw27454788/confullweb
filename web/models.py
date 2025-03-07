@@ -134,3 +134,34 @@ def execute_pre_save(sender, instance, *args, **kwargs):
                     os.remove(absolute_path)
                 except:
                     pass
+
+
+class News(models.Model):
+    title = models.CharField(max_length=100, unique=True)
+    content = models.TextField(max_length=2000, null=True, blank=True, unique=True)
+    en_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
+    en_content = models.TextField(max_length=2000, null=True, blank=True, unique=True)
+    es_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
+    es_content = models.TextField(max_length=2000, null=True, blank=True, unique=True)
+    de_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
+    de_content = models.TextField(max_length=2000, null=True, blank=True, unique=True)
+    fr_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
+    fr_content = models.TextField(max_length=2000, null=True, blank=True, unique=True)
+    ja_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
+    ja_content = models.TextField(max_length=2000, null=True, blank=True, unique=True)
+    ko_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
+    ko_content = models.TextField(max_length=2000, null=True, blank=True, unique=True)
+    ru_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
+    ru_content = models.TextField(max_length=2000, null=True, blank=True, unique=True)
+    created_at = models.DateTimeField(auto_now_add=True, editable=True, null=True, blank=True)
+    slug = models.SlugField(max_length=150, unique=True, blank=True, verbose_name="URL Slug")
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.en_title, allow_unicode=True)
+        super().save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return reverse('news_detail', args=[str(self.slug)])
+
+    def __str__(self):
+        return '%s' % (self.title)
