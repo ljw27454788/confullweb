@@ -41,6 +41,17 @@ product_name = {
     'edge': 'EDGE Card Connector',
 }
 
+title_code = {
+    'zh-hans':'title',
+    'en':'en_title',
+    'es':'es_title',
+    'de':'de_title',
+    'fr':'fr_title',
+    'ja':'ja_title',
+    'ko':'ko_title',
+    'ru':'ru_title',
+}
+
 @register.filter
 def get_name(product, code):
     code = name_code[code]
@@ -56,3 +67,8 @@ def get_description(product, code):
 def get_general_name(input):
     p_name = product_name[input]
     return gettext(p_name)
+
+@register.filter
+def get_news_title(news, code):
+    code = title_code[code]
+    return getattr(news, code)

@@ -6,3 +6,8 @@ from web.models import *
 class Product(admin.ModelAdmin):
     readonly_fields = ('id',)
     pass
+
+@admin.register(News)
+class News(admin.ModelAdmin):
+    readonly_fields = ('id',)
+    pass

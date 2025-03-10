@@ -8,6 +8,7 @@ from web import ajax
 urlpatterns = [
     path('', views.index, name='index'),
     path('contact', views.contact, name='contact'),
+    path('company-info', views.company, name='company'),
     re_path(r'^connectors$', views.ProductListView.as_view(), name='products'),
     re_path(r'^pin-header/(?P<slug>[-\w]+)$', views.PinheaderDetailView.as_view(), name='pin_header_detail'),
     re_path(r'^pin-header$', views.PinheaderListView.as_view(), name='pin_header'),
@@ -29,6 +30,8 @@ urlpatterns = [
     re_path(r'^edge-card-connector$', views.EdgeListView.as_view(), name='edge'),
     re_path(r'^idc-connector-cable-fc/(?P<slug>[-\w]+)$', views.FcDetailView.as_view(), name='fc_detail'),
     re_path(r'^idc-connector-cable-fc$', views.FcListView.as_view(), name='fc'),
+    re_path(r'^news/(?P<slug>[-\w]+)$', views.NewsDetailView.as_view(), name='news_detail'),
+    re_path(r'^news$', views.NewsListView.as_view(), name='news'),
 
     re_path(r'^product_filter', ajax.ProductFilterForm, name='product_filter'),
 ]

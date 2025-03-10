@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import generic
 
-from web.models import Product
+from web.models import Product, News
 
 # Create your views here.
 def index(request):
@@ -9,6 +9,9 @@ def index(request):
 
 def contact(request):
     return render(request, 'contact.html', context={})
+
+def company(request):
+    return render(request, 'company.html', context={})
 
 # Products List
 class ProductListView(generic.ListView):
@@ -314,4 +317,31 @@ class FcDetailView(generic.DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(FcDetailView, self).get_context_data(*args, **kwargs)
+        return context
+    
+
+#News
+class NewsListView(generic.ListView):
+    model = News
+    template_name = "News.html"
+    context_object_name = 'news'
+
+    def get_queryset(self):
+        return News.objects.all().order_by('-created_at')
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(NewsListView, self).get_context_data(*args, **kwargs)
+        return context
+    
+#News detail
+class NewsDetailView(generic.DetailView):
+    model = News
+    template_name = "news_detail.html"
+
+    def get_object(self, *args, **kwargs):
+        obj = super(NewsDetailView, self).get_object(*args, **kwargs)
+        return obj
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(NewsDetailView, self).get_context_data(*args, **kwargs)
         return context

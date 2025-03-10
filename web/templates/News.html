@@ -1,0 +1,22 @@
+{% extends "base_general.html" %}
+{% block content %}
+{% load static %}
+{% load i18n %}
+{% load util %}
+<br>
+<div class="container">
+    <div class="card">
+        <p class="mt-2 text-center fs-2">{%trans 'Knowledge List'%}</p>
+        {% for obj in object_list %}
+            <div class="card mx-3 mb-3">
+                <div class="card-body">
+                    <a class="stretched-link" href="{{ obj.get_detail_url }}">
+                        <h3 class="card-title">{{obj|get_news_title:LANGUAGE_CODE}}</h3></a>
+                    <p class="card-text"><small class="text-muted">{{obj.created_at}}</small></p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
