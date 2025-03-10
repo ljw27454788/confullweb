@@ -52,6 +52,17 @@ title_code = {
     'ru':'ru_title',
 }
 
+content_code = {
+    'zh-hans':'content',
+    'en':'en_content',
+    'es':'es_content',
+    'de':'de_content',
+    'fr':'fr_content',
+    'ja':'ja_content',
+    'ko':'ko_content',
+    'ru':'ru_content',
+}
+
 @register.filter
 def get_name(product, code):
     code = name_code[code]
@@ -71,4 +82,9 @@ def get_general_name(input):
 @register.filter
 def get_news_title(news, code):
     code = title_code[code]
+    return getattr(news, code)
+
+@register.filter
+def get_news_content(news, code):
+    code = content_code[code]
     return getattr(news, code)

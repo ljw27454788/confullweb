@@ -2,5 +2,21 @@
 {% block content %}
 {% load static %}
 {% load i18n %}
-
+{% load util %}
+<br>
+<div class="container">
+    <div class="card">
+        <p class="mt-2 text-center fs-2">{{news|get_news_title:LANGUAGE_CODE}}</p>
+        {%if news.picture%}
+            <div class="row">
+                <div class="col-lg-5 col-md-4"></div>
+                <div class="col-lg-2 col-md-4"><img src="{{ news.picture.url }}" class="img-fluid"></div>
+                <div class="col-lg-5 col-md-4"></div>
+            </div>
+        {%endif%}
+        <div class="card-body">
+            {{news|get_news_content:LANGUAGE_CODE|safe|linebreaks}}
+        </div>
+    </div>
+</div>
 {% endblock %}
