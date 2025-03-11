@@ -28,12 +28,14 @@
                     <div class="row">
                         <p><strong>{{ product|get_description:LANGUAGE_CODE|linebreaks }}</strong></p>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <a class="btn btn-outline-success" href="{{ product.pdf.url }}" target="_blank">
-                                <i class="fas fa-file-pdf"></i> {% trans "Download Drawing (PDF)" %}</a>
+                    {%if product.pdf%}
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-outline-success" href="{{ product.pdf.url }}" target="_blank">
+                                    <i class="fas fa-file-pdf"></i> {% trans "Download Drawing (PDF)" %}</a>
+                            </div>
                         </div>
-                    </div>
+                    {%endif%}
                     <div class="row mt-3">
                         <div class="col-12">
                             <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-message"></i> 

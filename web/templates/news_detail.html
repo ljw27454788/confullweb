@@ -3,6 +3,15 @@
 {% load static %}
 {% load i18n %}
 {% load util %}
+<nav aria-label="breadcrumb" class="bg-secondary-subtle">
+    <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}"><strong>{% trans 'Home' %}</strong></a></li>
+        <li class="breadcrumb-item"><a class="no-line" href="{% url 'news' %}">
+            <strong>{%trans 'Knowledge List'%}</strong>
+        </a></li>
+        <li class="breadcrumb-item active" aria-current="page"><strong>{{ news|get_news_title:LANGUAGE_CODE }}</strong></li>
+    </ol>
+</nav>
 <br>
 <div class="container">
     <div class="card">
@@ -16,6 +25,23 @@
         {%endif%}
         <div class="card-body">
             {{news|get_news_content:LANGUAGE_CODE|safe|linebreaks}}
+        </div>
+        <div class="card-footer">
+            {% if product_type %}
+                <div class="row">
+                    <div class="col-lg-5 col-md-4"></div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="card">
+                            <img src="{{ product_type }}.png" class="card-img-top" alt="...">
+                            <a href="{% url ''|add:product_type %}" class="stretched-link"></a>
+                            <div class="card-body">
+                                <p class="card-text fw-bolder text-center">{%trans "Check Our "%}{{ product_type|get_general_name }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-4"></div>
+                </div>
+            {%endif%}
         </div>
     </div>
 </div>

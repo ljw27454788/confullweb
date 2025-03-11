@@ -10,8 +10,8 @@ def index(request):
 def contact(request):
     return render(request, 'contact.html', context={})
 
-def company(request):
-    return render(request, 'company.html', context={})
+# def company(request):
+#     return render(request, 'company.html', context={})
 
 # Products List
 class ProductListView(generic.ListView):
@@ -344,4 +344,5 @@ class NewsDetailView(generic.DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(NewsDetailView, self).get_context_data(*args, **kwargs)
+        context['product_type'] = self.object.about
         return context

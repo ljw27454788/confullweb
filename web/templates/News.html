@@ -3,6 +3,12 @@
 {% load static %}
 {% load i18n %}
 {% load util %}
+<nav aria-label="breadcrumb" class="bg-secondary-subtle">
+    <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}"><strong>{% trans 'Home' %}</strong></a></li>
+        <li class="breadcrumb-item active" aria-current="page"><strong>{%trans 'Knowledge List'%}</strong></li>
+    </ol>
+</nav>
 <br>
 <div class="container">
     <div class="card">

@@ -8,7 +8,7 @@ from web import ajax
 urlpatterns = [
     path('', views.index, name='index'),
     path('contact', views.contact, name='contact'),
-    path('company-info', views.company, name='company'),
+    # path('company-info', views.company, name='company'),
     re_path(r'^connectors$', views.ProductListView.as_view(), name='products'),
     re_path(r'^pin-header/(?P<slug>[-\w]+)$', views.PinheaderDetailView.as_view(), name='pin_header_detail'),
     re_path(r'^pin-header$', views.PinheaderListView.as_view(), name='pin_header'),
