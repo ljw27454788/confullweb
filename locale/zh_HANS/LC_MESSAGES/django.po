@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-13 15:59+0800\n"
-"PO-Revision-Date: 2025-03-06 20:21+0000\n"
+"POT-Creation-Date: 2025-03-13 23:46+0800\n"
+"PO-Revision-Date: 2025-03-13 23:46+0000\n"
 "Last-Translator:   <q@q.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -50,7 +50,8 @@ msgstr ""
 msgid "Korean"
 msgstr ""
 
-#: .\web\templates\Box-Header.html:8 .\web\templates\EDGE-Card-Connector.html:8
+#: .\web\templates\Box-Header.html:8
+#: .\web\templates\EDGE-Card-Connector.html:8
 #: .\web\templates\Ejector-Header.html:8 .\web\templates\FC-IDC-Cable.html:7
 #: .\web\templates\Female-Header.html:8 .\web\templates\IC-Socket.html:8
 #: .\web\templates\Machined-Female-Header.html:7
@@ -72,8 +73,9 @@ msgstr "简牛"
 #: .\web\templates\Female-Header.html:22 .\web\templates\IC-Socket.html:22
 #: .\web\templates\Machined-Female-Header.html:21
 #: .\web\templates\Machined-Pin-Header.html:20
-#: .\web\templates\Pin-Header-Jumper.html:20 .\web\templates\Pin-Header.html:22
-#: .\web\templates\products.html:15 .\web\templates\products_sidebar.html:5
+#: .\web\templates\Pin-Header-Jumper.html:20
+#: .\web\templates\Pin-Header.html:22 .\web\templates\products.html:15
+#: .\web\templates\products_sidebar.html:5
 msgid "Product List"
 msgstr "产品目录"
 
@@ -81,13 +83,15 @@ msgstr "产品目录"
 #: .\web\templates\FC-IDC-Cable.html:33 .\web\templates\Female-Header.html:34
 #: .\web\templates\Machined-Female-Header.html:33
 #: .\web\templates\Machined-Pin-Header.html:32
-#: .\web\templates\Pin-Header-Jumper.html:32 .\web\templates\Pin-Header.html:34
+#: .\web\templates\Pin-Header-Jumper.html:32
+#: .\web\templates\Pin-Header.html:34
 msgid "Pitch"
 msgstr "间距"
 
 #: .\web\templates\Box-Header.html:47
 #: .\web\templates\EDGE-Card-Connector.html:34
-#: .\web\templates\Ejector-Header.html:47 .\web\templates\Female-Header.html:60
+#: .\web\templates\Ejector-Header.html:47
+#: .\web\templates\Female-Header.html:60
 #: .\web\templates\Machined-Female-Header.html:46
 #: .\web\templates\Machined-Pin-Header.html:45
 #: .\web\templates\Pin-Header.html:62
@@ -183,8 +187,6 @@ msgid "Email: confull@confull.com"
 msgstr "电子邮箱：confull@confull.com"
 
 #: .\web\templates\index.html:11
-#, fuzzy
-#| msgid "Board Connector Manufacturer with 25 Years' Experience"
 msgid "Board Connector Factory with 25 Years' Experience"
 msgstr "25年经验的板上连接器制造商"
 
@@ -197,33 +199,46 @@ msgid "Check Products"
 msgstr "查看产品"
 
 #: .\web\templates\index.html:19
-#, fuzzy
-#| msgid "Board Connector Manufacturer with 25 Years' Experience"
 msgid "Board Connector Factory with 25 Years Experience"
-msgstr "25年经验的板上连接器制造商"
+msgstr "25年经验的板上连接器制造厂商"
 
 #: .\web\templates\index.html:30
 msgid ""
-"Pin Header Connector - High-Quality Male & Female Header Pins for PCB "
-"Applications"
-msgstr ""
+"Pin Header connector, durable and reliable for PCB connections, available in"
+" single-row and double-row options, used in electronic devices, industrial "
+"applications, and automation systems"
+msgstr "排针连接器，耐用可靠的 PCB 连接方案，提供单排和双排选择，广泛应用于电子设备、工业应用和自动化系统"
 
 #: .\web\templates\index.html:40
 msgid ""
-"Female Header Connector - High-Quality PCB Socket for Electronic Applications"
-msgstr ""
+"Female Header connector, reliable and durable PCB connection, available in "
+"single-row and double-row options, widely used in electronic devices, "
+"industrial applications, and automation systems"
+msgstr "排母连接器，可靠耐用的 PCB 连接方案，提供单排和双排选择，广泛应用于电子设备、工业应用和自动化系统"
 
 #: .\web\templates\index.html:50
-msgid "Box Header Connector - Reliable PCB Header for Ribbon Cable Connections"
-msgstr ""
+msgid ""
+"High-quality Box Header connector for PCB, secure and stable connection, "
+"available in various pin configurations, ideal for electronic devices, "
+"industrial automation, and embedded systems"
+msgstr "高品质简牛 Box Header 连接器，适用于 PCB 板稳定可靠连接，多种针数规格可选，广泛应用于电子设备、工业自动化和嵌入式系统"
 
 #: .\web\templates\index.html:60
-msgid "Ejector Header Connector - Secure PCB Header for IDC Ribbon Cable"
+msgid ""
+"High-quality Ejector Header connector for PCB, secure and stable connection "
+"with locking mechanism, ideal for ribbon cable connections, used in "
+"industrial automation, embedded systems, and electronic devices"
 msgstr ""
+"高品质牛角连接器 Ejector Header，带锁扣设计，确保稳定可靠的 PCB 连接，适用于排线连接，广泛应用于工业自动化、嵌入式系统和电子设备"
 
 #: .\web\templates\index.html:70
-msgid "Jumper Cap - Reliable Shorting Connector for Pin Headers"
+msgid ""
+"High-quality Jumper cap for PCB circuit shorting, reliable electrical "
+"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used"
+" in electronic devices, DIY projects, and industrial control systems"
 msgstr ""
+"高品质短路帽 Jumper，适用于 PCB 电路短接，提供稳定可靠的电气连接，兼容 2.54mm 和 1.27mm 间距排针，广泛应用于电子设备、DIY"
+" 项目和工业控制系统"
 
 #: .\web\templates\index.html:80
 msgid "High-Quality Machined Pin Header for PCB connections"

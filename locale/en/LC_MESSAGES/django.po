@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-13 15:59+0800\n"
+"POT-Creation-Date: 2025-03-13 23:46+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -196,25 +196,37 @@ msgstr ""
 
 #: .\web\templates\index.html:30
 msgid ""
-"Pin Header Connector - High-Quality Male & Female Header Pins for PCB "
-"Applications"
+"Pin Header connector, durable and reliable for PCB connections, available in "
+"single-row and double-row options, used in electronic devices, industrial "
+"applications, and automation systems"
 msgstr ""
 
 #: .\web\templates\index.html:40
 msgid ""
-"Female Header Connector - High-Quality PCB Socket for Electronic Applications"
+"Female Header connector, reliable and durable PCB connection, available in "
+"single-row and double-row options, widely used in electronic devices, "
+"industrial applications, and automation systems"
 msgstr ""
 
 #: .\web\templates\index.html:50
-msgid "Box Header Connector - Reliable PCB Header for Ribbon Cable Connections"
+msgid ""
+"High-quality Box Header connector for PCB, secure and stable connection, "
+"available in various pin configurations, ideal for electronic devices, "
+"industrial automation, and embedded systems"
 msgstr ""
 
 #: .\web\templates\index.html:60
-msgid "Ejector Header Connector - Secure PCB Header for IDC Ribbon Cable"
+msgid ""
+"High-quality Ejector Header connector for PCB, secure and stable connection "
+"with locking mechanism, ideal for ribbon cable connections, used in "
+"industrial automation, embedded systems, and electronic devices"
 msgstr ""
 
 #: .\web\templates\index.html:70
-msgid "Jumper Cap - Reliable Shorting Connector for Pin Headers"
+msgid ""
+"High-quality Jumper cap for PCB circuit shorting, reliable electrical "
+"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used "
+"in electronic devices, DIY projects, and industrial control systems"
 msgstr ""
 
 #: .\web\templates\index.html:80

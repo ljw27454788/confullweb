@@ -8,15 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-13 15:59+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2025-03-13 23:46+0800\n"
+"PO-Revision-Date: 2025-03-13 23:48+0000\n"
+"Last-Translator:   <q@q.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.10.1\n"
 
 #: .\confullweb\settings.py:123
 msgid "English"
@@ -50,7 +51,8 @@ msgstr ""
 msgid "Korean"
 msgstr ""
 
-#: .\web\templates\Box-Header.html:8 .\web\templates\EDGE-Card-Connector.html:8
+#: .\web\templates\Box-Header.html:8
+#: .\web\templates\EDGE-Card-Connector.html:8
 #: .\web\templates\Ejector-Header.html:8 .\web\templates\FC-IDC-Cable.html:7
 #: .\web\templates\Female-Header.html:8 .\web\templates\IC-Socket.html:8
 #: .\web\templates\Machined-Female-Header.html:7
@@ -72,8 +74,9 @@ msgstr ""
 #: .\web\templates\Female-Header.html:22 .\web\templates\IC-Socket.html:22
 #: .\web\templates\Machined-Female-Header.html:21
 #: .\web\templates\Machined-Pin-Header.html:20
-#: .\web\templates\Pin-Header-Jumper.html:20 .\web\templates\Pin-Header.html:22
-#: .\web\templates\products.html:15 .\web\templates\products_sidebar.html:5
+#: .\web\templates\Pin-Header-Jumper.html:20
+#: .\web\templates\Pin-Header.html:22 .\web\templates\products.html:15
+#: .\web\templates\products_sidebar.html:5
 msgid "Product List"
 msgstr ""
 
@@ -81,13 +84,15 @@ msgstr ""
 #: .\web\templates\FC-IDC-Cable.html:33 .\web\templates\Female-Header.html:34
 #: .\web\templates\Machined-Female-Header.html:33
 #: .\web\templates\Machined-Pin-Header.html:32
-#: .\web\templates\Pin-Header-Jumper.html:32 .\web\templates\Pin-Header.html:34
+#: .\web\templates\Pin-Header-Jumper.html:32
+#: .\web\templates\Pin-Header.html:34
 msgid "Pitch"
 msgstr ""
 
 #: .\web\templates\Box-Header.html:47
 #: .\web\templates\EDGE-Card-Connector.html:34
-#: .\web\templates\Ejector-Header.html:47 .\web\templates\Female-Header.html:60
+#: .\web\templates\Ejector-Header.html:47
+#: .\web\templates\Female-Header.html:60
 #: .\web\templates\Machined-Female-Header.html:46
 #: .\web\templates\Machined-Pin-Header.html:45
 #: .\web\templates\Pin-Header.html:62
@@ -196,26 +201,46 @@ msgstr ""
 
 #: .\web\templates\index.html:30
 msgid ""
-"Pin Header Connector - High-Quality Male & Female Header Pins for PCB "
-"Applications"
+"Pin Header connector, durable and reliable for PCB connections, available in"
+" single-row and double-row options, used in electronic devices, industrial "
+"applications, and automation systems"
 msgstr ""
+"핀 헤더 커넥터, 내구성이 뛰어나고 신뢰할 수 있는 PCB 연결, 단열 및 이중열 옵션 제공, 전자 장치, 산업 응용 및 자동화 "
+"시스템에서 사용"
 
 #: .\web\templates\index.html:40
 msgid ""
-"Female Header Connector - High-Quality PCB Socket for Electronic Applications"
+"Female Header connector, reliable and durable PCB connection, available in "
+"single-row and double-row options, widely used in electronic devices, "
+"industrial applications, and automation systems"
 msgstr ""
+"Female Header 커넥터, 신뢰할 수 있고 내구성이 뛰어난 PCB 연결, 단열 및 이중열 옵션 제공, 전자 장치, 산업 응용 및 "
+"자동화 시스템에서 널리 사용"
 
 #: .\web\templates\index.html:50
-msgid "Box Header Connector - Reliable PCB Header for Ribbon Cable Connections"
-msgstr ""
+msgid ""
+"High-quality Box Header connector for PCB, secure and stable connection, "
+"available in various pin configurations, ideal for electronic devices, "
+"industrial automation, and embedded systems"
+msgstr "고품질 박스 헤더 커넥터, 안정적인 PCB 연결, 다양한 핀 구성 제공, 전자 기기, 산업 자동화 및 임베디드 시스템에 적합"
 
 #: .\web\templates\index.html:60
-msgid "Ejector Header Connector - Secure PCB Header for IDC Ribbon Cable"
+msgid ""
+"High-quality Ejector Header connector for PCB, secure and stable connection "
+"with locking mechanism, ideal for ribbon cable connections, used in "
+"industrial automation, embedded systems, and electronic devices"
 msgstr ""
+"고품질 이젝터 헤더 커넥터, 락킹 메커니즘이 적용된 안정적인 PCB 연결, 플랫 케이블 연결에 적합, 산업 자동화, 임베디드 시스템 및 "
+"전자 기기에 널리 사용"
 
 #: .\web\templates\index.html:70
-msgid "Jumper Cap - Reliable Shorting Connector for Pin Headers"
+msgid ""
+"High-quality Jumper cap for PCB circuit shorting, reliable electrical "
+"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used"
+" in electronic devices, DIY projects, and industrial control systems"
 msgstr ""
+"고품질 점퍼 캡, PCB 회로 단락 용, 안정적인 전기 연결 제공, 2.54mm 및 1.27mm 핀 헤더와 호환, 전자 기기, DIY "
+"프로젝트 및 산업 제어 시스템에 널리 사용"
 
 #: .\web\templates\index.html:80
 msgid "High-Quality Machined Pin Header for PCB connections"
