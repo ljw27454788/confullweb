@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-13 23:46+0800\n"
-"PO-Revision-Date: 2025-03-13 23:48+0000\n"
-"Last-Translator:   <q@q.com>\n"
+"POT-Creation-Date: 2025-03-14 09:28+0800\n"
+"PO-Revision-Date: 2025-03-14 09:30+0000\n"
+"Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -196,8 +196,13 @@ msgid "Check Products"
 msgstr ""
 
 #: .\web\templates\index.html:19
-msgid "Board Connector Factory with 25 Years Experience"
+msgid ""
+"Professional connector manufacturer - CONFULL, specializing in PCB "
+"connectors, board-to-board, wire-to-board, IDC, pin headers, and industrial "
+"connectors for reliable electronic solutions"
 msgstr ""
+"プロフェッショナルなコネクタメーカー - "
+"CONFULL、PCBコネクタ、基板対基板、ワイヤ対基板、IDC、ピンヘッダー、産業用コネクタに特化し、高信頼性の電子ソリューションを提供"
 
 #: .\web\templates\index.html:30
 msgid ""
@@ -241,32 +246,51 @@ msgstr ""
 "高品質のジャンパーキャップ、PCB回路のショート接続用、安定した電気接続を提供、2.54mmおよび1.27mmピッチのピンヘッダーに対応、電子機器、DIYプロジェクト、産業制御システムに広く使用"
 
 #: .\web\templates\index.html:80
-msgid "High-Quality Machined Pin Header for PCB connections"
+msgid ""
+"High-quality machined round pin header, precision-turned contacts for stable"
+" and reliable PCB connections, available in various pin configurations, "
+"ideal for industrial electronics, aerospace, and high-density applications"
 msgstr ""
+"高品質の丸ピンヘッダー、精密旋削コンタクトによる安定したPCB接続、さまざまなピン構成が可能、産業用電子機器、航空宇宙、高密度アプリケーションに最適"
 
 #: .\web\templates\index.html:90
-msgid "High-Precision Machined Female Headers for reliable PCB connections"
+msgid ""
+"High-quality machined round female header, precision-turned contacts for "
+"reliable PCB connections, compatible with round pin headers, ideal for "
+"industrial electronics, aerospace, and high-density applications"
 msgstr ""
+"高品質の丸型メスヘッダー、精密旋削コンタクトによる安定したPCB接続、丸型ピンヘッダーに対応、産業用電子機器、航空宇宙、高密度アプリケーションに最適"
 
 #: .\web\templates\index.html:100
-msgid "Reliable Insulation Displacement Connectors for cable connection"
+msgid ""
+"High-quality IDC connector and ribbon cable for secure and reliable PCB "
+"connections, compatible with 2.54mm and 1.27mm pitch, widely used in "
+"industrial electronics, computers, and automation systems"
 msgstr ""
+"高品質のIDCコネクタとフラットケーブル、安定したPCB接続を提供、2.54mmおよび1.27mmピッチに対応、産業用電子機器、コンピュータ、自動化システムに広く使用"
 
 #: .\web\templates\index.html:110
-msgid "Reliable DIP & SMT IC Socket for chip"
-msgstr ""
+msgid ""
+"High-quality IC socket for secure and reliable chip connections, compatible "
+"with DIP, PGA, and other IC packages, ideal for PCB prototyping, industrial "
+"electronics, and embedded systems"
+msgstr "高品質のICソケット、安定したチップ接続を提供、DIP・PGAなどのパッケージに対応、PCB設計、産業用電子機器、組み込みシステムに最適"
 
 #: .\web\templates\index.html:120
 msgid ""
-"Bus Finger EDGE card connector, designed for high-performance electronic "
-"devices, ensuring stable signal transmission, made with high-quality "
-"materials, long lifespan, widely used in computer hardware and industrial "
-"equipment"
+"High-quality EDGE card connector for secure and reliable PCB connections, "
+"compatible with PCIe, PCI, and industrial backplane systems, ideal for data "
+"communication, automation, and high-speed signal transmission"
 msgstr ""
+"高品質のエッジカードコネクタ、安定したPCB接続を提供、PCIe・PCI・産業用バックプレーンシステムに対応、データ通信、自動化、高速信号伝送に最適"
 
 #: .\web\templates\index.html:130
-msgid "asd"
+msgid ""
+"Comprehensive guide to learning connectors, including pin headers, female "
+"headers, IDC connectors, board-to-board connectors, and wire-to-board "
+"connectors for electronic projects and PCB design"
 msgstr ""
+"コネクタ学習ガイド、ピンヘッダー、メスヘッダー、IDCコネクタ、基板対基板コネクタ、ワイヤー対基板コネクタを含み、電子プロジェクトやPCB設計に最適"
 
 #: .\web\templates\index.html:133
 msgid "Know Product"

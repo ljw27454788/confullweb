@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-13 23:46+0800\n"
-"PO-Revision-Date: 2025-03-13 23:46+0000\n"
-"Last-Translator:   <q@q.com>\n"
+"POT-Creation-Date: 2025-03-14 09:28+0800\n"
+"PO-Revision-Date: 2025-03-14 09:28+0000\n"
+"Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -199,8 +199,11 @@ msgid "Check Products"
 msgstr "查看产品"
 
 #: .\web\templates\index.html:19
-msgid "Board Connector Factory with 25 Years Experience"
-msgstr "25年经验的板上连接器制造厂商"
+msgid ""
+"Professional connector manufacturer - CONFULL, specializing in PCB "
+"connectors, board-to-board, wire-to-board, IDC, pin headers, and industrial "
+"connectors for reliable electronic solutions"
+msgstr "专业连接器制造商 - CONFULL，专注于 PCB 连接器、板对板、线对板、IDC、排针及工业连接器，为电子行业提供高可靠性解决方案"
 
 #: .\web\templates\index.html:30
 msgid ""
@@ -241,32 +244,47 @@ msgstr ""
 " 项目和工业控制系统"
 
 #: .\web\templates\index.html:80
-msgid "High-Quality Machined Pin Header for PCB connections"
-msgstr ""
+msgid ""
+"High-quality machined round pin header, precision-turned contacts for stable"
+" and reliable PCB connections, available in various pin configurations, "
+"ideal for industrial electronics, aerospace, and high-density applications"
+msgstr "高品质圆孔排针，精密车削接触点，确保稳定可靠的 PCB 连接，提供多种针数规格，适用于工业电子、航空航天和高密度应用"
 
 #: .\web\templates\index.html:90
-msgid "High-Precision Machined Female Headers for reliable PCB connections"
-msgstr ""
+msgid ""
+"High-quality machined round female header, precision-turned contacts for "
+"reliable PCB connections, compatible with round pin headers, ideal for "
+"industrial electronics, aerospace, and high-density applications"
+msgstr "高品质圆孔排母，精密车削接触点，确保稳定可靠的 PCB 连接，兼容圆孔排针，适用于工业电子、航空航天和高密度应用"
 
 #: .\web\templates\index.html:100
-msgid "Reliable Insulation Displacement Connectors for cable connection"
+msgid ""
+"High-quality IDC connector and ribbon cable for secure and reliable PCB "
+"connections, compatible with 2.54mm and 1.27mm pitch, widely used in "
+"industrial electronics, computers, and automation systems"
 msgstr ""
+"高品质 IDC 连接器和扁平线束，提供稳定可靠的 PCB 连接，兼容 2.54mm 和 1.27mm 间距，广泛应用于工业电子、计算机和自动化系统"
 
 #: .\web\templates\index.html:110
-msgid "Reliable DIP & SMT IC Socket for chip"
-msgstr ""
+msgid ""
+"High-quality IC socket for secure and reliable chip connections, compatible "
+"with DIP, PGA, and other IC packages, ideal for PCB prototyping, industrial "
+"electronics, and embedded systems"
+msgstr "高品质 IC 座，提供稳定可靠的芯片连接，兼容 DIP、PGA 等 IC 封装，广泛用于 PCB 设计、工业电子和嵌入式系统"
 
 #: .\web\templates\index.html:120
 msgid ""
-"Bus Finger EDGE card connector, designed for high-performance electronic "
-"devices, ensuring stable signal transmission, made with high-quality "
-"materials, long lifespan, widely used in computer hardware and industrial "
-"equipment"
-msgstr ""
+"High-quality EDGE card connector for secure and reliable PCB connections, "
+"compatible with PCIe, PCI, and industrial backplane systems, ideal for data "
+"communication, automation, and high-speed signal transmission"
+msgstr "高品质总线金手指连接器，提供稳定可靠的 PCB 连接，兼容 PCIe、PCI 及工业背板系统，广泛应用于数据通信、自动化和高速信号传输"
 
 #: .\web\templates\index.html:130
-msgid "asd"
-msgstr ""
+msgid ""
+"Comprehensive guide to learning connectors, including pin headers, female "
+"headers, IDC connectors, board-to-board connectors, and wire-to-board "
+"connectors for electronic projects and PCB design"
+msgstr "学习连接器全面指南，涵盖排针、排母、IDC 连接器、板对板连接器、线对板连接器，适用于电子项目和 PCB 设计"
 
 #: .\web\templates\index.html:133
 #, fuzzy
@@ -289,6 +307,9 @@ msgstr ""
 #: .\web\templates\products_list.html:18
 msgid "Get Detail"
 msgstr "查看详情"
+
+#~ msgid "Board Connector Factory with 25 Years Experience"
+#~ msgstr "25年经验的板上连接器制造厂商"
 
 #~ msgid "Check All Products"
 #~ msgstr "查看所有产品"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-13 23:46+0800\n"
+"POT-Creation-Date: 2025-03-14 09:28+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -191,7 +191,10 @@ msgid "Check Products"
 msgstr ""
 
 #: .\web\templates\index.html:19
-msgid "Board Connector Factory with 25 Years Experience"
+msgid ""
+"Professional connector manufacturer - CONFULL, specializing in PCB "
+"connectors, board-to-board, wire-to-board, IDC, pin headers, and industrial "
+"connectors for reliable electronic solutions"
 msgstr ""
 
 #: .\web\templates\index.html:30
@@ -230,31 +233,45 @@ msgid ""
 msgstr ""
 
 #: .\web\templates\index.html:80
-msgid "High-Quality Machined Pin Header for PCB connections"
+msgid ""
+"High-quality machined round pin header, precision-turned contacts for stable "
+"and reliable PCB connections, available in various pin configurations, ideal "
+"for industrial electronics, aerospace, and high-density applications"
 msgstr ""
 
 #: .\web\templates\index.html:90
-msgid "High-Precision Machined Female Headers for reliable PCB connections"
+msgid ""
+"High-quality machined round female header, precision-turned contacts for "
+"reliable PCB connections, compatible with round pin headers, ideal for "
+"industrial electronics, aerospace, and high-density applications"
 msgstr ""
 
 #: .\web\templates\index.html:100
-msgid "Reliable Insulation Displacement Connectors for cable connection"
+msgid ""
+"High-quality IDC connector and ribbon cable for secure and reliable PCB "
+"connections, compatible with 2.54mm and 1.27mm pitch, widely used in "
+"industrial electronics, computers, and automation systems"
 msgstr ""
 
 #: .\web\templates\index.html:110
-msgid "Reliable DIP & SMT IC Socket for chip"
+msgid ""
+"High-quality IC socket for secure and reliable chip connections, compatible "
+"with DIP, PGA, and other IC packages, ideal for PCB prototyping, industrial "
+"electronics, and embedded systems"
 msgstr ""
 
 #: .\web\templates\index.html:120
 msgid ""
-"Bus Finger EDGE card connector, designed for high-performance electronic "
-"devices, ensuring stable signal transmission, made with high-quality "
-"materials, long lifespan, widely used in computer hardware and industrial "
-"equipment"
+"High-quality EDGE card connector for secure and reliable PCB connections, "
+"compatible with PCIe, PCI, and industrial backplane systems, ideal for data "
+"communication, automation, and high-speed signal transmission"
 msgstr ""
 
 #: .\web\templates\index.html:130
-msgid "asd"
+msgid ""
+"Comprehensive guide to learning connectors, including pin headers, female "
+"headers, IDC connectors, board-to-board connectors, and wire-to-board "
+"connectors for electronic projects and PCB design"
 msgstr ""
 
 #: .\web\templates\index.html:133
