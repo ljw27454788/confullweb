@@ -9,16 +9,16 @@ import uuid
 
 # Choices
 product_types = (
-    ('pin_header', '排针'),
-    ('female_header', '排母'),
-    ('box_header', '简牛'),
-    ('ejector_header', '牛角'),
+    ('pin-header', '排针'),
+    ('female-header', '排母'),
+    ('box-header', '简牛'),
+    ('ejector-header', '牛角'),
     ('socket', '网口'),
     ('jumper', '短路帽'),
     ('fc', 'FC'),
-    ('round_header', '圆孔针'),
-    ('round_female_header', '圆孔座'),
-    ('ic_socket', 'IC座'),
+    ('round-header', '圆孔针'),
+    ('round-female-header', '圆孔座'),
+    ('ic-socket', 'IC座'),
     ('din', '欧式插座'),
     ('plcc', 'plcc'),
     ('edge', '总线金手指'),
@@ -74,6 +74,8 @@ class Product(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     name = models.CharField(max_length=100, unique=True) #chinese
     description = models.TextField(max_length=500, null=True, blank=True)
+    tw_name = models.CharField(max_length=100, default="tw") #tw chinese
+    tw_description = models.TextField(max_length=500, null=True, blank=True, default="tw")
     en_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #english
     en_description = models.TextField(max_length=500, null=True, blank=True)
     es_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #spanish
@@ -105,7 +107,7 @@ class Product(models.Model):
         super().save(*args, **kwargs)
 
     def get_detail_url(self):
-        return reverse(self.product_type+'_detail', args=[str(self.slug)])
+        return reverse(self.product_type+'-detail', args=[str(self.slug)])
 
     def __str__(self):
         return '%s' % (self.name)
@@ -133,6 +135,8 @@ class News(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     title = models.CharField(max_length=100, unique=True)
     content = models.TextField(max_length=2000, null=True, blank=True)
+    tw_title = models.CharField(max_length=100, default="tw")
+    tw_content = models.TextField(max_length=2000, null=True, blank=True, default="tw")
     en_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
     en_content = models.TextField(max_length=2000, null=True, blank=True)
     es_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
@@ -157,7 +161,7 @@ class News(models.Model):
         super().save(*args, **kwargs)
 
     def get_detail_url(self):
-        return reverse('news_detail', args=[str(self.slug)])
+        return reverse('news-detail', args=[str(self.slug)])
 
     def __str__(self):
         return '%s' % (self.title)

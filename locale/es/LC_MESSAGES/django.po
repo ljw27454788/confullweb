@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-14 09:28+0800\n"
+"POT-Creation-Date: 2025-03-15 14:59+0800\n"
 "PO-Revision-Date: 2025-03-14 09:29+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,31 +28,34 @@ msgid "Simplified Chinese"
 msgstr ""
 
 #: .\confullweb\settings.py:125
-msgid "French"
+msgid "Traditional Chinese"
 msgstr ""
 
 #: .\confullweb\settings.py:126
-msgid "Spanish"
+msgid "French"
 msgstr ""
 
 #: .\confullweb\settings.py:127
-msgid "German"
+msgid "Spanish"
 msgstr ""
 
 #: .\confullweb\settings.py:128
-msgid "Russian"
+msgid "German"
 msgstr ""
 
 #: .\confullweb\settings.py:129
-msgid "Japanese"
+msgid "Russian"
 msgstr ""
 
 #: .\confullweb\settings.py:130
+msgid "Japanese"
+msgstr ""
+
+#: .\confullweb\settings.py:131
 msgid "Korean"
 msgstr ""
 
-#: .\web\templates\Box-Header.html:8
-#: .\web\templates\EDGE-Card-Connector.html:8
+#: .\web\templates\Box-Header.html:8 .\web\templates\EDGE-Card-Connector.html:8
 #: .\web\templates\Ejector-Header.html:8 .\web\templates\FC-IDC-Cable.html:7
 #: .\web\templates\Female-Header.html:8 .\web\templates\IC-Socket.html:8
 #: .\web\templates\Machined-Female-Header.html:7
@@ -74,9 +77,8 @@ msgstr ""
 #: .\web\templates\Female-Header.html:22 .\web\templates\IC-Socket.html:22
 #: .\web\templates\Machined-Female-Header.html:21
 #: .\web\templates\Machined-Pin-Header.html:20
-#: .\web\templates\Pin-Header-Jumper.html:20
-#: .\web\templates\Pin-Header.html:22 .\web\templates\products.html:15
-#: .\web\templates\products_sidebar.html:5
+#: .\web\templates\Pin-Header-Jumper.html:20 .\web\templates\Pin-Header.html:22
+#: .\web\templates\products.html:15 .\web\templates\products_sidebar.html:5
 msgid "Product List"
 msgstr ""
 
@@ -84,15 +86,13 @@ msgstr ""
 #: .\web\templates\FC-IDC-Cable.html:33 .\web\templates\Female-Header.html:34
 #: .\web\templates\Machined-Female-Header.html:33
 #: .\web\templates\Machined-Pin-Header.html:32
-#: .\web\templates\Pin-Header-Jumper.html:32
-#: .\web\templates\Pin-Header.html:34
+#: .\web\templates\Pin-Header-Jumper.html:32 .\web\templates\Pin-Header.html:34
 msgid "Pitch"
 msgstr ""
 
 #: .\web\templates\Box-Header.html:47
 #: .\web\templates\EDGE-Card-Connector.html:34
-#: .\web\templates\Ejector-Header.html:47
-#: .\web\templates\Female-Header.html:60
+#: .\web\templates\Ejector-Header.html:47 .\web\templates\Female-Header.html:60
 #: .\web\templates\Machined-Female-Header.html:46
 #: .\web\templates\Machined-Pin-Header.html:45
 #: .\web\templates\Pin-Header.html:62
@@ -169,17 +169,17 @@ msgstr ""
 msgid "Contact Us"
 msgstr ""
 
-#: .\web\templates\base_general.html:132
+#: .\web\templates\base_general.html:128
 msgid "Know Products"
 msgstr ""
 
-#: .\web\templates\base_general.html:149
+#: .\web\templates\base_general.html:145
 msgid ""
 "Address: Building B10, Hengfeng Industrial City, Baoan District, Shenzhen, "
 "518100"
 msgstr ""
 
-#: .\web\templates\base_general.html:153
+#: .\web\templates\base_general.html:149
 msgid "Email: confull@confull.com"
 msgstr ""
 
@@ -207,8 +207,8 @@ msgstr ""
 
 #: .\web\templates\index.html:30
 msgid ""
-"Pin Header connector, durable and reliable for PCB connections, available in"
-" single-row and double-row options, used in electronic devices, industrial "
+"Pin Header connector, durable and reliable for PCB connections, available in "
+"single-row and double-row options, used in electronic devices, industrial "
 "applications, and automation systems"
 msgstr ""
 "Conector de pines, duradero y confiable para conexiones de PCB, disponible "
@@ -248,8 +248,8 @@ msgstr ""
 #: .\web\templates\index.html:70
 msgid ""
 "High-quality Jumper cap for PCB circuit shorting, reliable electrical "
-"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used"
-" in electronic devices, DIY projects, and industrial control systems"
+"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used "
+"in electronic devices, DIY projects, and industrial control systems"
 msgstr ""
 "Jumper de alta calidad para el cortocircuito de circuitos en PCB, conexión "
 "eléctrica confiable, compatible con pines de 2.54mm y 1.27mm, ampliamente "
@@ -258,14 +258,14 @@ msgstr ""
 
 #: .\web\templates\index.html:80
 msgid ""
-"High-quality machined round pin header, precision-turned contacts for stable"
-" and reliable PCB connections, available in various pin configurations, "
-"ideal for industrial electronics, aerospace, and high-density applications"
+"High-quality machined round pin header, precision-turned contacts for stable "
+"and reliable PCB connections, available in various pin configurations, ideal "
+"for industrial electronics, aerospace, and high-density applications"
 msgstr ""
 "Conector de pines redondos mecanizados de alta calidad, contactos torneados "
-"de precisión para conexiones estables y fiables en PCB, disponible en varias"
-" configuraciones de pines, ideal para electrónica industrial, aeroespacial y"
-" aplicaciones de alta densidad"
+"de precisión para conexiones estables y fiables en PCB, disponible en varias "
+"configuraciones de pines, ideal para electrónica industrial, aeroespacial y "
+"aplicaciones de alta densidad"
 
 #: .\web\templates\index.html:90
 msgid ""
@@ -284,8 +284,8 @@ msgid ""
 "connections, compatible with 2.54mm and 1.27mm pitch, widely used in "
 "industrial electronics, computers, and automation systems"
 msgstr ""
-"Conector IDC y cable plano de alta calidad para conexiones seguras y fiables"
-" en PCB, compatible con pasos de 2.54mm y 1.27mm, ampliamente utilizado en "
+"Conector IDC y cable plano de alta calidad para conexiones seguras y fiables "
+"en PCB, compatible con pasos de 2.54mm y 1.27mm, ampliamente utilizado en "
 "electrónica industrial, computadoras y sistemas de automatización"
 
 #: .\web\templates\index.html:110
@@ -316,8 +316,8 @@ msgid ""
 "connectors for electronic projects and PCB design"
 msgstr ""
 "Guía completa para aprender sobre conectores, incluyendo pines de "
-"encabezado, conectores hembra, conectores IDC, conectores de placa a placa y"
-" de cable a placa para proyectos electrónicos y diseño de PCB"
+"encabezado, conectores hembra, conectores IDC, conectores de placa a placa y "
+"de cable a placa para proyectos electrónicos y diseño de PCB"
 
 #: .\web\templates\index.html:133
 msgid "Know Product"

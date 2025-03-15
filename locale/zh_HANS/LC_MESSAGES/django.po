@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-14 09:28+0800\n"
+"POT-Creation-Date: 2025-03-15 14:59+0800\n"
 "PO-Revision-Date: 2025-03-14 09:28+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,31 +27,34 @@ msgid "Simplified Chinese"
 msgstr ""
 
 #: .\confullweb\settings.py:125
-msgid "French"
+msgid "Traditional Chinese"
 msgstr ""
 
 #: .\confullweb\settings.py:126
-msgid "Spanish"
+msgid "French"
 msgstr ""
 
 #: .\confullweb\settings.py:127
-msgid "German"
+msgid "Spanish"
 msgstr ""
 
 #: .\confullweb\settings.py:128
-msgid "Russian"
+msgid "German"
 msgstr ""
 
 #: .\confullweb\settings.py:129
-msgid "Japanese"
+msgid "Russian"
 msgstr ""
 
 #: .\confullweb\settings.py:130
+msgid "Japanese"
+msgstr ""
+
+#: .\confullweb\settings.py:131
 msgid "Korean"
 msgstr ""
 
-#: .\web\templates\Box-Header.html:8
-#: .\web\templates\EDGE-Card-Connector.html:8
+#: .\web\templates\Box-Header.html:8 .\web\templates\EDGE-Card-Connector.html:8
 #: .\web\templates\Ejector-Header.html:8 .\web\templates\FC-IDC-Cable.html:7
 #: .\web\templates\Female-Header.html:8 .\web\templates\IC-Socket.html:8
 #: .\web\templates\Machined-Female-Header.html:7
@@ -73,9 +76,8 @@ msgstr "简牛"
 #: .\web\templates\Female-Header.html:22 .\web\templates\IC-Socket.html:22
 #: .\web\templates\Machined-Female-Header.html:21
 #: .\web\templates\Machined-Pin-Header.html:20
-#: .\web\templates\Pin-Header-Jumper.html:20
-#: .\web\templates\Pin-Header.html:22 .\web\templates\products.html:15
-#: .\web\templates\products_sidebar.html:5
+#: .\web\templates\Pin-Header-Jumper.html:20 .\web\templates\Pin-Header.html:22
+#: .\web\templates\products.html:15 .\web\templates\products_sidebar.html:5
 msgid "Product List"
 msgstr "产品目录"
 
@@ -83,15 +85,13 @@ msgstr "产品目录"
 #: .\web\templates\FC-IDC-Cable.html:33 .\web\templates\Female-Header.html:34
 #: .\web\templates\Machined-Female-Header.html:33
 #: .\web\templates\Machined-Pin-Header.html:32
-#: .\web\templates\Pin-Header-Jumper.html:32
-#: .\web\templates\Pin-Header.html:34
+#: .\web\templates\Pin-Header-Jumper.html:32 .\web\templates\Pin-Header.html:34
 msgid "Pitch"
 msgstr "间距"
 
 #: .\web\templates\Box-Header.html:47
 #: .\web\templates\EDGE-Card-Connector.html:34
-#: .\web\templates\Ejector-Header.html:47
-#: .\web\templates\Female-Header.html:60
+#: .\web\templates\Ejector-Header.html:47 .\web\templates\Female-Header.html:60
 #: .\web\templates\Machined-Female-Header.html:46
 #: .\web\templates\Machined-Pin-Header.html:45
 #: .\web\templates\Pin-Header.html:62
@@ -170,19 +170,19 @@ msgstr "产品目录"
 msgid "Contact Us"
 msgstr "联系我们"
 
-#: .\web\templates\base_general.html:132
+#: .\web\templates\base_general.html:128
 #, fuzzy
 #| msgid "Products"
 msgid "Know Products"
 msgstr "产品"
 
-#: .\web\templates\base_general.html:149
+#: .\web\templates\base_general.html:145
 msgid ""
 "Address: Building B10, Hengfeng Industrial City, Baoan District, Shenzhen, "
 "518100"
 msgstr "地址：深圳市宝安区恒丰工业城B10栋"
 
-#: .\web\templates\base_general.html:153
+#: .\web\templates\base_general.html:149
 msgid "Email: confull@confull.com"
 msgstr "电子邮箱：confull@confull.com"
 
@@ -203,28 +203,36 @@ msgid ""
 "Professional connector manufacturer - CONFULL, specializing in PCB "
 "connectors, board-to-board, wire-to-board, IDC, pin headers, and industrial "
 "connectors for reliable electronic solutions"
-msgstr "专业连接器制造商 - CONFULL，专注于 PCB 连接器、板对板、线对板、IDC、排针及工业连接器，为电子行业提供高可靠性解决方案"
+msgstr ""
+"专业连接器制造商 - CONFULL，专注于 PCB 连接器、板对板、线对板、IDC、排针及工"
+"业连接器，为电子行业提供高可靠性解决方案"
 
 #: .\web\templates\index.html:30
 msgid ""
-"Pin Header connector, durable and reliable for PCB connections, available in"
-" single-row and double-row options, used in electronic devices, industrial "
+"Pin Header connector, durable and reliable for PCB connections, available in "
+"single-row and double-row options, used in electronic devices, industrial "
 "applications, and automation systems"
-msgstr "排针连接器，耐用可靠的 PCB 连接方案，提供单排和双排选择，广泛应用于电子设备、工业应用和自动化系统"
+msgstr ""
+"排针连接器，耐用可靠的 PCB 连接方案，提供单排和双排选择，广泛应用于电子设备、"
+"工业应用和自动化系统"
 
 #: .\web\templates\index.html:40
 msgid ""
 "Female Header connector, reliable and durable PCB connection, available in "
 "single-row and double-row options, widely used in electronic devices, "
 "industrial applications, and automation systems"
-msgstr "排母连接器，可靠耐用的 PCB 连接方案，提供单排和双排选择，广泛应用于电子设备、工业应用和自动化系统"
+msgstr ""
+"排母连接器，可靠耐用的 PCB 连接方案，提供单排和双排选择，广泛应用于电子设备、"
+"工业应用和自动化系统"
 
 #: .\web\templates\index.html:50
 msgid ""
 "High-quality Box Header connector for PCB, secure and stable connection, "
 "available in various pin configurations, ideal for electronic devices, "
 "industrial automation, and embedded systems"
-msgstr "高品质简牛 Box Header 连接器，适用于 PCB 板稳定可靠连接，多种针数规格可选，广泛应用于电子设备、工业自动化和嵌入式系统"
+msgstr ""
+"高品质简牛 Box Header 连接器，适用于 PCB 板稳定可靠连接，多种针数规格可选，广"
+"泛应用于电子设备、工业自动化和嵌入式系统"
 
 #: .\web\templates\index.html:60
 msgid ""
@@ -232,30 +240,35 @@ msgid ""
 "with locking mechanism, ideal for ribbon cable connections, used in "
 "industrial automation, embedded systems, and electronic devices"
 msgstr ""
-"高品质牛角连接器 Ejector Header，带锁扣设计，确保稳定可靠的 PCB 连接，适用于排线连接，广泛应用于工业自动化、嵌入式系统和电子设备"
+"高品质牛角连接器 Ejector Header，带锁扣设计，确保稳定可靠的 PCB 连接，适用于"
+"排线连接，广泛应用于工业自动化、嵌入式系统和电子设备"
 
 #: .\web\templates\index.html:70
 msgid ""
 "High-quality Jumper cap for PCB circuit shorting, reliable electrical "
-"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used"
-" in electronic devices, DIY projects, and industrial control systems"
+"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used "
+"in electronic devices, DIY projects, and industrial control systems"
 msgstr ""
-"高品质短路帽 Jumper，适用于 PCB 电路短接，提供稳定可靠的电气连接，兼容 2.54mm 和 1.27mm 间距排针，广泛应用于电子设备、DIY"
-" 项目和工业控制系统"
+"高品质短路帽 Jumper，适用于 PCB 电路短接，提供稳定可靠的电气连接，兼容 "
+"2.54mm 和 1.27mm 间距排针，广泛应用于电子设备、DIY 项目和工业控制系统"
 
 #: .\web\templates\index.html:80
 msgid ""
-"High-quality machined round pin header, precision-turned contacts for stable"
-" and reliable PCB connections, available in various pin configurations, "
-"ideal for industrial electronics, aerospace, and high-density applications"
-msgstr "高品质圆孔排针，精密车削接触点，确保稳定可靠的 PCB 连接，提供多种针数规格，适用于工业电子、航空航天和高密度应用"
+"High-quality machined round pin header, precision-turned contacts for stable "
+"and reliable PCB connections, available in various pin configurations, ideal "
+"for industrial electronics, aerospace, and high-density applications"
+msgstr ""
+"高品质圆孔排针，精密车削接触点，确保稳定可靠的 PCB 连接，提供多种针数规格，适"
+"用于工业电子、航空航天和高密度应用"
 
 #: .\web\templates\index.html:90
 msgid ""
 "High-quality machined round female header, precision-turned contacts for "
 "reliable PCB connections, compatible with round pin headers, ideal for "
 "industrial electronics, aerospace, and high-density applications"
-msgstr "高品质圆孔排母，精密车削接触点，确保稳定可靠的 PCB 连接，兼容圆孔排针，适用于工业电子、航空航天和高密度应用"
+msgstr ""
+"高品质圆孔排母，精密车削接触点，确保稳定可靠的 PCB 连接，兼容圆孔排针，适用于"
+"工业电子、航空航天和高密度应用"
 
 #: .\web\templates\index.html:100
 msgid ""
@@ -263,28 +276,35 @@ msgid ""
 "connections, compatible with 2.54mm and 1.27mm pitch, widely used in "
 "industrial electronics, computers, and automation systems"
 msgstr ""
-"高品质 IDC 连接器和扁平线束，提供稳定可靠的 PCB 连接，兼容 2.54mm 和 1.27mm 间距，广泛应用于工业电子、计算机和自动化系统"
+"高品质 IDC 连接器和扁平线束，提供稳定可靠的 PCB 连接，兼容 2.54mm 和 1.27mm "
+"间距，广泛应用于工业电子、计算机和自动化系统"
 
 #: .\web\templates\index.html:110
 msgid ""
 "High-quality IC socket for secure and reliable chip connections, compatible "
 "with DIP, PGA, and other IC packages, ideal for PCB prototyping, industrial "
 "electronics, and embedded systems"
-msgstr "高品质 IC 座，提供稳定可靠的芯片连接，兼容 DIP、PGA 等 IC 封装，广泛用于 PCB 设计、工业电子和嵌入式系统"
+msgstr ""
+"高品质 IC 座，提供稳定可靠的芯片连接，兼容 DIP、PGA 等 IC 封装，广泛用于 PCB "
+"设计、工业电子和嵌入式系统"
 
 #: .\web\templates\index.html:120
 msgid ""
 "High-quality EDGE card connector for secure and reliable PCB connections, "
 "compatible with PCIe, PCI, and industrial backplane systems, ideal for data "
 "communication, automation, and high-speed signal transmission"
-msgstr "高品质总线金手指连接器，提供稳定可靠的 PCB 连接，兼容 PCIe、PCI 及工业背板系统，广泛应用于数据通信、自动化和高速信号传输"
+msgstr ""
+"高品质总线金手指连接器，提供稳定可靠的 PCB 连接，兼容 PCIe、PCI 及工业背板系"
+"统，广泛应用于数据通信、自动化和高速信号传输"
 
 #: .\web\templates\index.html:130
 msgid ""
 "Comprehensive guide to learning connectors, including pin headers, female "
 "headers, IDC connectors, board-to-board connectors, and wire-to-board "
 "connectors for electronic projects and PCB design"
-msgstr "学习连接器全面指南，涵盖排针、排母、IDC 连接器、板对板连接器、线对板连接器，适用于电子项目和 PCB 设计"
+msgstr ""
+"学习连接器全面指南，涵盖排针、排母、IDC 连接器、板对板连接器、线对板连接器，"
+"适用于电子项目和 PCB 设计"
 
 #: .\web\templates\index.html:133
 #, fuzzy

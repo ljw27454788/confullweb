@@ -1,4 +1,4 @@
-{% extends "base_general.html" %}
+{% extends "base-general.html" %}
 {% block content %}
 {% load static %}
 {% load i18n %}
@@ -24,9 +24,10 @@
         </div>
     </div>
     {#边目录#}
-    {% include 'products_sidebar.html' %}
+    {% include 'products-sidebar.html' %}
 
     <br>
+    <h1 class='text-center'>{% trans 'Pin Header' %}</h1>
     <form id="filter_form">
         <div class="card">
             <div class="card-body overflow-auto">
@@ -79,14 +80,14 @@
                         <label class="btn btn-outline-primary mb-1" for="ptype8">All</label>
                     </div>
                 </div>
-                <input type="hidden" name="product_type" value="pin_header">
+                <input type="hidden" name="product_type" value="pin-header">
                 <input type="hidden" name="language_code" value="{{ LANGUAGE_CODE }}">
             </div>
         </div>
     </form>
 
     <div id="product_list">
-        {% include 'products_list.html' %}
+        {% include 'products-list.html' %}
     </div>
 
     

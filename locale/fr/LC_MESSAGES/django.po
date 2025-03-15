@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-14 09:28+0800\n"
+"POT-Creation-Date: 2025-03-15 14:59+0800\n"
 "PO-Revision-Date: 2025-03-14 09:29+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,31 +28,34 @@ msgid "Simplified Chinese"
 msgstr ""
 
 #: .\confullweb\settings.py:125
-msgid "French"
+msgid "Traditional Chinese"
 msgstr ""
 
 #: .\confullweb\settings.py:126
-msgid "Spanish"
+msgid "French"
 msgstr ""
 
 #: .\confullweb\settings.py:127
-msgid "German"
+msgid "Spanish"
 msgstr ""
 
 #: .\confullweb\settings.py:128
-msgid "Russian"
+msgid "German"
 msgstr ""
 
 #: .\confullweb\settings.py:129
-msgid "Japanese"
+msgid "Russian"
 msgstr ""
 
 #: .\confullweb\settings.py:130
+msgid "Japanese"
+msgstr ""
+
+#: .\confullweb\settings.py:131
 msgid "Korean"
 msgstr ""
 
-#: .\web\templates\Box-Header.html:8
-#: .\web\templates\EDGE-Card-Connector.html:8
+#: .\web\templates\Box-Header.html:8 .\web\templates\EDGE-Card-Connector.html:8
 #: .\web\templates\Ejector-Header.html:8 .\web\templates\FC-IDC-Cable.html:7
 #: .\web\templates\Female-Header.html:8 .\web\templates\IC-Socket.html:8
 #: .\web\templates\Machined-Female-Header.html:7
@@ -74,9 +77,8 @@ msgstr ""
 #: .\web\templates\Female-Header.html:22 .\web\templates\IC-Socket.html:22
 #: .\web\templates\Machined-Female-Header.html:21
 #: .\web\templates\Machined-Pin-Header.html:20
-#: .\web\templates\Pin-Header-Jumper.html:20
-#: .\web\templates\Pin-Header.html:22 .\web\templates\products.html:15
-#: .\web\templates\products_sidebar.html:5
+#: .\web\templates\Pin-Header-Jumper.html:20 .\web\templates\Pin-Header.html:22
+#: .\web\templates\products.html:15 .\web\templates\products_sidebar.html:5
 msgid "Product List"
 msgstr ""
 
@@ -84,15 +86,13 @@ msgstr ""
 #: .\web\templates\FC-IDC-Cable.html:33 .\web\templates\Female-Header.html:34
 #: .\web\templates\Machined-Female-Header.html:33
 #: .\web\templates\Machined-Pin-Header.html:32
-#: .\web\templates\Pin-Header-Jumper.html:32
-#: .\web\templates\Pin-Header.html:34
+#: .\web\templates\Pin-Header-Jumper.html:32 .\web\templates\Pin-Header.html:34
 msgid "Pitch"
 msgstr ""
 
 #: .\web\templates\Box-Header.html:47
 #: .\web\templates\EDGE-Card-Connector.html:34
-#: .\web\templates\Ejector-Header.html:47
-#: .\web\templates\Female-Header.html:60
+#: .\web\templates\Ejector-Header.html:47 .\web\templates\Female-Header.html:60
 #: .\web\templates\Machined-Female-Header.html:46
 #: .\web\templates\Machined-Pin-Header.html:45
 #: .\web\templates\Pin-Header.html:62
@@ -169,17 +169,17 @@ msgstr ""
 msgid "Contact Us"
 msgstr ""
 
-#: .\web\templates\base_general.html:132
+#: .\web\templates\base_general.html:128
 msgid "Know Products"
 msgstr ""
 
-#: .\web\templates\base_general.html:149
+#: .\web\templates\base_general.html:145
 msgid ""
 "Address: Building B10, Hengfeng Industrial City, Baoan District, Shenzhen, "
 "518100"
 msgstr ""
 
-#: .\web\templates\base_general.html:153
+#: .\web\templates\base_general.html:149
 msgid "Email: confull@confull.com"
 msgstr ""
 
@@ -207,13 +207,13 @@ msgstr ""
 
 #: .\web\templates\index.html:30
 msgid ""
-"Pin Header connector, durable and reliable for PCB connections, available in"
-" single-row and double-row options, used in electronic devices, industrial "
+"Pin Header connector, durable and reliable for PCB connections, available in "
+"single-row and double-row options, used in electronic devices, industrial "
 "applications, and automation systems"
 msgstr ""
-"Connecteur Pin Header, durable et fiable pour les connexions PCB, disponible"
-" en options à une ou deux rangées, utilisé dans les appareils électroniques,"
-" les applications industrielles et les systèmes d'automatisation"
+"Connecteur Pin Header, durable et fiable pour les connexions PCB, disponible "
+"en options à une ou deux rangées, utilisé dans les appareils électroniques, "
+"les applications industrielles et les systèmes d'automatisation"
 
 #: .\web\templates\index.html:40
 msgid ""
@@ -245,14 +245,14 @@ msgid ""
 msgstr ""
 "Connecteur Ejector Header de haute qualité pour PCB, avec mécanisme de "
 "verrouillage pour une connexion sécurisée et stable, idéal pour les câbles "
-"en nappe, utilisé dans l'automatisation industrielle, les systèmes embarqués"
-" et les appareils électroniques"
+"en nappe, utilisé dans l'automatisation industrielle, les systèmes embarqués "
+"et les appareils électroniques"
 
 #: .\web\templates\index.html:70
 msgid ""
 "High-quality Jumper cap for PCB circuit shorting, reliable electrical "
-"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used"
-" in electronic devices, DIY projects, and industrial control systems"
+"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used "
+"in electronic devices, DIY projects, and industrial control systems"
 msgstr ""
 "Jumper de haute qualité pour court-circuit de circuit imprimé, connexion "
 "électrique fiable, compatible avec des broches de 2,54mm et 1,27mm, "
@@ -261,14 +261,14 @@ msgstr ""
 
 #: .\web\templates\index.html:80
 msgid ""
-"High-quality machined round pin header, precision-turned contacts for stable"
-" and reliable PCB connections, available in various pin configurations, "
-"ideal for industrial electronics, aerospace, and high-density applications"
+"High-quality machined round pin header, precision-turned contacts for stable "
+"and reliable PCB connections, available in various pin configurations, ideal "
+"for industrial electronics, aerospace, and high-density applications"
 msgstr ""
 "Connecteur à broches rondes usinées de haute qualité, contacts tournés de "
 "précision pour une connexion stable et fiable sur PCB, disponible en "
-"plusieurs configurations de broches, idéal pour l'électronique industrielle,"
-" l'aérospatiale et les applications haute densité"
+"plusieurs configurations de broches, idéal pour l'électronique industrielle, "
+"l'aérospatiale et les applications haute densité"
 
 #: .\web\templates\index.html:90
 msgid ""
@@ -277,8 +277,8 @@ msgid ""
 "industrial electronics, aerospace, and high-density applications"
 msgstr ""
 "Connecteur femelle à broches rondes usinées de haute qualité, contacts "
-"tournés de précision pour une connexion stable et fiable sur PCB, compatible"
-" avec des broches rondes, idéal pour l'électronique industrielle, "
+"tournés de précision pour une connexion stable et fiable sur PCB, compatible "
+"avec des broches rondes, idéal pour l'électronique industrielle, "
 "l'aérospatiale et les applications haute densité"
 
 #: .\web\templates\index.html:100

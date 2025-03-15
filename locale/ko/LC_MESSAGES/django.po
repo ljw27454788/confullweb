@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-14 09:28+0800\n"
+"POT-Creation-Date: 2025-03-15 14:59+0800\n"
 "PO-Revision-Date: 2025-03-14 09:30+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,31 +28,34 @@ msgid "Simplified Chinese"
 msgstr ""
 
 #: .\confullweb\settings.py:125
-msgid "French"
+msgid "Traditional Chinese"
 msgstr ""
 
 #: .\confullweb\settings.py:126
-msgid "Spanish"
+msgid "French"
 msgstr ""
 
 #: .\confullweb\settings.py:127
-msgid "German"
+msgid "Spanish"
 msgstr ""
 
 #: .\confullweb\settings.py:128
-msgid "Russian"
+msgid "German"
 msgstr ""
 
 #: .\confullweb\settings.py:129
-msgid "Japanese"
+msgid "Russian"
 msgstr ""
 
 #: .\confullweb\settings.py:130
+msgid "Japanese"
+msgstr ""
+
+#: .\confullweb\settings.py:131
 msgid "Korean"
 msgstr ""
 
-#: .\web\templates\Box-Header.html:8
-#: .\web\templates\EDGE-Card-Connector.html:8
+#: .\web\templates\Box-Header.html:8 .\web\templates\EDGE-Card-Connector.html:8
 #: .\web\templates\Ejector-Header.html:8 .\web\templates\FC-IDC-Cable.html:7
 #: .\web\templates\Female-Header.html:8 .\web\templates\IC-Socket.html:8
 #: .\web\templates\Machined-Female-Header.html:7
@@ -74,9 +77,8 @@ msgstr ""
 #: .\web\templates\Female-Header.html:22 .\web\templates\IC-Socket.html:22
 #: .\web\templates\Machined-Female-Header.html:21
 #: .\web\templates\Machined-Pin-Header.html:20
-#: .\web\templates\Pin-Header-Jumper.html:20
-#: .\web\templates\Pin-Header.html:22 .\web\templates\products.html:15
-#: .\web\templates\products_sidebar.html:5
+#: .\web\templates\Pin-Header-Jumper.html:20 .\web\templates\Pin-Header.html:22
+#: .\web\templates\products.html:15 .\web\templates\products_sidebar.html:5
 msgid "Product List"
 msgstr ""
 
@@ -84,15 +86,13 @@ msgstr ""
 #: .\web\templates\FC-IDC-Cable.html:33 .\web\templates\Female-Header.html:34
 #: .\web\templates\Machined-Female-Header.html:33
 #: .\web\templates\Machined-Pin-Header.html:32
-#: .\web\templates\Pin-Header-Jumper.html:32
-#: .\web\templates\Pin-Header.html:34
+#: .\web\templates\Pin-Header-Jumper.html:32 .\web\templates\Pin-Header.html:34
 msgid "Pitch"
 msgstr ""
 
 #: .\web\templates\Box-Header.html:47
 #: .\web\templates\EDGE-Card-Connector.html:34
-#: .\web\templates\Ejector-Header.html:47
-#: .\web\templates\Female-Header.html:60
+#: .\web\templates\Ejector-Header.html:47 .\web\templates\Female-Header.html:60
 #: .\web\templates\Machined-Female-Header.html:46
 #: .\web\templates\Machined-Pin-Header.html:45
 #: .\web\templates\Pin-Header.html:62
@@ -169,17 +169,17 @@ msgstr ""
 msgid "Contact Us"
 msgstr ""
 
-#: .\web\templates\base_general.html:132
+#: .\web\templates\base_general.html:128
 msgid "Know Products"
 msgstr ""
 
-#: .\web\templates\base_general.html:149
+#: .\web\templates\base_general.html:145
 msgid ""
 "Address: Building B10, Hengfeng Industrial City, Baoan District, Shenzhen, "
 "518100"
 msgstr ""
 
-#: .\web\templates\base_general.html:153
+#: .\web\templates\base_general.html:149
 msgid "Email: confull@confull.com"
 msgstr ""
 
@@ -201,17 +201,17 @@ msgid ""
 "connectors, board-to-board, wire-to-board, IDC, pin headers, and industrial "
 "connectors for reliable electronic solutions"
 msgstr ""
-"전문 커넥터 제조업체 - CONFULL, PCB 커넥터, 보드투보드, 와이어투보드, IDC, 핀 헤더 및 산업용 커넥터를 전문으로 하며 "
-"신뢰할 수 있는 전자 솔루션 제공"
+"전문 커넥터 제조업체 - CONFULL, PCB 커넥터, 보드투보드, 와이어투보드, IDC, "
+"핀 헤더 및 산업용 커넥터를 전문으로 하며 신뢰할 수 있는 전자 솔루션 제공"
 
 #: .\web\templates\index.html:30
 msgid ""
-"Pin Header connector, durable and reliable for PCB connections, available in"
-" single-row and double-row options, used in electronic devices, industrial "
+"Pin Header connector, durable and reliable for PCB connections, available in "
+"single-row and double-row options, used in electronic devices, industrial "
 "applications, and automation systems"
 msgstr ""
-"핀 헤더 커넥터, 내구성이 뛰어나고 신뢰할 수 있는 PCB 연결, 단열 및 이중열 옵션 제공, 전자 장치, 산업 응용 및 자동화 "
-"시스템에서 사용"
+"핀 헤더 커넥터, 내구성이 뛰어나고 신뢰할 수 있는 PCB 연결, 단열 및 이중열 옵"
+"션 제공, 전자 장치, 산업 응용 및 자동화 시스템에서 사용"
 
 #: .\web\templates\index.html:40
 msgid ""
@@ -219,15 +219,17 @@ msgid ""
 "single-row and double-row options, widely used in electronic devices, "
 "industrial applications, and automation systems"
 msgstr ""
-"Female Header 커넥터, 신뢰할 수 있고 내구성이 뛰어난 PCB 연결, 단열 및 이중열 옵션 제공, 전자 장치, 산업 응용 및 "
-"자동화 시스템에서 널리 사용"
+"Female Header 커넥터, 신뢰할 수 있고 내구성이 뛰어난 PCB 연결, 단열 및 이중"
+"열 옵션 제공, 전자 장치, 산업 응용 및 자동화 시스템에서 널리 사용"
 
 #: .\web\templates\index.html:50
 msgid ""
 "High-quality Box Header connector for PCB, secure and stable connection, "
 "available in various pin configurations, ideal for electronic devices, "
 "industrial automation, and embedded systems"
-msgstr "고품질 박스 헤더 커넥터, 안정적인 PCB 연결, 다양한 핀 구성 제공, 전자 기기, 산업 자동화 및 임베디드 시스템에 적합"
+msgstr ""
+"고품질 박스 헤더 커넥터, 안정적인 PCB 연결, 다양한 핀 구성 제공, 전자 기기, "
+"산업 자동화 및 임베디드 시스템에 적합"
 
 #: .\web\templates\index.html:60
 msgid ""
@@ -235,26 +237,26 @@ msgid ""
 "with locking mechanism, ideal for ribbon cable connections, used in "
 "industrial automation, embedded systems, and electronic devices"
 msgstr ""
-"고품질 이젝터 헤더 커넥터, 락킹 메커니즘이 적용된 안정적인 PCB 연결, 플랫 케이블 연결에 적합, 산업 자동화, 임베디드 시스템 및 "
-"전자 기기에 널리 사용"
+"고품질 이젝터 헤더 커넥터, 락킹 메커니즘이 적용된 안정적인 PCB 연결, 플랫 케"
+"이블 연결에 적합, 산업 자동화, 임베디드 시스템 및 전자 기기에 널리 사용"
 
 #: .\web\templates\index.html:70
 msgid ""
 "High-quality Jumper cap for PCB circuit shorting, reliable electrical "
-"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used"
-" in electronic devices, DIY projects, and industrial control systems"
+"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used "
+"in electronic devices, DIY projects, and industrial control systems"
 msgstr ""
-"고품질 점퍼 캡, PCB 회로 단락 용, 안정적인 전기 연결 제공, 2.54mm 및 1.27mm 핀 헤더와 호환, 전자 기기, DIY "
-"프로젝트 및 산업 제어 시스템에 널리 사용"
+"고품질 점퍼 캡, PCB 회로 단락 용, 안정적인 전기 연결 제공, 2.54mm 및 1.27mm "
+"핀 헤더와 호환, 전자 기기, DIY 프로젝트 및 산업 제어 시스템에 널리 사용"
 
 #: .\web\templates\index.html:80
 msgid ""
-"High-quality machined round pin header, precision-turned contacts for stable"
-" and reliable PCB connections, available in various pin configurations, "
-"ideal for industrial electronics, aerospace, and high-density applications"
+"High-quality machined round pin header, precision-turned contacts for stable "
+"and reliable PCB connections, available in various pin configurations, ideal "
+"for industrial electronics, aerospace, and high-density applications"
 msgstr ""
-"고품질 가공 원형 핀 헤더, 정밀 가공 접촉으로 안정적이고 신뢰할 수 있는 PCB 연결 제공, 다양한 핀 구성 가능, 산업 전자, "
-"항공우주 및 고밀도 응용 분야에 적합"
+"고품질 가공 원형 핀 헤더, 정밀 가공 접촉으로 안정적이고 신뢰할 수 있는 PCB 연"
+"결 제공, 다양한 핀 구성 가능, 산업 전자, 항공우주 및 고밀도 응용 분야에 적합"
 
 #: .\web\templates\index.html:90
 msgid ""
@@ -262,8 +264,8 @@ msgid ""
 "reliable PCB connections, compatible with round pin headers, ideal for "
 "industrial electronics, aerospace, and high-density applications"
 msgstr ""
-"고품질 가공 원형 암 헤더, 정밀 가공 접촉으로 안정적이고 신뢰할 수 있는 PCB 연결 제공, 원형 핀 헤더와 호환, 산업 전자, "
-"항공우주 및 고밀도 응용 분야에 적합"
+"고품질 가공 원형 암 헤더, 정밀 가공 접촉으로 안정적이고 신뢰할 수 있는 PCB 연"
+"결 제공, 원형 핀 헤더와 호환, 산업 전자, 항공우주 및 고밀도 응용 분야에 적합"
 
 #: .\web\templates\index.html:100
 msgid ""
@@ -271,8 +273,8 @@ msgid ""
 "connections, compatible with 2.54mm and 1.27mm pitch, widely used in "
 "industrial electronics, computers, and automation systems"
 msgstr ""
-"고품질 IDC 커넥터 및 플랫 케이블, 안정적인 PCB 연결 제공, 2.54mm 및 1.27mm 피치와 호환, 산업 전자, 컴퓨터 및 "
-"자동화 시스템에서 널리 사용"
+"고품질 IDC 커넥터 및 플랫 케이블, 안정적인 PCB 연결 제공, 2.54mm 및 1.27mm 피"
+"치와 호환, 산업 전자, 컴퓨터 및 자동화 시스템에서 널리 사용"
 
 #: .\web\templates\index.html:110
 msgid ""
@@ -280,8 +282,8 @@ msgid ""
 "with DIP, PGA, and other IC packages, ideal for PCB prototyping, industrial "
 "electronics, and embedded systems"
 msgstr ""
-"고품질 IC 소켓, 안정적이고 신뢰할 수 있는 칩 연결 제공, DIP 및 PGA 패키지와 호환, PCB 설계, 산업 전자 및 임베디드 "
-"시스템에 이상적"
+"고품질 IC 소켓, 안정적이고 신뢰할 수 있는 칩 연결 제공, DIP 및 PGA 패키지와 "
+"호환, PCB 설계, 산업 전자 및 임베디드 시스템에 이상적"
 
 #: .\web\templates\index.html:120
 msgid ""
@@ -289,8 +291,8 @@ msgid ""
 "compatible with PCIe, PCI, and industrial backplane systems, ideal for data "
 "communication, automation, and high-speed signal transmission"
 msgstr ""
-"고품질 엣지 카드 커넥터, 안정적인 PCB 연결 제공, PCIe 및 PCI 산업용 백플레인 시스템과 호환, 데이터 통신, 자동화 및 고속"
-" 신호 전송에 이상적"
+"고품질 엣지 카드 커넥터, 안정적인 PCB 연결 제공, PCIe 및 PCI 산업용 백플레인 "
+"시스템과 호환, 데이터 통신, 자동화 및 고속 신호 전송에 이상적"
 
 #: .\web\templates\index.html:130
 msgid ""
@@ -298,8 +300,8 @@ msgid ""
 "headers, IDC connectors, board-to-board connectors, and wire-to-board "
 "connectors for electronic projects and PCB design"
 msgstr ""
-"커넥터 학습 가이드, 핀 헤더, 암 헤더, IDC 커넥터, 보드투보드 및 와이어투보드 커넥터 포함, 전자 프로젝트 및 PCB 설계에 "
-"이상적"
+"커넥터 학습 가이드, 핀 헤더, 암 헤더, IDC 커넥터, 보드투보드 및 와이어투보드 "
+"커넥터 포함, 전자 프로젝트 및 PCB 설계에 이상적"
 
 #: .\web\templates\index.html:133
 msgid "Know Product"

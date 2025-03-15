@@ -19,10 +19,10 @@ def ProductFilterForm(request):
 
     # if queryset is empty
     if not product:
-        return render(request, 'products_filter_message.html', context={
+        return render(request, 'products-filter-message.html', context={
             'LANGUAGE_CODE': language_code,
         })
-    return render(request, 'products_list.html', context={
+    return render(request, 'products-list.html', context={
         'object_list': product,
         'LANGUAGE_CODE': language_code,
     })

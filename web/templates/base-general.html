@@ -79,6 +79,11 @@
                             <input name="language" type="hidden" value="zh-hans"/>
                             <button class="dropdown-item" type="submit"><img src="{% static 'img/flag/zh.png' %}">  中文</button>
                         </form>
+                        <form action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="language" type="hidden" value="zh-hant"/>
+                            <button class="dropdown-item" type="submit"><img src="{% static 'img/flag/zh.png' %}">  繁體中文</button>
+                        </form>
                     </div>
                 </div>
                 {#小屏下拉按钮#}
@@ -99,23 +104,23 @@
                             <a id="dropdownSubMenu1" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                class="nav-link dropdown-toggle">{% trans "Products List" %}</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-                                <li><a href="{% url 'pin_header' %}" class="dropdown-item">
+                                <li><a href="{% url 'pin-header' %}" class="dropdown-item">
                                     {% trans "Pin Header" %}</a></li>
-                                <li><a href="{% url 'female_header' %}" class="dropdown-item">
+                                <li><a href="{% url 'female-header' %}" class="dropdown-item">
                                     {% trans "Female Header" %}</a></li>
-                                <li><a href="{% url 'box_header' %}" class="dropdown-item">
+                                <li><a href="{% url 'box-header' %}" class="dropdown-item">
                                     {% trans "Box Header" %}</a></li>
-                                <li><a href="{% url 'ejector_header' %}" class="dropdown-item">
+                                <li><a href="{% url 'ejector-header' %}" class="dropdown-item">
                                     {% trans "Ejector Header" %}</a></li>
-                                <li><a href="{% url 'round_header' %}" class="dropdown-item">
+                                <li><a href="{% url 'round-header' %}" class="dropdown-item">
                                     {% trans "Machined Pin Header" %}</a></li>
-                                <li><a href="{% url 'round_female_header' %}" class="dropdown-item">
+                                <li><a href="{% url 'round-female-header' %}" class="dropdown-item">
                                     {% trans "Machined Female Header" %}</a></li>
                                 <li><a href="{% url 'jumper' %}" class="dropdown-item">
                                     {% trans "Pin Header Jumper" %}</a></li>
                                 <li><a href="{% url 'fc' %}" class="dropdown-item">
                                     {% trans "IDC Connector & Cable" %}</a></li>
-                                <li><a href="{% url 'ic_socket' %}" class="dropdown-item">
+                                <li><a href="{% url 'ic-socket' %}" class="dropdown-item">
                                     {% trans "IC Socket" %}</a></li>
                                 <li><a href="{% url 'edge' %}" class="dropdown-item">
                                     {% trans "EDGE Card Connector" %}</a></li>

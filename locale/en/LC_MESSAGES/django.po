@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-14 09:28+0800\n"
+"POT-Creation-Date: 2025-03-15 14:59+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,26 +27,30 @@ msgid "Simplified Chinese"
 msgstr ""
 
 #: .\confullweb\settings.py:125
-msgid "French"
+msgid "Traditional Chinese"
 msgstr ""
 
 #: .\confullweb\settings.py:126
-msgid "Spanish"
+msgid "French"
 msgstr ""
 
 #: .\confullweb\settings.py:127
-msgid "German"
+msgid "Spanish"
 msgstr ""
 
 #: .\confullweb\settings.py:128
-msgid "Russian"
+msgid "German"
 msgstr ""
 
 #: .\confullweb\settings.py:129
-msgid "Japanese"
+msgid "Russian"
 msgstr ""
 
 #: .\confullweb\settings.py:130
+msgid "Japanese"
+msgstr ""
+
+#: .\confullweb\settings.py:131
 msgid "Korean"
 msgstr ""
 
@@ -164,17 +168,17 @@ msgstr ""
 msgid "Contact Us"
 msgstr ""
 
-#: .\web\templates\base_general.html:132
+#: .\web\templates\base_general.html:128
 msgid "Know Products"
 msgstr ""
 
-#: .\web\templates\base_general.html:149
+#: .\web\templates\base_general.html:145
 msgid ""
 "Address: Building B10, Hengfeng Industrial City, Baoan District, Shenzhen, "
 "518100"
 msgstr ""
 
-#: .\web\templates\base_general.html:153
+#: .\web\templates\base_general.html:149
 msgid "Email: confull@confull.com"
 msgstr ""
 

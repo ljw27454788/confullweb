@@ -5,6 +5,7 @@ register = template.Library()
 
 name_code = {
     'zh-hans':'name',
+    'zh-hant':'tw_name',
     'en':'en_name',
     'es':'es_name',
     'de':'de_name',
@@ -16,6 +17,7 @@ name_code = {
 
 description_code = {
     'zh-hans':'description',
+    'zh-hant':'tw_description',
     'en':'en_description',
     'es':'es_description',
     'de':'de_description',
@@ -26,16 +28,16 @@ description_code = {
 }
 
 product_name = {
-    'pin_header': 'Pin Header',
-    'female_header': 'Female Header',
-    'box_header': 'Box Header',
-    'ejector_header': 'Ejector Header',
+    'pin-header': 'Pin Header',
+    'female-header': 'Female Header',
+    'box-header': 'Box Header',
+    'ejector-header': 'Ejector Header',
     'socket': 'RJ45',
     'jumper': 'Pin Header Jumper',
     'fc': 'IDC Connector & Cable',
-    'round_header': 'Machined Pin Header',
-    'round_female_header': 'Machined Female Header',
-    'ic_socket': 'IC Socket',
+    'round-header': 'Machined Pin Header',
+    'round-female_header': 'Machined Female Header',
+    'ic-socket': 'IC Socket',
     'din': 'Din41612',
     'plcc': 'PLCC',
     'edge': 'EDGE Card Connector',
@@ -43,6 +45,7 @@ product_name = {
 
 title_code = {
     'zh-hans':'title',
+    'zh-hant':'tw_title',
     'en':'en_title',
     'es':'es_title',
     'de':'de_title',
@@ -54,6 +57,7 @@ title_code = {
 
 content_code = {
     'zh-hans':'content',
+    'zh-hant':'tw_content',
     'en':'en_content',
     'es':'es_content',
     'de':'de_content',

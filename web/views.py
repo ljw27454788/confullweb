@@ -45,10 +45,10 @@ class PinheaderListView(generic.ListView):
     paginate_by = 8
     model = Product
     template_name = "Pin-Header.html"
-    context_object_name = 'pin_header'
+    context_object_name = 'pin-header'
 
     def get_queryset(self):
-        return Product.objects.filter(product_type="pin_header")
+        return Product.objects.filter(product_type="pin-header")
 
     def get_context_data(self, *args, **kwargs):
         context = super(PinheaderListView, self).get_context_data(*args, **kwargs)
@@ -57,7 +57,7 @@ class PinheaderListView(generic.ListView):
 #pin header detail
 class PinheaderDetailView(generic.DetailView):
     model = Product
-    template_name = "products_detail.html"
+    template_name = "products-detail.html"
 
     def get_object(self, *args, **kwargs):
         obj = super(PinheaderDetailView, self).get_object(*args, **kwargs)
@@ -73,10 +73,10 @@ class FemaleheaderListView(generic.ListView):
     paginate_by = 8
     model = Product
     template_name = "Female-Header.html"
-    context_object_name = 'female_header'
+    context_object_name = 'female-header'
 
     def get_queryset(self):
-        return Product.objects.filter(product_type="female_header")
+        return Product.objects.filter(product_type="female-header")
 
     def get_context_data(self, *args, **kwargs):
         context = super(FemaleheaderListView, self).get_context_data(*args, **kwargs)
@@ -85,7 +85,7 @@ class FemaleheaderListView(generic.ListView):
 #female header detail
 class FemaleheaderDetailView(generic.DetailView):
     model = Product
-    template_name = "products_detail.html"
+    template_name = "products-detail.html"
 
     def get_object(self, *args, **kwargs):
         obj = super(FemaleheaderDetailView, self).get_object(*args, **kwargs)
@@ -101,10 +101,10 @@ class BoxheaderListView(generic.ListView):
     paginate_by = 8
     model = Product
     template_name = "Box-Header.html"
-    context_object_name = 'box_header'
+    context_object_name = 'box-header'
 
     def get_queryset(self):
-        return Product.objects.filter(product_type="box_header")
+        return Product.objects.filter(product_type="box-header")
 
     def get_context_data(self, *args, **kwargs):
         context = super(BoxheaderListView, self).get_context_data(*args, **kwargs)
@@ -113,7 +113,7 @@ class BoxheaderListView(generic.ListView):
 #box header detail
 class BoxheaderDetailView(generic.DetailView):
     model = Product
-    template_name = "products_detail.html"
+    template_name = "products-detail.html"
 
     def get_object(self, *args, **kwargs):
         obj = super(BoxheaderDetailView, self).get_object(*args, **kwargs)
@@ -129,10 +129,10 @@ class EjectorheaderListView(generic.ListView):
     paginate_by = 8
     model = Product
     template_name = "Ejector-Header.html"
-    context_object_name = 'ejector_header'
+    context_object_name = 'ejector-header'
 
     def get_queryset(self):
-        return Product.objects.filter(product_type="ejector_header")
+        return Product.objects.filter(product_type="ejector-header")
 
     def get_context_data(self, *args, **kwargs):
         context = super(EjectorheaderListView, self).get_context_data(*args, **kwargs)
@@ -141,7 +141,7 @@ class EjectorheaderListView(generic.ListView):
 #ejector header detail
 class EjectorheaderDetailView(generic.DetailView):
     model = Product
-    template_name = "products_detail.html"
+    template_name = "products-detail.html"
 
     def get_object(self, *args, **kwargs):
         obj = super(EjectorheaderDetailView, self).get_object(*args, **kwargs)
@@ -157,10 +157,10 @@ class MachinedpinheaderListView(generic.ListView):
     paginate_by = 8
     model = Product
     template_name = "Machined-Pin-Header.html"
-    context_object_name = 'round_header'
+    context_object_name = 'round-header'
 
     def get_queryset(self):
-        return Product.objects.filter(product_type="round_header")
+        return Product.objects.filter(product_type="round-header")
 
     def get_context_data(self, *args, **kwargs):
         context = super(MachinedpinheaderListView, self).get_context_data(*args, **kwargs)
@@ -169,7 +169,7 @@ class MachinedpinheaderListView(generic.ListView):
 #Machined Pin detail
 class MachinedpinheaderDetailView(generic.DetailView):
     model = Product
-    template_name = "products_detail.html"
+    template_name = "products-detail.html"
 
     def get_object(self, *args, **kwargs):
         obj = super(MachinedpinheaderDetailView, self).get_object(*args, **kwargs)
@@ -185,10 +185,10 @@ class MachinedfemaleheaderListView(generic.ListView):
     paginate_by = 8
     model = Product
     template_name = "Machined-Female-Header.html"
-    context_object_name = 'round_female_header'
+    context_object_name = 'round-female-header'
 
     def get_queryset(self):
-        return Product.objects.filter(product_type="round_female_header")
+        return Product.objects.filter(product_type="round-female-header")
 
     def get_context_data(self, *args, **kwargs):
         context = super(MachinedfemaleheaderListView, self).get_context_data(*args, **kwargs)
@@ -197,7 +197,7 @@ class MachinedfemaleheaderListView(generic.ListView):
 #Machined Female detail
 class MachinedfemaleheaderDetailView(generic.DetailView):
     model = Product
-    template_name = "products_detail.html"
+    template_name = "products-detail.html"
 
     def get_object(self, *args, **kwargs):
         obj = super(MachinedfemaleheaderDetailView, self).get_object(*args, **kwargs)
@@ -225,7 +225,7 @@ class JumperListView(generic.ListView):
 #Jumper detail
 class JumperDetailView(generic.DetailView):
     model = Product
-    template_name = "products_detail.html"
+    template_name = "products-detail.html"
 
     def get_object(self, *args, **kwargs):
         obj = super(JumperDetailView, self).get_object(*args, **kwargs)
@@ -241,10 +241,10 @@ class IcsocketListView(generic.ListView):
     paginate_by = 8
     model = Product
     template_name = "IC-Socket.html"
-    context_object_name = 'ic_socket'
+    context_object_name = 'ic-socket'
 
     def get_queryset(self):
-        return Product.objects.filter(product_type="ic_socket")
+        return Product.objects.filter(product_type="ic-socket")
 
     def get_context_data(self, *args, **kwargs):
         context = super(IcsocketListView, self).get_context_data(*args, **kwargs)
@@ -253,7 +253,7 @@ class IcsocketListView(generic.ListView):
 #IC Socket detail
 class IcsocketDetailView(generic.DetailView):
     model = Product
-    template_name = "products_detail.html"
+    template_name = "products-detail.html"
 
     def get_object(self, *args, **kwargs):
         obj = super(IcsocketDetailView, self).get_object(*args, **kwargs)
@@ -281,7 +281,7 @@ class EdgeListView(generic.ListView):
 #EDGE detail
 class EdgeDetailView(generic.DetailView):
     model = Product
-    template_name = "products_detail.html"
+    template_name = "products-detail.html"
 
     def get_object(self, *args, **kwargs):
         obj = super(EdgeDetailView, self).get_object(*args, **kwargs)
@@ -309,7 +309,7 @@ class FcListView(generic.ListView):
 #IDC FC detail
 class FcDetailView(generic.DetailView):
     model = Product
-    template_name = "products_detail.html"
+    template_name = "products-detail.html"
 
     def get_object(self, *args, **kwargs):
         obj = super(FcDetailView, self).get_object(*args, **kwargs)
@@ -336,7 +336,7 @@ class NewsListView(generic.ListView):
 #News detail
 class NewsDetailView(generic.DetailView):
     model = News
-    template_name = "news_detail.html"
+    template_name = "news-detail.html"
 
     def get_object(self, *args, **kwargs):
         obj = super(NewsDetailView, self).get_object(*args, **kwargs)
