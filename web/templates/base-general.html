@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 {% load i18n %}
-<html>
+<html lang="{{ request.LANGUAGE_CODE }}">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <title>深圳市超越世纪电子有限公司|20年专业连接器生产厂家 CYSJCONN</title>
+        <meta name="robots" content="index, follow">
     
         {% load static %}
         <!-- Theme style -->
+        <link rel="icon" href="{% static 'img/logo-img.png' %}">
         <link rel="stylesheet" href="{% static 'bootstrap5/css/bootstrap.min.css' %}">
         <link rel="stylesheet" href="{% static 'css/standard.css' %}">
         <link rel="stylesheet" href="{% static 'fontawesome/css/fontawesome.min.css' %}">
@@ -23,7 +25,8 @@
             <div class="container">
                 {#logo#}
                 <a class="navbar-brand" href="{% url 'index' %}">
-                    <img src="{% static 'img/logo.png' %}" width="auto" height="30px" alt="">
+                    <img src="{% static 'img/logo-img.png' %}" width="auto" height="30px" alt="">
+                    <img src="{% static 'img/logo-text.png' %}" width="auto" height="30px" alt="">
                 </a>
                 {#语言下拉#}
                 <div class="dropdown">
@@ -130,7 +133,7 @@
                             <a class="nav-link" href="{% url 'contact' %}">{% trans "Contact Us" %}</a>
                         </li>
                         <li class="nav-item active me-3">
-                            <a class="nav-link" href="{% url 'news' %}">{% trans "Know Products" %}</a>
+                            <a class="nav-link" href="{% url 'news' %}">{% trans "Learn Products" %}</a>
                         </li>
                     </ul>
                 </div>
@@ -156,6 +159,11 @@
             </ul>
             <div class="container p-1 pb-1 border-bottom">
                 <section class="mb-1">
+                    <!-- wechat -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: green;"
+                    href="#!" role="button">
+                        <i class="fab fa-weixin"></i>
+                    </a>
                     <!-- Facebook -->
                     <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;"
                     href="#!" role="button">
@@ -175,11 +183,6 @@
                     <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;"
                     href="#!" role="button">
                         <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <!-- wechat -->
-                    <a class="btn text-white btn-floating m-1" style="background-color: green;"
-                        href="#!" role="button">
-                        <i class="fab fa-weixin"></i>
                     </a>
                 </section>
             </div>

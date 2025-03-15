@@ -30,8 +30,8 @@ urlpatterns = [
     re_path(r'^edge-card-connector$', views.EdgeListView.as_view(), name='edge'),
     re_path(r'^idc-connector-cable-fc/(?P<slug>[-\w]+)$', views.FcDetailView.as_view(), name='fc-detail'),
     re_path(r'^idc-connector-cable-fc$', views.FcListView.as_view(), name='fc'),
-    re_path(r'^news/(?P<slug>[-\w]+)$', views.NewsDetailView.as_view(), name='news-detail'),
-    re_path(r'^news$', views.NewsListView.as_view(), name='news'),
+    re_path(r'^learn-products/(?P<slug>[-\w]+)$', views.NewsDetailView.as_view(), name='news-detail'),
+    re_path(r'^learn-products$', views.NewsListView.as_view(), name='news'),
 
     re_path(r'^product_filter', ajax.ProductFilterForm, name='product_filter'),
 ]
