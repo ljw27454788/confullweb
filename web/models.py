@@ -74,8 +74,8 @@ class Product(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     name = models.CharField(max_length=100, unique=True) #chinese
     description = models.TextField(max_length=500, null=True, blank=True)
-    tw_name = models.CharField(max_length=100, default="tw") #tw chinese
-    tw_description = models.TextField(max_length=500, null=True, blank=True, default="tw")
+    tw_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #tw chinese
+    tw_description = models.TextField(max_length=500, null=True, blank=True)
     en_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #english
     en_description = models.TextField(max_length=500, null=True, blank=True)
     es_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #spanish
@@ -135,8 +135,8 @@ class News(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     title = models.CharField(max_length=100, unique=True)
     content = models.TextField(max_length=2000, null=True, blank=True)
-    tw_title = models.CharField(max_length=100, default="tw")
-    tw_content = models.TextField(max_length=2000, null=True, blank=True, default="tw")
+    tw_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
+    tw_content = models.TextField(max_length=2000, null=True, blank=True)
     en_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
     en_content = models.TextField(max_length=2000, null=True, blank=True)
     es_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
