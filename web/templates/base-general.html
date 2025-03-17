@@ -2,14 +2,14 @@
 {% load i18n %}
 <html lang="{{ request.LANGUAGE_CODE }}">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         <meta charset="UTF-8">
-        <title>深圳市超越世纪电子有限公司|20年专业连接器生产厂家 CYSJCONN</title>
-        <meta name="robots" content="index, follow">
+        {% block seo %}{% endblock %}
     
         {% load static %}
+
         <!-- Theme style -->
-        <link rel="icon" href="{% static 'img/logo-img.png' %}">
+        <link rel="icon" href="{% static 'img/confull-img.png' %}">
         <link rel="stylesheet" href="{% static 'bootstrap5/css/bootstrap.min.css' %}">
         <link rel="stylesheet" href="{% static 'css/standard.css' %}">
         <link rel="stylesheet" href="{% static 'fontawesome/css/fontawesome.min.css' %}">
@@ -25,8 +25,8 @@
             <div class="container">
                 {#logo#}
                 <a class="navbar-brand" href="{% url 'index' %}">
-                    <img src="{% static 'img/logo-img.png' %}" width="auto" height="30px" alt="">
-                    <img src="{% static 'img/logo-text.png' %}" width="auto" height="30px" alt="">
+                    <img src="{% static 'img/confull-img.png' %}" width="auto" height="30px" alt="">
+                    <img src="{% static 'img/confull-text.png' %}" width="auto" height="30px" alt="">
                 </a>
                 {#语言下拉#}
                 <div class="dropdown">

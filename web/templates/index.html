@@ -1,8 +1,53 @@
 {% extends "base-general.html" %}
-{% block content %}
 {% load static %}
 {% load i18n %}
 
+{% block seo %}
+<title>aaaaa</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="">
+<meta name="author" content="{% trans 'Confull Electronics' %}">
+
+<meta property="og:title" content="Confull电子连接器工厂 | 专业生产排针排母、IDC压线、IC座等">
+<meta property="og:description" content="Confull电子连接器工厂，提供高质量的板对板、线对板连接器，广泛应用于电子行业。">
+<meta property="og:image" content="https://www.confull.com/images/confull-banner.jpg">
+<meta property="og:url" content="https://www.confull.com">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="{{ request.LANGUAGE_CODE }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Confull电子连接器工厂 | 专业生产排针排母、IDC压线、IC座等">
+<meta name="twitter:description" content="Confull电子连接器工厂，提供高质量的板对板、线对板连接器，广泛应用于电子行业。">
+<meta name="twitter:image" content="https://www.confull.com/images/confull-banner.jpg">
+<meta name="twitter:site" content="@confull">
+
+{% for lang, url in hreflang_urls.items %}
+    <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">
+{% endfor %}
+
+<link rel="canonical" href="{{request.build_absolute_uri}}">
+
+<!-- Schema -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Confull Electronics",
+        "url": "{{request.build_absolute_uri}}",
+        "logo": "https://www.confull.com/images/confull-logo.png",
+        "description": "Confull电子连接器工厂,提供高质量的板对板、线对板连接器",
+        "inLanguage": "{{ request.LANGUAGE_CODE }}",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+86-180-3805-9516",
+            "contactType": "customer service",
+            "availableLanguage": ["en", "es", "de", "fr", "ru", "ja", "ko", "zh-Hans", "zh-Hant"]
+        }
+    }
+</script>
+{% endblock %}
+
+{% block content %}
 <header class="py-5">
     <div class="container px-5">
         <div class="row align-items-center justify-content-center">
@@ -16,7 +61,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 d-block text-center">
-                <img class="img-fluid rounded" src="{% static 'img/banner.jpg' %}" alt="{% trans 'Professional connector manufacturer - CONFULL, specializing in PCB connectors, board-to-board, wire-to-board, IDC, pin headers, and industrial connectors for reliable electronic solutions' %}"/>
+                <img class="img-fluid rounded" src="{% static 'img/confull-banner.jpg' %}" alt="{% trans 'Professional connector manufacturer - CONFULL, specializing in PCB connectors, board-to-board, wire-to-board, IDC, pin headers, and industrial connectors for reliable electronic solutions' %}"/>
             </div>
         </div>
     </div>

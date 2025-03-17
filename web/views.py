@@ -1,14 +1,32 @@
 from django.shortcuts import render
 from django.views import generic
+from django.urls import resolve
+from django.utils.translation import get_language
 
 from web.models import Product, News
 
+def get_hreflang_urls(request):
+    languages = ["en", "es", "de", "fr", "ru", "ja", "ko", "zh-Hans", "zh-Hant"]
+    default_lang = "en"
+    path = request.path
+    current_lang = get_language()
+    if path.startswith(f"/{current_lang}/"):
+        path = path[len(f"/{current_lang}"):]
+
+    hreflang_urls = {
+        lang: f"https://www.confull.com/{lang}{path}".lower() for lang in languages
+    }
+    hreflang_urls["x-default"] = f"https://www.confull.com/{default_lang}{path}".lower()
+    return hreflang_urls
+
 # Create your views here.
 def index(request):
-    return render(request, 'index.html', context={})
+    hreflang_urls = get_hreflang_urls(request)
+    return render(request, 'index.html', context={"hreflang_urls": hreflang_urls})
 
 def contact(request):
-    return render(request, 'contact.html', context={})
+    hreflang_urls = get_hreflang_urls(request)
+    return render(request, 'contact.html', context={"hreflang_urls": hreflang_urls})
 
 # def company(request):
 #     return render(request, 'company.html', context={})
@@ -52,6 +70,8 @@ class PinheaderListView(generic.ListView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(PinheaderListView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 #pin header detail
@@ -65,6 +85,8 @@ class PinheaderDetailView(generic.DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(PinheaderDetailView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 
@@ -80,6 +102,8 @@ class FemaleheaderListView(generic.ListView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(FemaleheaderListView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 #female header detail
@@ -93,6 +117,8 @@ class FemaleheaderDetailView(generic.DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(FemaleheaderDetailView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 
@@ -108,6 +134,8 @@ class BoxheaderListView(generic.ListView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(BoxheaderListView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 #box header detail
@@ -121,6 +149,8 @@ class BoxheaderDetailView(generic.DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(BoxheaderDetailView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 
@@ -136,6 +166,8 @@ class EjectorheaderListView(generic.ListView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(EjectorheaderListView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 #ejector header detail
@@ -149,6 +181,8 @@ class EjectorheaderDetailView(generic.DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(EjectorheaderDetailView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 
@@ -164,6 +198,8 @@ class MachinedpinheaderListView(generic.ListView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(MachinedpinheaderListView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 #Machined Pin detail
@@ -177,6 +213,8 @@ class MachinedpinheaderDetailView(generic.DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(MachinedpinheaderDetailView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
 
 
@@ -192,6 +230,8 @@ class MachinedfemaleheaderListView(generic.ListView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(MachinedfemaleheaderListView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 #Machined Female detail
@@ -205,6 +245,8 @@ class MachinedfemaleheaderDetailView(generic.DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(MachinedfemaleheaderDetailView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 
@@ -220,6 +262,8 @@ class JumperListView(generic.ListView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(JumperListView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 #Jumper detail
@@ -233,6 +277,8 @@ class JumperDetailView(generic.DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(JumperDetailView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 
@@ -248,6 +294,8 @@ class IcsocketListView(generic.ListView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(IcsocketListView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 #IC Socket detail
@@ -261,6 +309,8 @@ class IcsocketDetailView(generic.DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(IcsocketDetailView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 
@@ -276,6 +326,8 @@ class EdgeListView(generic.ListView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(EdgeListView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 #EDGE detail
@@ -289,6 +341,8 @@ class EdgeDetailView(generic.DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(EdgeDetailView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 
@@ -304,6 +358,8 @@ class FcListView(generic.ListView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(FcListView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 #IDC FC detail
@@ -317,6 +373,8 @@ class FcDetailView(generic.DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(FcDetailView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 
@@ -331,6 +389,8 @@ class NewsListView(generic.ListView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(NewsListView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         return context
     
 #News detail
@@ -344,5 +404,7 @@ class NewsDetailView(generic.DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(NewsDetailView, self).get_context_data(*args, **kwargs)
+        hreflang_urls = get_hreflang_urls(self.request)
+        context['hreflang_urls'] = hreflang_urls
         context['product_type'] = self.object.about
         return context
