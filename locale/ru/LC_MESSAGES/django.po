@@ -8,17 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-15 14:59+0800\n"
-"PO-Revision-Date: 2025-03-14 09:30+0000\n"
+"POT-Creation-Date: 2025-03-18 10:52+0800\n"
+"PO-Revision-Date: 2025-03-18 10:58+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
-"%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Translated-Using: django-rosetta 0.10.1\n"
 
 #: .\confullweb\settings.py:123
@@ -57,19 +55,21 @@ msgstr ""
 msgid "Korean"
 msgstr ""
 
-#: .\web\templates\Box-Header.html:8 .\web\templates\EDGE-Card-Connector.html:8
+#: .\web\templates\Box-Header.html:8
+#: .\web\templates\EDGE-Card-Connector.html:8
 #: .\web\templates\Ejector-Header.html:8 .\web\templates\FC-IDC-Cable.html:7
 #: .\web\templates\Female-Header.html:8 .\web\templates\IC-Socket.html:8
 #: .\web\templates\Machined-Female-Header.html:7
 #: .\web\templates\Machined-Pin-Header.html:7 .\web\templates\News.html:8
-#: .\web\templates\Pin-Header-Jumper.html:7 .\web\templates\Pin-Header.html:7
-#: .\web\templates\base_general.html:95 .\web\templates\contact.html:7
-#: .\web\templates\news_detail.html:8 .\web\templates\products_detail.html:8
+#: .\web\templates\Pin-Header-Jumper.html:7 .\web\templates\Pin-Header.html:15
+#: .\web\templates\base-general.html:101 .\web\templates\contact.html:7
+#: .\web\templates\news-detail.html:8 .\web\templates\products-detail.html:16
 msgid "Home"
 msgstr ""
 
-#: .\web\templates\Box-Header.html:9 .\web\templates\base_general.html:107
-#: .\web\templates\index.html:53 .\web\templates\products_sidebar.html:17
+#: .\web\templates\Box-Header.html:9 .\web\templates\Box-Header.html:30
+#: .\web\templates\base-general.html:113 .\web\templates\index.html:97
+#: .\web\templates\products-sidebar.html:17
 msgid "Box Header"
 msgstr ""
 
@@ -79,125 +79,159 @@ msgstr ""
 #: .\web\templates\Female-Header.html:22 .\web\templates\IC-Socket.html:22
 #: .\web\templates\Machined-Female-Header.html:21
 #: .\web\templates\Machined-Pin-Header.html:20
-#: .\web\templates\Pin-Header-Jumper.html:20 .\web\templates\Pin-Header.html:22
-#: .\web\templates\products.html:15 .\web\templates\products_sidebar.html:5
+#: .\web\templates\Pin-Header-Jumper.html:20
+#: .\web\templates\Pin-Header.html:30 .\web\templates\products-sidebar.html:5
+#: .\web\templates\products.html:15
 msgid "Product List"
 msgstr ""
 
-#: .\web\templates\Box-Header.html:34 .\web\templates\Ejector-Header.html:34
-#: .\web\templates\FC-IDC-Cable.html:33 .\web\templates\Female-Header.html:34
-#: .\web\templates\Machined-Female-Header.html:33
-#: .\web\templates\Machined-Pin-Header.html:32
-#: .\web\templates\Pin-Header-Jumper.html:32 .\web\templates\Pin-Header.html:34
+#: .\web\templates\Box-Header.html:35 .\web\templates\Ejector-Header.html:35
+#: .\web\templates\FC-IDC-Cable.html:34 .\web\templates\Female-Header.html:35
+#: .\web\templates\Machined-Female-Header.html:34
+#: .\web\templates\Machined-Pin-Header.html:33
+#: .\web\templates\Pin-Header-Jumper.html:33
+#: .\web\templates\Pin-Header.html:43
 msgid "Pitch"
 msgstr ""
 
-#: .\web\templates\Box-Header.html:47
-#: .\web\templates\EDGE-Card-Connector.html:34
-#: .\web\templates\Ejector-Header.html:47 .\web\templates\Female-Header.html:60
-#: .\web\templates\Machined-Female-Header.html:46
-#: .\web\templates\Machined-Pin-Header.html:45
-#: .\web\templates\Pin-Header.html:62
+#: .\web\templates\Box-Header.html:48
+#: .\web\templates\EDGE-Card-Connector.html:35
+#: .\web\templates\Ejector-Header.html:48
+#: .\web\templates\Female-Header.html:61
+#: .\web\templates\Machined-Female-Header.html:47
+#: .\web\templates\Machined-Pin-Header.html:46
+#: .\web\templates\Pin-Header.html:71
 msgid "Type"
 msgstr ""
 
 #: .\web\templates\EDGE-Card-Connector.html:9
-#: .\web\templates\base_general.html:121 .\web\templates\index.html:123
-#: .\web\templates\products_sidebar.html:38
+#: .\web\templates\EDGE-Card-Connector.html:30
+#: .\web\templates\base-general.html:127 .\web\templates\index.html:167
+#: .\web\templates\products-sidebar.html:38
 msgid "EDGE Card Connector"
 msgstr ""
 
-#: .\web\templates\Ejector-Header.html:9 .\web\templates\base_general.html:109
-#: .\web\templates\index.html:63 .\web\templates\products_sidebar.html:20
+#: .\web\templates\Ejector-Header.html:9
+#: .\web\templates\Ejector-Header.html:30
+#: .\web\templates\base-general.html:115 .\web\templates\index.html:107
+#: .\web\templates\products-sidebar.html:20
 msgid "Ejector Header"
 msgstr ""
 
-#: .\web\templates\FC-IDC-Cable.html:8 .\web\templates\base_general.html:117
-#: .\web\templates\index.html:103 .\web\templates\products_sidebar.html:26
+#: .\web\templates\FC-IDC-Cable.html:8 .\web\templates\FC-IDC-Cable.html:29
+#: .\web\templates\base-general.html:123 .\web\templates\index.html:147
+#: .\web\templates\products-sidebar.html:26
 msgid "IDC Connector & Cable"
 msgstr ""
 
-#: .\web\templates\Female-Header.html:9 .\web\templates\base_general.html:105
-#: .\web\templates\index.html:43 .\web\templates\products_sidebar.html:14
+#: .\web\templates\Female-Header.html:9 .\web\templates\Female-Header.html:30
+#: .\web\templates\base-general.html:111 .\web\templates\index.html:87
+#: .\web\templates\products-sidebar.html:14
 msgid "Female Header"
 msgstr ""
 
-#: .\web\templates\Female-Header.html:47 .\web\templates\Pin-Header.html:49
+#: .\web\templates\Female-Header.html:48 .\web\templates\Pin-Header.html:58
 msgid "Row"
 msgstr ""
 
-#: .\web\templates\IC-Socket.html:9 .\web\templates\base_general.html:119
-#: .\web\templates\index.html:113 .\web\templates\products_sidebar.html:35
+#: .\web\templates\IC-Socket.html:9 .\web\templates\IC-Socket.html:30
+#: .\web\templates\base-general.html:125 .\web\templates\index.html:157
+#: .\web\templates\products-sidebar.html:35
 msgid "IC Socket"
 msgstr ""
 
 #: .\web\templates\Machined-Female-Header.html:8
-#: .\web\templates\base_general.html:113 .\web\templates\index.html:93
-#: .\web\templates\products_sidebar.html:32
+#: .\web\templates\Machined-Female-Header.html:29
+#: .\web\templates\base-general.html:119 .\web\templates\index.html:137
+#: .\web\templates\products-sidebar.html:32
 msgid "Machined Female Header"
 msgstr ""
 
 #: .\web\templates\Machined-Pin-Header.html:8
-#: .\web\templates\base_general.html:111 .\web\templates\index.html:83
-#: .\web\templates\products_sidebar.html:29
+#: .\web\templates\Machined-Pin-Header.html:28
+#: .\web\templates\base-general.html:117 .\web\templates\index.html:127
+#: .\web\templates\products-sidebar.html:29
 msgid "Machined Pin Header"
 msgstr ""
 
 #: .\web\templates\News.html:9 .\web\templates\News.html:15
-#: .\web\templates\news_detail.html:10
-msgid "Knowledge List"
+#: .\web\templates\base-general.html:134 .\web\templates\index.html:177
+#: .\web\templates\news-detail.html:10
+msgid "Learn Products"
 msgstr ""
 
 #: .\web\templates\Pin-Header-Jumper.html:8
-#: .\web\templates\base_general.html:115 .\web\templates\index.html:73
-#: .\web\templates\products_sidebar.html:23
+#: .\web\templates\Pin-Header-Jumper.html:28
+#: .\web\templates\base-general.html:121 .\web\templates\index.html:117
+#: .\web\templates\products-sidebar.html:23
 msgid "Pin Header Jumper"
 msgstr ""
 
-#: .\web\templates\Pin-Header.html:8 .\web\templates\base_general.html:103
-#: .\web\templates\index.html:33 .\web\templates\products_sidebar.html:11
+#: .\web\templates\Pin-Header.html:16 .\web\templates\Pin-Header.html:38
+#: .\web\templates\base-general.html:109 .\web\templates\index.html:77
+#: .\web\templates\products-sidebar.html:11
 msgid "Pin Header"
 msgstr ""
 
-#: .\web\templates\base_general.html:87
+#: .\web\templates\base-general.html:93
 msgid "Menu"
 msgstr ""
 
-#: .\web\templates\base_general.html:100
+#: .\web\templates\base-general.html:106
 msgid "Products List"
 msgstr ""
 
-#: .\web\templates\base_general.html:125 .\web\templates\contact.html:8
+#: .\web\templates\base-general.html:131 .\web\templates\contact.html:8
 msgid "Contact Us"
 msgstr ""
 
-#: .\web\templates\base_general.html:128
-msgid "Know Products"
-msgstr ""
-
-#: .\web\templates\base_general.html:145
+#: .\web\templates\base-general.html:151
 msgid ""
 "Address: Building B10, Hengfeng Industrial City, Baoan District, Shenzhen, "
 "518100"
 msgstr ""
 
-#: .\web\templates\base_general.html:149
+#: .\web\templates\base-general.html:155
 msgid "Email: confull@confull.com"
 msgstr ""
 
-#: .\web\templates\index.html:11
+#: .\web\templates\index.html:6
+msgid ""
+"Confull | Pin Header, Female Header, Box Header & EDGE Connector "
+"Manufacturer"
+msgstr ""
+"Confull | Производитель разъемов для печатных плат: Pin Header, Female "
+"Header, Box Header & EDGE Connector"
+
+#: .\web\templates\index.html:7
+msgid ""
+"Confull Electronics specializes in Board-to-Board & Wire-to-Board "
+"Connectors, including Pin Header, Female Header, Box Header, Ejector Header,"
+" IC Socket, Jumper, IDC Connector, EDGE Connector, and Machined Connectors "
+"for PCB applications."
+msgstr ""
+"Confull Electronics специализируется на разъемах Board-to-Board и Wire-to-"
+"Board, включая Pin Header, Female Header, Box Header, Ejector Header, IC "
+"Socket, Jumper, IDC Connector, EDGE Connector и прецизионные разъемы для "
+"печатных плат."
+
+#: .\web\templates\index.html:9
+msgid "Confull Electronics"
+msgstr ""
+
+#: .\web\templates\index.html:55
 msgid "Board Connector Factory with 25 Years' Experience"
 msgstr ""
 
-#: .\web\templates\index.html:12
+#: .\web\templates\index.html:56
 msgid "Precision in Every Pins"
 msgstr ""
 
-#: .\web\templates\index.html:14
+#: .\web\templates\index.html:58
 msgid "Check Products"
 msgstr ""
 
-#: .\web\templates\index.html:19
+#: .\web\templates\index.html:63
 msgid ""
 "Professional connector manufacturer - CONFULL, specializing in PCB "
 "connectors, board-to-board, wire-to-board, IDC, pin headers, and industrial "
@@ -207,27 +241,27 @@ msgstr ""
 "разъемах, board-to-board, wire-to-board, IDC, штырьковых разъемах и "
 "промышленных разъемах для надежных электронных решений"
 
-#: .\web\templates\index.html:30
+#: .\web\templates\index.html:74
 msgid ""
-"Pin Header connector, durable and reliable for PCB connections, available in "
-"single-row and double-row options, used in electronic devices, industrial "
+"Pin Header connector, durable and reliable for PCB connections, available in"
+" single-row and double-row options, used in electronic devices, industrial "
 "applications, and automation systems"
 msgstr ""
-"Разъём Pin Header, прочное и надежное соединение для PCB, доступен в одно- и "
-"двухрядных вариантах, используется в электронных устройствах, промышленных "
+"Разъём Pin Header, прочное и надежное соединение для PCB, доступен в одно- и"
+" двухрядных вариантах, используется в электронных устройствах, промышленных "
 "применениях и системах автоматизации"
 
-#: .\web\templates\index.html:40
+#: .\web\templates\index.html:84
 msgid ""
 "Female Header connector, reliable and durable PCB connection, available in "
 "single-row and double-row options, widely used in electronic devices, "
 "industrial applications, and automation systems"
 msgstr ""
 "Разъём Female Header, надежное и долговечное соединение для PCB, доступен в "
-"одно- и двухрядных вариантах, широко используется в электронных устройствах, "
-"промышленных применениях и системах автоматизации"
+"одно- и двухрядных вариантах, широко используется в электронных устройствах,"
+" промышленных применениях и системах автоматизации"
 
-#: .\web\templates\index.html:50
+#: .\web\templates\index.html:94
 msgid ""
 "High-quality Box Header connector for PCB, secure and stable connection, "
 "available in various pin configurations, ideal for electronic devices, "
@@ -237,7 +271,7 @@ msgstr ""
 "соединение, доступен в различных конфигурациях контактов, идеален для "
 "электронных устройств, промышленной автоматизации и встроенных систем"
 
-#: .\web\templates\index.html:60
+#: .\web\templates\index.html:104
 msgid ""
 "High-quality Ejector Header connector for PCB, secure and stable connection "
 "with locking mechanism, ideal for ribbon cable connections, used in "
@@ -245,54 +279,54 @@ msgid ""
 msgstr ""
 "Высококачественный разъём Ejector Header для PCB, безопасное и стабильное "
 "соединение с механизмом фиксации, идеально подходит для ленточных кабелей, "
-"используется в промышленной автоматизации, встроенных системах и электронных "
-"устройствах"
+"используется в промышленной автоматизации, встроенных системах и электронных"
+" устройствах"
 
-#: .\web\templates\index.html:70
+#: .\web\templates\index.html:114
 msgid ""
 "High-quality Jumper cap for PCB circuit shorting, reliable electrical "
-"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used "
-"in electronic devices, DIY projects, and industrial control systems"
+"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used"
+" in electronic devices, DIY projects, and industrial control systems"
 msgstr ""
 "Высококачественная перемычка Jumper для замыкания цепи на PCB, надежное "
 "электрическое соединение, совместима с шагом 2.54мм и 1.27мм, широко "
-"используется в электронных устройствах, DIY-проектах и промышленных системах "
-"управления"
+"используется в электронных устройствах, DIY-проектах и промышленных системах"
+" управления"
 
-#: .\web\templates\index.html:80
+#: .\web\templates\index.html:124
 msgid ""
-"High-quality machined round pin header, precision-turned contacts for stable "
-"and reliable PCB connections, available in various pin configurations, ideal "
-"for industrial electronics, aerospace, and high-density applications"
+"High-quality machined round pin header, precision-turned contacts for stable"
+" and reliable PCB connections, available in various pin configurations, "
+"ideal for industrial electronics, aerospace, and high-density applications"
 msgstr ""
 "Высококачественный круглый контактный разъём с механической обработкой, "
 "прецизионные токопроводящие контакты для стабильного и надёжного соединения "
 "PCB, доступен в различных конфигурациях, идеально подходит для промышленной "
 "электроники, аэрокосмической отрасли и высокоплотных приложений"
 
-#: .\web\templates\index.html:90
+#: .\web\templates\index.html:134
 msgid ""
 "High-quality machined round female header, precision-turned contacts for "
 "reliable PCB connections, compatible with round pin headers, ideal for "
 "industrial electronics, aerospace, and high-density applications"
 msgstr ""
 "Высококачественная круглая контактная гнездовая колодка с механической "
-"обработкой, прецизионные токопроводящие контакты для стабильного и надёжного "
-"соединения PCB, совместима с круглыми контактными разъёмами, идеально "
+"обработкой, прецизионные токопроводящие контакты для стабильного и надёжного"
+" соединения PCB, совместима с круглыми контактными разъёмами, идеально "
 "подходит для промышленной электроники, аэрокосмической отрасли и "
 "высокоплотных приложений"
 
-#: .\web\templates\index.html:100
+#: .\web\templates\index.html:144
 msgid ""
 "High-quality IDC connector and ribbon cable for secure and reliable PCB "
 "connections, compatible with 2.54mm and 1.27mm pitch, widely used in "
 "industrial electronics, computers, and automation systems"
 msgstr ""
-"Высококачественный IDC-разъем и ленточный кабель для надежного подключения к "
-"PCB, совместим с шагом 2,54мм и 1,27мм, широко используется в промышленной "
+"Высококачественный IDC-разъем и ленточный кабель для надежного подключения к"
+" PCB, совместим с шагом 2,54мм и 1,27мм, широко используется в промышленной "
 "электронике, компьютерах и системах автоматизации"
 
-#: .\web\templates\index.html:110
+#: .\web\templates\index.html:154
 msgid ""
 "High-quality IC socket for secure and reliable chip connections, compatible "
 "with DIP, PGA, and other IC packages, ideal for PCB prototyping, industrial "
@@ -302,17 +336,17 @@ msgstr ""
 "чипов, совместим с корпусами DIP, PGA и другими, идеально подходит для "
 "проектирования PCB, промышленной электроники и встраиваемых систем"
 
-#: .\web\templates\index.html:120
+#: .\web\templates\index.html:164
 msgid ""
 "High-quality EDGE card connector for secure and reliable PCB connections, "
 "compatible with PCIe, PCI, and industrial backplane systems, ideal for data "
 "communication, automation, and high-speed signal transmission"
 msgstr ""
 "Высококачественный разъём EDGE для надёжного соединения с PCB, совместим с "
-"PCIe, PCI и промышленными бэкплейн-системами, идеально подходит для передачи "
-"данных, автоматизации и высокоскоростной передачи сигналов"
+"PCIe, PCI и промышленными бэкплейн-системами, идеально подходит для передачи"
+" данных, автоматизации и высокоскоростной передачи сигналов"
 
-#: .\web\templates\index.html:130
+#: .\web\templates\index.html:174
 msgid ""
 "Comprehensive guide to learning connectors, including pin headers, female "
 "headers, IDC connectors, board-to-board connectors, and wire-to-board "
@@ -322,22 +356,18 @@ msgstr ""
 "гнездовые разъемы, IDC-разъемы, разъемы плата-к-плате и провод-к-плате для "
 "электронных проектов и разработки печатных плат"
 
-#: .\web\templates\index.html:133
-msgid "Know Product"
-msgstr ""
-
-#: .\web\templates\news_detail.html:38
+#: .\web\templates\news-detail.html:38
 msgid "Check Our "
 msgstr ""
 
-#: .\web\templates\products_detail.html:32
+#: .\web\templates\products-detail.html:40
 msgid "Download Drawing (PDF)"
 msgstr ""
 
-#: .\web\templates\products_detail.html:39
+#: .\web\templates\products-detail.html:47
 msgid "Contact to get Drawing without LOGO"
 msgstr ""
 
-#: .\web\templates\products_list.html:18
+#: .\web\templates\products-list.html:18
 msgid "Get Detail"
 msgstr ""
