@@ -1,14 +1,22 @@
 from django.shortcuts import render
 from django.views import generic
-from django.utils.translation import get_language
+from django.conf import settings
 
 from web.models import Product, News
+
+def remove_language_prefix(request):
+    path = request.path.strip("/")
+
+    for lang_code, _ in settings.LANGUAGES:
+        if path.startswith(f"{lang_code}"):
+            return f"/{path[len(lang_code)+1:]}"
+    
+    return f"/{path}"
 
 def get_hreflang_urls(request):
     languages = ["es", "de", "fr", "ru", "ja", "ko", "zh-Hans", "zh-Hant"]
 
-    path = request.path
-    print(path) # /es/ or / /es/contact or /contact
+    path = remove_language_prefix(request)
 
     hreflang_urls = {
         lang: f"https://www.confull.com/{lang}{path}".lower()
