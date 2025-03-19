@@ -1,28 +1,35 @@
-from django.shortcuts import redirect, render
+from django.shortcuts import render
 from django.views import generic
-from django.urls import resolve
 from django.utils.translation import get_language
 
 from web.models import Product, News
 
 def get_hreflang_urls(request):
-    languages = ["en", "es", "de", "fr", "ru", "ja", "ko", "zh-Hans", "zh-Hant"]
-    default_lang = "en"
+    languages = ["es", "de", "fr", "ru", "ja", "ko", "zh-Hans", "zh-Hant"]
+
     path = request.path
-    current_lang = get_language()
-    if path.startswith(f"/{current_lang}/"):
-        path = path[len(f"/{current_lang}"):]
+    print(path) # /es/ or / /es/contact or /contact
 
     hreflang_urls = {
-        lang: f"https://www.confull.com/{lang}{path}".lower() for lang in languages
+        lang: f"https://www.confull.com/{lang}{path}".lower()
+        for lang in languages
     }
-    hreflang_urls["x-default"] = f"https://www.confull.com/{default_lang}{path}".lower()
+
+    hreflang_urls["en"] = f"https://www.confull.com{path}".lower()
+    hreflang_urls["x-default"] = f"https://www.confull.com{path}".lower()
     return hreflang_urls
+
+def get_canonical(request):
+    base_url = "https://www.confull.com"
+
+    canonical_url = f"{base_url}{request.path}"
+    return canonical_url
 
 # Create your views here.
 def index(request):
     hreflang_urls = get_hreflang_urls(request)
-    return render(request, 'index.html', context={"hreflang_urls": hreflang_urls})
+    canonical_url = get_canonical(request)
+    return render(request, 'index.html', context={"hreflang_urls": hreflang_urls, "canonical_url": canonical_url})
 
 def contact(request):
     hreflang_urls = get_hreflang_urls(request)

@@ -21,16 +21,10 @@
     <meta name="twitter:image" content="https://www.confull.com/static/img/confull-banner.jpg">
     <meta name="twitter:site" content="@confull">
 
-    {% comment %} {% for lang, url in hreflang_urls.items %}
+    {% for lang, url in hreflang_urls.items %}
         <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">
-    {% endfor %} {% endcomment %}
-    {% for lang_code, lang_name in LANGUAGES %}
-        {% language lang_code %}
-            {# 默认语言生成 /about/，其他语言生成 /es/about/ #}
-            <link rel="alternate" hreflang="{{ lang_code }}" href="{{ request.build_absolute_uri }}">
-        {% endlanguage %}
     {% endfor %}
-    <link rel="canonical" href="{{request.build_absolute_uri}}">
+    <link rel="canonical" href="{{canonical_url}}">
 
     <!-- Schema -->
     <script type="application/ld+json">
