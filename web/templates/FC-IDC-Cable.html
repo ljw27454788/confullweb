@@ -1,7 +1,58 @@
 {% extends "base-general.html" %}
-{% block content %}
 {% load static %}
 {% load i18n %}
+{% load util %}
+
+{% block seo %}
+    <title>{% trans "IDC Connectors & Ribbon Cables | Wire-to-Board Solutions - Confull Electronics" %}</title>
+    <meta name="description" content="{% trans 'Explore Confull Electronics' IDC connectors and ribbon cable assemblies for secure wire-to-board connections. Available in 1.27mm, 2.0mm and 2.54mm pitch, with custom lengths and configurations.' %}">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="{% trans 'Confull Electronics' %}">
+    <meta name="keywords" content="{% trans 'IDC connector, ribbon cable, wire-to-board cable, IDC cable assembly, 2.54mm IDC, 2.0mm IDC, 1.27mm IDC, flat cable, Confull Electronics'%}">
+
+    <meta property="og:title" content="{% trans 'IDC Connectors & Ribbon Cable Assemblies | Confull Electronics'%}">
+    <meta property="og:description" content="{% trans 'Confull offers high-quality IDC connectors and flat ribbon cables for wire-to-board applications. Customizable length, pitch, and connector type available.'%}">
+    <meta property="og:image" content="https://www.confull.com/static/img/idc-cable-connector.jpg">
+    <meta property="og:url" content="{{request.build_absolute_uri}}">
+    <meta property="og:type" content="product.group">
+    <meta property="og:locale" content="{{ ''|get_bcp:request.LANGUAGE_CODE }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% trans 'IDC Connector & Ribbon Cable | Wire-to-Board PCB Solutions'%}">
+    <meta name="twitter:description" content="{% trans 'Find reliable IDC connectors and ribbon cables at Confull Electronics. Ideal for secure wire-to-board connections in industrial and consumer electronics.'%}">
+    <meta name="twitter:image" content="https://www.confull.com/static/img/idc-cable-connector.jpg">
+    <meta name="twitter:site" content="@confull">
+
+    {% for lang, url in hreflang_urls.items %}
+        <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">
+    {% endfor %}
+    <link rel="canonical" href="{{canonical_url}}">
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "IDC Connectors & Ribbon Cables",
+            "alternateName": ["简牛连接器","Flat Cable IDC Assemblies","IDCコネクタ・フラットケーブルアセンブリ","IDC 커넥터 및 리본 케이블 어셈블리","Разъёмы IDC и ленточные кабели"],
+            "url": "{{request.build_absolute_uri}}",
+            "description": "{% trans 'Confull Electronics manufactures IDC connectors and flat ribbon cable assemblies for wire-to-board PCB applications. Available in 1.27mm and 2.54mm pitch, customizable to your needs.'%}",
+            "inLanguage": "{{ request.LANGUAGE_CODE }}",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Confull Electronics",
+                "alternateName": "超越世纪电子",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.confull.com/static/img/confull-logo.png"
+                },
+                "url": "https://www.confull.com"
+            }
+        }
+    </script>
+{% endblock %}
+
+{% block content %}
 <nav aria-label="breadcrumb" class="bg-secondary-subtle">
     <ol class="breadcrumb justify-content-center">
         <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}">{% trans 'Home' %}</a></li>

@@ -1,8 +1,58 @@
 {% extends "base-general.html" %}
-{% block content %}
 {% load static %}
 {% load i18n %}
+{% load util %}
 
+{% block seo %}
+    <title>{% trans "IC Sockets | DIP, PGA & Custom Chip Socket Manufacturer - Confull Electronics" %}</title>
+    <meta name="description" content="{% trans 'Confull Electronics manufactures high-quality IC sockets including DIP, PGA, and custom chip sockets for secure and durable PCB connections. OEM/ODM available.' %}">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="{% trans 'Confull Electronics' %}">
+    <meta name="keywords" content="{% trans 'IC socket, chip socket, DIP socket, PGA socket, PCB socket, through-hole socket, Confull Electronics'%}">
+
+    <meta property="og:title" content="{% trans 'IC Socket Connectors | DIP, PGA & Custom Chip Sockets - Confull Electronics'%}">
+    <meta property="og:description" content="{% trans 'Discover IC sockets from Confull Electronics for DIP, PGA, and custom IC packaging. High-reliability chip socket solutions for industrial PCB applications.'%}">
+    <meta property="og:image" content="https://www.confull.com/static/img/ic-socket.jpg">
+    <meta property="og:url" content="{{request.build_absolute_uri}}">
+    <meta property="og:type" content="product.group">
+    <meta property="og:locale" content="{{ ''|get_bcp:request.LANGUAGE_CODE }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% trans 'IC Socket Connectors | Confull Electronics'%}">
+    <meta name="twitter:description" content="{% trans 'Explore reliable IC sockets from Confull — DIP, PGA, and custom chip sockets for PCB designs. OEM and bulk solutions available.'%}">
+    <meta name="twitter:image" content="https://www.confull.com/static/img/ic-socket.jpg">
+    <meta name="twitter:site" content="@confull">
+
+    {% for lang, url in hreflang_urls.items %}
+        <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">
+    {% endfor %}
+    <link rel="canonical" href="{{canonical_url}}">
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "IC Socket Connectors",
+            "alternateName": ["IC芯片座","ICソケット","IC 소켓","Панель для микросхем (IC Socket)"],
+            "url": "{{request.build_absolute_uri}}",
+            "description": "{% trans 'Confull Electronics provides reliable IC sockets for DIP, PGA, and custom chip packages. Ideal for secure and durable IC mounting on PCB boards.'%}",
+            "inLanguage": "{{ request.LANGUAGE_CODE }}",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Confull Electronics",
+                "alternateName": "超越世纪电子",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.confull.com/static/img/confull-logo.png"
+                },
+                "url": "https://www.confull.com"
+            }
+        }
+    </script>
+{% endblock %}
+
+{% block content %}
 <nav aria-label="breadcrumb" class="bg-secondary-subtle">
     <ol class="breadcrumb justify-content-center">
         <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}">{% trans 'Home' %}</a></li>

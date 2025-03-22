@@ -87,6 +87,8 @@ class PinheaderListView(generic.ListView):
         context = super(PinheaderListView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 #pin header detail
@@ -102,6 +104,8 @@ class PinheaderDetailView(generic.DetailView):
         context = super(PinheaderDetailView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 
@@ -119,6 +123,8 @@ class FemaleheaderListView(generic.ListView):
         context = super(FemaleheaderListView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 #female header detail
@@ -134,6 +140,8 @@ class FemaleheaderDetailView(generic.DetailView):
         context = super(FemaleheaderDetailView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 
@@ -151,6 +159,8 @@ class BoxheaderListView(generic.ListView):
         context = super(BoxheaderListView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 #box header detail
@@ -166,6 +176,8 @@ class BoxheaderDetailView(generic.DetailView):
         context = super(BoxheaderDetailView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 
@@ -183,6 +195,8 @@ class EjectorheaderListView(generic.ListView):
         context = super(EjectorheaderListView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 #ejector header detail
@@ -198,6 +212,8 @@ class EjectorheaderDetailView(generic.DetailView):
         context = super(EjectorheaderDetailView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 
@@ -215,6 +231,8 @@ class MachinedpinheaderListView(generic.ListView):
         context = super(MachinedpinheaderListView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 #Machined Pin detail
@@ -230,6 +248,8 @@ class MachinedpinheaderDetailView(generic.DetailView):
         context = super(MachinedpinheaderDetailView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
 
 
@@ -247,6 +267,8 @@ class MachinedfemaleheaderListView(generic.ListView):
         context = super(MachinedfemaleheaderListView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 #Machined Female detail
@@ -262,6 +284,8 @@ class MachinedfemaleheaderDetailView(generic.DetailView):
         context = super(MachinedfemaleheaderDetailView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 
@@ -279,6 +303,8 @@ class JumperListView(generic.ListView):
         context = super(JumperListView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 #Jumper detail
@@ -294,6 +320,8 @@ class JumperDetailView(generic.DetailView):
         context = super(JumperDetailView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 
@@ -311,6 +339,8 @@ class IcsocketListView(generic.ListView):
         context = super(IcsocketListView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 #IC Socket detail
@@ -326,6 +356,8 @@ class IcsocketDetailView(generic.DetailView):
         context = super(IcsocketDetailView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 
@@ -343,6 +375,8 @@ class EdgeListView(generic.ListView):
         context = super(EdgeListView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 #EDGE detail
@@ -358,6 +392,8 @@ class EdgeDetailView(generic.DetailView):
         context = super(EdgeDetailView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 
@@ -375,6 +411,8 @@ class FcListView(generic.ListView):
         context = super(FcListView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 #IDC FC detail
@@ -390,6 +428,8 @@ class FcDetailView(generic.DetailView):
         context = super(FcDetailView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 
@@ -406,6 +446,8 @@ class NewsListView(generic.ListView):
         context = super(NewsListView, self).get_context_data(*args, **kwargs)
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context
     
 #News detail
@@ -422,4 +464,6 @@ class NewsDetailView(generic.DetailView):
         hreflang_urls = get_hreflang_urls(self.request)
         context['hreflang_urls'] = hreflang_urls
         context['product_type'] = self.object.about
+        canonical_url = get_canonical(self.request)
+        context['canonical_url'] = canonical_url
         return context

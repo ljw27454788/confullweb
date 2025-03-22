@@ -67,6 +67,22 @@ content_code = {
     'ru':'ru_content',
 }
 
+LANGUAGE_BCP47_MAP = {
+    "en": "en-US",
+    "es": "es-ES",
+    "fr": "fr-FR",
+    "de": "de-DE",
+    "ru": "ru-RU",
+    "ja": "ja-JP",
+    "ko": "ko-KR",
+    "zh-hans": "zh-CN",
+    "zh-hant": "zh-TW",
+}
+
+@register.filter
+def get_bcp(string, code):
+    return LANGUAGE_BCP47_MAP[code]
+
 @register.filter
 def get_name(product, code):
     code = name_code[code]

@@ -1,8 +1,58 @@
 {% extends "base-general.html" %}
-{% block content %}
 {% load static %}
 {% load i18n %}
+{% load util %}
 
+{% block seo %}
+    <title>{% trans "EDGE Card Connectors | High-Speed PCB Edge Connectors - Confull Electronics" %}</title>
+    <meta name="description" content="{% trans 'Discover high-performance EDGE Card Connectors from Confull Electronics. Ideal for PCI, PCIe, and high-speed backplane PCB connections. OEM & custom solutions available.' %}">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="{% trans 'Confull Electronics' %}">
+    <meta name="keywords" content="{% trans 'EDGE card connector, PCB edge connector, PCIe connector, high-speed connector, board edge socket, gold finger connector, Confull Electronics'%}">
+
+    <meta property="og:title" content="{% trans 'EDGE Card PCB Connectors | PCI/PCIe Gold Finger Solutions - Confull Electronics'%}">
+    <meta property="og:description" content="{% trans 'Confull Electronics provides reliable EDGE card connectors for PCB applications, including PCI, PCIe, and custom backplane connections. High-speed, durable, and customizable.'%}">
+    <meta property="og:image" content="https://www.confull.com/static/img/edge-card-connector.jpg">
+    <meta property="og:url" content="{{request.build_absolute_uri}}">
+    <meta property="og:type" content="product.group">
+    <meta property="og:locale" content="{{ ''|get_bcp:request.LANGUAGE_CODE }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% trans 'EDGE Card Connectors | High-Speed PCB Solutions - Confull Electronics'%}">
+    <meta name="twitter:description" content="{% trans 'Explore high-speed PCB EDGE connectors from Confull, ideal for gold-finger card edge connections including PCI, PCIe, and custom designs.'%}">
+    <meta name="twitter:image" content="https://www.confull.com/static/img/edge-card-connector.jpg">
+    <meta name="twitter:site" content="@confull">
+
+    {% for lang, url in hreflang_urls.items %}
+        <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">
+    {% endfor %}
+    <link rel="canonical" href="{{canonical_url}}">
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "EDGE Card Connectors",
+            "alternateName": ["总线金手指插卡连接器", "Gold Finger PCB Edge Connectors", "エッジカードコネクタ", "엣지 카드 커넥터","Крайовой разъём (EDGE Connector)"],
+            "url": "{{request.build_absolute_uri}}",
+            "description": "{% trans 'Explore high-quality EDGE card connectors for PCI, PCIe, and custom PCB applications. Confull Electronics offers high-speed, durable, and customizable card edge connectors.'%}",
+            "inLanguage": "{{ request.LANGUAGE_CODE }}",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Confull Electronics",
+                "alternateName": "超越世纪电子",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.confull.com/static/img/confull-logo.png"
+                },
+                "url": "https://www.confull.com"
+            }
+        }
+    </script>
+{% endblock %}
+
+{% block content %}
 <nav aria-label="breadcrumb" class="bg-secondary-subtle">
     <ol class="breadcrumb justify-content-center">
         <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}">{% trans 'Home' %}</a></li>

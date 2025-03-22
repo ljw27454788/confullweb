@@ -1,8 +1,58 @@
 {% extends "base-general.html" %}
-{% block content %}
 {% load static %}
 {% load i18n %}
+{% load util %}
 
+{% block seo %}
+    <title>{% trans "Female Header Connectors | PCB Socket Manufacturer - Confull Electronics" %}</title>
+    <meta name="description" content="{% trans 'Confull Electronics provides high-quality Female Header Connectors for PCB board-to-board and wire-to-board connections. Multiple pitches, rows, and customization options available.' %}">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="{% trans 'Confull Electronics' %}">
+    <meta name="keywords" content="{% trans 'Female Header connector, PCB socket, pin header socket, board-to-board connector, wire-to-board connector, PCB connector, Confull Electronics'%}">
+
+    <meta property="og:title" content="{% trans 'Female Header PCB Connectors | Confull Electronics'%}">
+    <meta property="og:description" content="{% trans 'Explore reliable Female Header Connectors from Confull Electronics. Ideal for PCB sockets in board-to-board or wire-to-board applications. Available in various configurations.'%}">
+    <meta property="og:image" content="https://www.confull.com/static/img/female-header.jpg">
+    <meta property="og:url" content="{{request.build_absolute_uri}}">
+    <meta property="og:type" content="product.group">
+    <meta property="og:locale" content="{{ ''|get_bcp:request.LANGUAGE_CODE }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% trans 'Female Header Connectors | PCB Socket Manufacturer'%}">
+    <meta name="twitter:description" content="{% trans 'Confull Electronics offers durable and customizable Female Header connectors for PCB applications. Wide range of pitch and row options.'%}">
+    <meta name="twitter:image" content="https://www.confull.com/static/img/female-header.jpg">
+    <meta name="twitter:site" content="@confull">
+
+    {% for lang, url in hreflang_urls.items %}
+        <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">
+    {% endfor %}
+    <link rel="canonical" href="{{canonical_url}}">
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Female Header Connectors",
+            "alternateName": ["排母","Female Pin Header","メスヘッダーコネクタ","암 헤더 커넥터","Гнездовой разъём (Female Header)"],
+            "url": "{{request.build_absolute_uri}}",
+            "description": "{% trans 'Confull Electronics manufactures Female Header connectors for PCB board-to-board and wire-to-board connections. Multiple pitch, row, and plating options available.'%}",
+            "inLanguage": "{{ request.LANGUAGE_CODE }}",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Confull Electronics",
+                "alternateName": "超越世纪电子",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.confull.com/static/img/confull-logo.png"
+                },
+                "url": "https://www.confull.com"
+            }
+        }
+    </script>
+{% endblock %}
+
+{% block content %}
 <nav aria-label="breadcrumb" class="bg-secondary-subtle">
     <ol class="breadcrumb justify-content-center">
         <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}">{% trans 'Home' %}</a></li>

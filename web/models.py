@@ -15,13 +15,13 @@ product_types = (
     ('ejector-header', '牛角'),
     ('socket', '网口'),
     ('jumper', '短路帽'),
-    ('fc', 'FC'),
+    ('idc-cable-connector', 'FC'),
     ('round-header', '圆孔针'),
     ('round-female-header', '圆孔座'),
     ('ic-socket', 'IC座'),
     ('din', '欧式插座'),
     ('plcc', 'plcc'),
-    ('edge', '总线金手指'),
+    ('edge-card-connector', '总线金手指'),
 )
 
 pitch = (

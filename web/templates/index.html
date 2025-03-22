@@ -1,19 +1,21 @@
 {% extends "base-general.html" %}
 {% load static %}
 {% load i18n %}
+{% load util %}
 
 {% block seo %}
     <title>{% trans "Confull | Pin Header, Female Header, Box Header & EDGE Connector Manufacturer" %}</title>
     <meta name="description" content="{% trans 'Confull Electronics manufactures high-quality PCB connectors, including Pin Header, Female Header, IDC, and Board-to-Board solutions for industrial applications.' %}">
     <meta name="robots" content="index, follow">
     <meta name="author" content="{% trans 'Confull Electronics' %}">
+    <meta name="keywords" content="{% trans 'connector, pin header, female header, box header, ejector header, IDC cable, IC socket, PCB connector, board-to-board, wire-to-board, Confull Electronics'%}">
 
     <meta property="og:title" content="{% trans 'Confull Electronics | Pin Header, Female Header & PCB Connectors'%}">
     <meta property="og:description" content="{% trans 'Confull Electronics specializes in Board-to-Board & Wire-to-Board Connectors, including Pin Header, Female Header, Box Header, Ejector Header, IC Socket, Jumper, IDC Connector, EDGE Connector, and Machined Connectors for PCB applications.'%}">
     <meta property="og:image" content="https://www.confull.com/static/img/confull-banner.jpg">
-    <meta property="og:url" content="https://www.confull.com">
+    <meta property="og:url" content="{{request.build_absolute_uri}}">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="{{ request.LANGUAGE_CODE }}">
+    <meta property="og:locale" content="{{ ''|get_bcp:request.LANGUAGE_CODE }}">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{% trans 'Confull Electronics | PCB Connector Manufacturer'%}">
@@ -32,6 +34,7 @@
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Confull Electronics",
+            "alternateName": "超越世纪电子",
             "url": "{{request.build_absolute_uri}}",
             "logo": "https://www.confull.com/static/img/confull-logo.png",
             "description": "{% trans 'Confull Electronics specializes in Board-to-Board & Wire-to-Board Connectors, including Pin Header, Female Header, Box Header, Ejector Header, IC Socket, Jumper, IDC Connector, EDGE Connector, and Machined Connectors for PCB applications.'%}",
@@ -142,7 +145,7 @@
         </div>
         <div class="col-6 col-lg-2 col-md-3 mb-2">
             <div class="card h-100">
-                <img src="{% static 'img/fc.jpg' %}" class="card-img-top" 
+                <img src="{% static 'img/idc-cable-connector.jpg' %}" class="card-img-top" 
                 alt="{% trans 'High-quality IDC connector and ribbon cable for secure and reliable PCB connections, compatible with 2.54mm and 1.27mm pitch, widely used in industrial electronics, computers, and automation systems' %}">
                 <a href="{% url 'fc' %}" class="stretched-link"></a>
                 <div class="card-body">
@@ -162,7 +165,7 @@
         </div>
         <div class="col-6 col-lg-2 col-md-3 mb-2">
             <div class="card h-100">
-                <img src="{% static 'img/edge.jpg' %}" class="card-img-top" 
+                <img src="{% static 'img/edge-card-connector.jpg' %}" class="card-img-top" 
                 alt="{% trans 'High-quality EDGE card connector for secure and reliable PCB connections, compatible with PCIe, PCI, and industrial backplane systems, ideal for data communication, automation, and high-speed signal transmission' %}">
                 <a href="{% url 'edge' %}" class="stretched-link"></a>
                 <div class="card-body">
