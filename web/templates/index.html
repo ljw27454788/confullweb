@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="{% trans 'Confull Electronics | PCB Connector Manufacturer'%}">
     <meta name="twitter:description" content="{% trans 'Leading supplier of Pin Header, Female Header, IDC Connector, EDGE Connector, and Board-to-Board & Wire-to-Board solutions for PCB applications.'%}">
     <meta name="twitter:image" content="https://www.confull.com/static/img/confull-banner.jpg">
-    <meta name="twitter:site" content="@confull">
+    {% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
 
     {% for lang, url in hreflang_urls.items %}
         <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">

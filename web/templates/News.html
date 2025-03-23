@@ -1,12 +1,48 @@
 {% extends "base-general.html" %}
-{% block content %}
 {% load static %}
 {% load i18n %}
 {% load util %}
+
+{% block seo %}
+<title>{% trans 'Learn About PCB Connectors | Product Knowledge Center | Confull Electronics'%}</title>
+<meta name="description" content="{% trans 'Explore detailed knowledge of PCB connectors including Pin Header, Box Header, IDC Connectors and more. Learn from Confull Electronics to select the right connector for your application.' %}">
+
+<meta property="og:title" content="{% trans 'Learn About PCB Connectors | Confull Electronics'%}">
+<meta property="og:description" content="{% trans 'Explore essential product knowledge on PCB connectors such as Pin Header, Female Header, IDC, and more. Enhance your understanding with Confull's insights.'%}">
+<meta property="og:image" content="https://www.confull.com/static/img/confull-logo.png">
+<meta property="og:url" content="{{request.build_absolute_uri}}">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="{{ ''|get_bcp:request.LANGUAGE_CODE }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% trans 'Connector Knowledge Center | Confull Electronics'%}">
+<meta name="twitter:description" content="{% trans 'Discover connector basics, design tips, and application guides. Learn from Confull’s 25+ years of experience in electronic connectors.'%}">
+<meta name="twitter:image" content="https://www.confull.com/static/img/confull-logo.png">
+{% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Connector Knowledge Center",
+      "alternateName": ["连接器知识中心","コネクタ知識センター","커넥터 지식 센터","Центр знаний о разъёмах"],
+      "description": "{% trans 'Technical knowledge and insights about PCB connectors provided by Confull Electronics, covering Pin Headers, IDC connectors, and more.'%}",
+      "url": "{{request.build_absolute_uri}}",
+      "inLanguage": "{{ request.LANGUAGE_CODE }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Confull Electronics",
+        "alternateName": "超越世纪电子",
+      }
+    }
+</script>
+{% endblock %}
+
+{% block content %}
 <nav aria-label="breadcrumb" class="bg-secondary-subtle">
     <ol class="breadcrumb justify-content-center">
-        <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}"><strong>{% trans 'Home' %}</strong></a></li>
-        <li class="breadcrumb-item active" aria-current="page"><strong>{%trans 'Learn Products'%}</strong></li>
+        <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}">{% trans 'Home' %}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{%trans 'Learn Products'%}</li>
     </ol>
 </nav>
 <br>
@@ -17,7 +53,7 @@
             <div class="card mx-3 mb-3">
                 <div class="card-body">
                     <a class="stretched-link" href="{{ obj.get_detail_url }}">
-                        <h3 class="card-title">{{obj|get_news_title:LANGUAGE_CODE}}</h3></a>
+                        <h3 class="card-title">{{obj.title}}</h3></a>
                     <p class="card-text"><small class="text-muted">{{obj.created_at}}</small></p>
                 </div>
             </div>

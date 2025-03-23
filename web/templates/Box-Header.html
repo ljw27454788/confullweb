@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="{% trans 'Box Header Connectors | Confull Electronics'%}">
     <meta name="twitter:description" content="{% trans 'Explore board-to-board Box Header Connectors for PCB from Confull. High reliability, fast delivery, OEM/ODM support.'%}">
     <meta name="twitter:image" content="https://www.confull.com/static/img/box-header.jpg">
-    <meta name="twitter:site" content="@confull">
+    {% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
 
     {% for lang, url in hreflang_urls.items %}
         <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">

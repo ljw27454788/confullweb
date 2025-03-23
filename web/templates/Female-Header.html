@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="{% trans 'Female Header Connectors | PCB Socket Manufacturer'%}">
     <meta name="twitter:description" content="{% trans 'Confull Electronics offers durable and customizable Female Header connectors for PCB applications. Wide range of pitch and row options.'%}">
     <meta name="twitter:image" content="https://www.confull.com/static/img/female-header.jpg">
-    <meta name="twitter:site" content="@confull">
+    {% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
 
     {% for lang, url in hreflang_urls.items %}
         <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">

@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="{% trans 'EDGE Card Connectors | High-Speed PCB Solutions - Confull Electronics'%}">
     <meta name="twitter:description" content="{% trans 'Explore high-speed PCB EDGE connectors from Confull, ideal for gold-finger card edge connections including PCI, PCIe, and custom designs.'%}">
     <meta name="twitter:image" content="https://www.confull.com/static/img/edge-card-connector.jpg">
-    <meta name="twitter:site" content="@confull">
+    {% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
 
     {% for lang, url in hreflang_urls.items %}
         <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">

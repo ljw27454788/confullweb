@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="{% trans 'Machined Round Female Headers | Precision Socket Manufacturer'%}">
     <meta name="twitter:description" content="{% trans 'High-quality machined round female headers with turned pins and gold plating. Ideal for precise, secure PCB connections in industrial applications.'%}">
     <meta name="twitter:image" content="https://www.confull.com/static/img/round-female-header.jpg">
-    <meta name="twitter:site" content="@confull">
+    {% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
 
     {% for lang, url in hreflang_urls.items %}
         <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">

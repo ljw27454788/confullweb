@@ -19,7 +19,7 @@ product_types = (
     ('round-header', '圆孔针'),
     ('round-female-header', '圆孔座'),
     ('ic-socket', 'IC座'),
-    ('din', '欧式插座'),
+    ('din41612', '欧式插座'),
     ('plcc', 'plcc'),
     ('edge-card-connector', '总线金手指'),
 )
@@ -72,30 +72,14 @@ def getNewsPath(instance, filename):
 # Models
 class Product(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)
-    name = models.CharField(max_length=100, unique=True) #chinese
+    name = models.CharField(max_length=100, unique=True)
     description = models.TextField(max_length=500, null=True, blank=True)
-    tw_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #tw chinese
-    tw_description = models.TextField(max_length=500, null=True, blank=True)
-    en_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #english
-    en_description = models.TextField(max_length=500, null=True, blank=True)
-    es_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #spanish
-    es_description = models.TextField(max_length=500, null=True, blank=True)
-    de_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #german
-    de_description = models.TextField(max_length=500, null=True, blank=True)
-    fr_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #french
-    fr_description = models.TextField(max_length=500, null=True, blank=True)
-    ja_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #japan
-    ja_description = models.TextField(max_length=500, null=True, blank=True)
-    ko_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #korean
-    ko_description = models.TextField(max_length=500, null=True, blank=True)
-    ru_name = models.CharField(max_length=100, unique=True, null=True, blank=True) #russian
-    ru_description = models.TextField(max_length=500, null=True, blank=True)
+    seo_description = models.TextField(max_length=300, null=True, blank=True)
     slug = models.SlugField(max_length=150, unique=True, blank=True, verbose_name="URL Slug")
     pitch = models.CharField(max_length=20, choices=pitch, null=True, blank=True)
     picture = models.FileField(upload_to=getProductPath, null=True, blank=True)
     picture2 = models.FileField(upload_to=getProductPath, null=True, blank=True)
     picture3 = models.FileField(upload_to=getProductPath, null=True, blank=True)
-    blueprint = models.FileField(upload_to=getProductPath, null=True, blank=True)
     pdf = models.FileField(upload_to=getProductPath, null=True, blank=True)
     product_type = models.CharField(max_length=50, choices=product_types, null=True, blank=True)
     row = models.CharField(max_length=10, null=True, blank=True, choices=row_num)
@@ -103,7 +87,7 @@ class Product(models.Model):
     shape = models.CharField(max_length=20, null=True, blank=True, choices=shape)
 
     def save(self, *args, **kwargs):
-        self.slug = slugify(self.en_name, allow_unicode=True)
+        self.slug = slugify(self.name_en, allow_unicode=True)
         super().save(*args, **kwargs)
 
     def get_detail_url(self):
@@ -135,29 +119,14 @@ class News(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     title = models.CharField(max_length=100, unique=True)
     content = models.TextField(max_length=2000, null=True, blank=True)
-    tw_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
-    tw_content = models.TextField(max_length=2000, null=True, blank=True)
-    en_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
-    en_content = models.TextField(max_length=2000, null=True, blank=True)
-    es_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
-    es_content = models.TextField(max_length=2000, null=True, blank=True)
-    de_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
-    de_content = models.TextField(max_length=2000, null=True, blank=True)
-    fr_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
-    fr_content = models.TextField(max_length=2000, null=True, blank=True)
-    ja_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
-    ja_content = models.TextField(max_length=2000, null=True, blank=True)
-    ko_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
-    ko_content = models.TextField(max_length=2000, null=True, blank=True)
-    ru_title = models.CharField(max_length=100, null=True, blank=True, unique=True)
-    ru_content = models.TextField(max_length=2000, null=True, blank=True)
+    seo_description = models.TextField(max_length=300, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True, editable=True, null=True, blank=True)
     picture = models.FileField(upload_to=getNewsPath, null=True, blank=True)
     about = models.CharField(max_length=50, choices=product_types, null=True, blank=True)
     slug = models.SlugField(max_length=150, unique=True, blank=True, verbose_name="URL Slug")
 
     def save(self, *args, **kwargs):
-        self.slug = slugify(self.en_title, allow_unicode=True)
+        self.slug = slugify(self.title_en, allow_unicode=True)
         super().save(*args, **kwargs)
 
     def get_detail_url(self):

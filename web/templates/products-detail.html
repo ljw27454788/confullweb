@@ -4,20 +4,58 @@
 {% load util %}
 
 {% block seo %}
+<title>{{ product.name }} | - {% trans "Confull Electronics" %}</title>
+<meta name="description" content="{{ product.seo_description }}">
+<meta name="robots" content="index, follow">
+<meta name="author" content="{% trans 'Confull Electronics' %}">
+
+<meta property="og:title" content="{{ product.name }} | {% trans 'Confull Electronics'%}">
+<meta property="og:description" content="{{ product.seo_description }}">
+<meta property="og:image" content="{{ product.picture.url }}">
+<meta property="og:url" content="{{request.build_absolute_uri}}">
+<meta property="og:type" content="product">
+<meta property="og:locale" content="{{ ''|get_bcp:request.LANGUAGE_CODE }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ product.name }} | {% trans 'Confull Electronics'%}">
+<meta name="twitter:description" content="{{ product.seo_description }}">
+<meta name="twitter:image" content="{{ product.picture.url }}">
+{% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
+
 {% for lang, url in hreflang_urls.items %}
 <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">
 {% endfor %}
+<link rel="canonical" href="{{canonical_url}}">
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "{{ product.name }}",
+      "description": "{{ product.seo_description }}",
+      "image": "{{ product.picture.url }}",
+      "sku": "{{ product.slug }}",
+      "brand": {
+        "@type": "Organization",
+        "name": "Confull Electronics",
+        "alternateName": "超越世纪电子",
+      },
+      "url": "{{ request.build_absolute_uri }}",
+      "inLanguage": "{{ request.LANGUAGE_CODE }}"
+    }
+</script>
+
 {% endblock %}
 
 {% block content %}
 
 <nav aria-label="breadcrumb" class="bg-secondary-subtle">
     <ol class="breadcrumb justify-content-center">
-        <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}"><strong>{% trans 'Home' %}</strong></a></li>
+        <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}">{% trans 'Home' %}</a></li>
         <li class="breadcrumb-item"><a class="no-line" href="{% url ''|add:product.product_type %}">
-            <strong>{{ product.product_type|get_general_name }}</strong>
+            {{ product.product_type|get_general_name }}
         </a></li>
-        <li class="breadcrumb-item active" aria-current="page"><strong>{{ product|get_name:LANGUAGE_CODE }}</strong></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ product.name }}</li>
     </ol>
 </nav>
 <div class="container">
@@ -28,10 +66,10 @@
                     <img src="{{ product.picture.url }}" class="w-100" alt="Product Image">
                 </div>
                 <div class="col-md-6 col-sm-12 mt-3">
-                    <h3><strong>{{ product|get_name:LANGUAGE_CODE}}</strong></h3>
+                    <h3><strong>{{ product.name }}</strong></h3>
                     <hr>
                     <div class="row">
-                        <p><strong>{{ product|get_description:LANGUAGE_CODE|linebreaks }}</strong></p>
+                        <p><strong>{{ product.description|linebreaks }}</strong></p>
                     </div>
                     {%if product.pdf%}
                         <div class="row">

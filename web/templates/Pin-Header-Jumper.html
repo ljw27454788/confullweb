@@ -4,24 +4,24 @@
 {% load util %}
 
 {% block seo %}
-    <title>{% trans "" %}</title>
-    <meta name="description" content="{% trans '' %}">
+    <title>{% trans "Jumper Caps | Shorting Shunts for Pin Headers - Confull Electronics" %}</title>
+    <meta name="description" content="{% trans 'Confull Electronics supplies high-quality jumper caps for 2.54mm, 2.0mm and 1.27mm pitch pin headers. Ideal for short-circuiting configurations on PCBs. Available in various colors and styles.' %}">
     <meta name="robots" content="index, follow">
     <meta name="author" content="{% trans 'Confull Electronics' %}">
-    <meta name="keywords" content="{% trans ''%}">
+    <meta name="keywords" content="{% trans 'jumper cap, PCB jumper, shorting cap, shunt, pin header jumper, 2.54mm jumper, 1.27mm jumper, Confull Electronics'%}">
 
-    <meta property="og:title" content="{% trans ''%}">
-    <meta property="og:description" content="{% trans ''%}">
-    <meta property="og:image" content="https://www.confull.com/static/img/confull-banner.jpg">
+    <meta property="og:title" content="{% trans 'Jumper Caps for Pin Headers | PCB Shorting Shunts - Confull Electronics'%}">
+    <meta property="og:description" content="{% trans 'Reliable and compact jumper caps from Confull for 2.54mm, 2.0mm and 1.27mm pitch pin headers. Designed for easy shorting and configuration of PCB circuits.'%}">
+    <meta property="og:image" content="https://www.confull.com/static/img/jumper.jpg">
     <meta property="og:url" content="{{request.build_absolute_uri}}">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="product.group">
     <meta property="og:locale" content="{{ ''|get_bcp:request.LANGUAGE_CODE }}">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{% trans ''%}">
-    <meta name="twitter:description" content="{% trans ''%}">
-    <meta name="twitter:image" content="https://www.confull.com/static/img/confull-banner.jpg">
-    <meta name="twitter:site" content="@confull">
+    <meta name="twitter:title" content="{% trans 'Jumper Caps | Shorting Shunts for Pin Headers'%}">
+    <meta name="twitter:description" content="{% trans 'Confull offers PCB jumper caps for 2.54mm & 2.0mm & 1.27mm pitch headers. Perfect for configuring circuits with secure shorting. Various colors and packaging options available.'%}">
+    <meta name="twitter:image" content="https://www.confull.com/static/img/jumper.jpg">
+    {% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
 
     {% for lang, url in hreflang_urls.items %}
         <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">
@@ -33,10 +33,10 @@
         {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
-            "name": "Box Header Connectors",
-            "alternateName": ["简牛连接器"],
+            "name": "Jumper Caps for Pin Headers",
+            "alternateName": ["短路帽","ジャンパーキャップ","점퍼 캡","Перемычка для пин-хедеров (Jumper Cap)"],
             "url": "{{request.build_absolute_uri}}",
-            "description": "{% trans ''%}",
+            "description": "{% trans 'Confull Electronics provides high-quality jumper caps (shorting shunts) for pin headers in 2.54mm, 2.0mm and 1.27mm pitch. Designed for reliable circuit configuration on PCBs.'%}",
             "inLanguage": "{{ request.LANGUAGE_CODE }}",
             "publisher": {
                 "@type": "Organization",

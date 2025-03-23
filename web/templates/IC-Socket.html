@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="{% trans 'IC Socket Connectors | Confull Electronics'%}">
     <meta name="twitter:description" content="{% trans 'Explore reliable IC sockets from Confull — DIP, PGA, and custom chip sockets for PCB designs. OEM and bulk solutions available.'%}">
     <meta name="twitter:image" content="https://www.confull.com/static/img/ic-socket.jpg">
-    <meta name="twitter:site" content="@confull">
+    {% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
 
     {% for lang, url in hreflang_urls.items %}
         <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">

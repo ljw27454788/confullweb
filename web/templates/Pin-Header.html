@@ -4,24 +4,24 @@
 {% load util %}
 
 {% block seo %}
-    <title>{% trans "" %}</title>
-    <meta name="description" content="{% trans '' %}">
+    <title>{% trans "Pin Headers | PCB Male Connectors Manufacturer - Confull Electronics" %}</title>
+    <meta name="description" content="{% trans 'Confull Electronics manufactures high-quality pin headers for PCB connections, available in 2.54mm, 2.00mm, 1.27mm pitch. Options include straight, right-angle, single-row, dual-row, and custom headers.' %}">
     <meta name="robots" content="index, follow">
     <meta name="author" content="{% trans 'Confull Electronics' %}">
-    <meta name="keywords" content="{% trans ''%}">
+    <meta name="keywords" content="{% trans 'pin header, male header, PCB connector, straight header, right-angle pin header, 2.54mm header, 2.0mm header, Confull Electronics'%}">
 
-    <meta property="og:title" content="{% trans ''%}">
-    <meta property="og:description" content="{% trans ''%}">
-    <meta property="og:image" content="https://www.confull.com/static/img/confull-banner.jpg">
+    <meta property="og:title" content="{% trans 'Pin Header Connectors | Straight & Right-Angle Male Headers - Confull Electronics'%}">
+    <meta property="og:description" content="{% trans 'Explore a wide range of pin header connectors from Confull Electronics. Available in multiple pitches and configurations for board-to-board and wire-to-board applications.'%}">
+    <meta property="og:image" content="https://www.confull.com/static/img/pin-header.jpg">
     <meta property="og:url" content="{{request.build_absolute_uri}}">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="product.group">
     <meta property="og:locale" content="{{ ''|get_bcp:request.LANGUAGE_CODE }}">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{% trans ''%}">
-    <meta name="twitter:description" content="{% trans ''%}">
-    <meta name="twitter:image" content="https://www.confull.com/static/img/confull-banner.jpg">
-    <meta name="twitter:site" content="@confull">
+    <meta name="twitter:title" content="{% trans 'Pin Headers | High-Precision Male PCB Connectors'%}">
+    <meta name="twitter:description" content="{% trans 'Confull offers high-quality pin headers for PCB applications. Straight and right-angle options with various pitches and rows available.'%}">
+    <meta name="twitter:image" content="https://www.confull.com/static/img/pin-header.jpg">
+    {% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
 
     {% for lang, url in hreflang_urls.items %}
         <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">
@@ -33,10 +33,10 @@
         {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
-            "name": "Box Header Connectors",
-            "alternateName": ["简牛连接器"],
+            "name": "Pin Header Connectors",
+            "alternateName": ["排针连接器","ピンヘッダー","핀 헤더","Штыревой разъём (Pin Header)"],
             "url": "{{request.build_absolute_uri}}",
-            "description": "{% trans ''%}",
+            "description": "{% trans 'Confull Electronics provides reliable pin header connectors in 2.54mm, 2.00mm, and 1.27mm pitch, with straight and right-angle designs. Ideal for board-to-board and module interfaces.'%}",
             "inLanguage": "{{ request.LANGUAGE_CODE }}",
             "publisher": {
                 "@type": "Organization",

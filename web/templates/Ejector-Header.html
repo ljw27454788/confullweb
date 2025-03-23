@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="{% trans 'Ejector Header Connectors | PCB Shrouded Header Manufacturer'%}">
     <meta name="twitter:description" content="{% trans 'Secure and durable Ejector Headers for IDC ribbon cable and PCB applications. Manufactured by Confull Electronics with custom options available.'%}">
     <meta name="twitter:image" content="https://www.confull.com/static/img/ejector-header.jpg">
-    <meta name="twitter:site" content="@confull">
+    {% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
 
     {% for lang, url in hreflang_urls.items %}
         <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">

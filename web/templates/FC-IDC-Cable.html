@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="{% trans 'IDC Connector & Ribbon Cable | Wire-to-Board PCB Solutions'%}">
     <meta name="twitter:description" content="{% trans 'Find reliable IDC connectors and ribbon cables at Confull Electronics. Ideal for secure wire-to-board connections in industrial and consumer electronics.'%}">
     <meta name="twitter:image" content="https://www.confull.com/static/img/idc-cable-connector.jpg">
-    <meta name="twitter:site" content="@confull">
+    {% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
 
     {% for lang, url in hreflang_urls.items %}
         <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">

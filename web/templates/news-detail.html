@@ -5,17 +5,17 @@
 {% load util %}
 <nav aria-label="breadcrumb" class="bg-secondary-subtle">
     <ol class="breadcrumb justify-content-center">
-        <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}"><strong>{% trans 'Home' %}</strong></a></li>
+        <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}">{% trans 'Home' %}</a></li>
         <li class="breadcrumb-item"><a class="no-line" href="{% url 'news' %}">
-            <strong>{%trans 'Learn Products'%}</strong>
+            {%trans 'Learn Products'%}
         </a></li>
-        <li class="breadcrumb-item active" aria-current="page"><strong>{{ news|get_news_title:LANGUAGE_CODE }}</strong></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ news.title }}</li>
     </ol>
 </nav>
 <br>
 <div class="container">
     <div class="card">
-        <p class="mt-2 text-center fs-2">{{news|get_news_title:LANGUAGE_CODE}}</p>
+        <p class="mt-2 text-center fs-2">{{news.title}}</p>
         {%if news.picture%}
             <div class="row">
                 <div class="col-lg-5 col-md-4"></div>
@@ -24,7 +24,7 @@
             </div>
         {%endif%}
         <div class="card-body">
-            {{news|get_news_content:LANGUAGE_CODE|safe|linebreaks}}
+            {{news.content|safe|linebreaks}}
         </div>
         <div class="card-footer">
             {% if product_type %}
