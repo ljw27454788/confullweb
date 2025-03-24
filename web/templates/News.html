@@ -6,9 +6,11 @@
 {% block seo %}
 <title>{% trans 'Learn About PCB Connectors | Product Knowledge Center | Confull Electronics'%}</title>
 <meta name="description" content="{% trans 'Explore detailed knowledge of PCB connectors including Pin Header, Box Header, IDC Connectors and more. Learn from Confull Electronics to select the right connector for your application.' %}">
+<meta name="robots" content="index, follow">
+<meta name="author" content="{% trans 'Confull Electronics'%}">
 
 <meta property="og:title" content="{% trans 'Learn About PCB Connectors | Confull Electronics'%}">
-<meta property="og:description" content="{% trans 'Explore essential product knowledge on PCB connectors such as Pin Header, Female Header, IDC, and more. Enhance your understanding with Confull's insights.'%}">
+<meta property="og:description" content="{% trans 'Explore essential product knowledge on PCB connectors such as Pin Header, Female Header, IDC, and more. Enhance your understanding with Confull insights.'%}">
 <meta property="og:image" content="https://www.confull.com/static/img/confull-logo.png">
 <meta property="og:url" content="{{request.build_absolute_uri}}">
 <meta property="og:type" content="article">
@@ -19,6 +21,11 @@
 <meta name="twitter:description" content="{% trans 'Discover connector basics, design tips, and application guides. Learn from Confull’s 25+ years of experience in electronic connectors.'%}">
 <meta name="twitter:image" content="https://www.confull.com/static/img/confull-logo.png">
 {% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
+
+{% for lang, url in hreflang_urls.items %}
+<link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">
+{% endfor %}
+<link rel="canonical" href="{{canonical_url}}">
 
 <script type="application/ld+json">
     {
@@ -48,11 +55,11 @@
 <br>
 <div class="container">
     <div class="card">
-        <p class="mt-2 text-center fs-2">{%trans 'Learn Products'%}</p>
+        <h1 class="mt-2 text-center">{%trans 'Learn Products'%}</h1>
         {% for obj in object_list %}
             <div class="card mx-3 mb-3">
                 <div class="card-body">
-                    <a class="stretched-link" href="{{ obj.get_detail_url }}">
+                    <a class="stretched-link" href="{{ obj.get_absolute_url }}">
                         <h3 class="card-title">{{obj.title}}</h3></a>
                     <p class="card-text"><small class="text-muted">{{obj.created_at}}</small></p>
                 </div>

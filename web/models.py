@@ -3,9 +3,11 @@ from django.conf import settings
 from django.urls import reverse
 from django.dispatch import receiver
 from django.utils.text import slugify
+from django.utils import timezone
 
 import os
 import uuid
+
 
 # Choices
 product_types = (
@@ -85,13 +87,17 @@ class Product(models.Model):
     row = models.CharField(max_length=10, null=True, blank=True, choices=row_num)
     pnum = models.CharField(max_length=10, null=True, blank=True, choices=pnum)
     shape = models.CharField(max_length=20, null=True, blank=True, choices=shape)
+    created_at = models.DateTimeField(default=timezone.now, editable=True, null=True, blank=True)
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name_en, allow_unicode=True)
         super().save(*args, **kwargs)
 
-    def get_detail_url(self):
+    def get_absolute_url(self):
         return reverse(self.product_type+'-detail', args=[str(self.slug)])
+
+    # def get_detail_url(self):
+    #     return reverse(self.product_type+'-detail', args=[str(self.slug)])
 
     def __str__(self):
         return '%s' % (self.name)
@@ -120,7 +126,7 @@ class News(models.Model):
     title = models.CharField(max_length=100, unique=True)
     content = models.TextField(max_length=2000, null=True, blank=True)
     seo_description = models.TextField(max_length=300, null=True, blank=True)
-    created_at = models.DateTimeField(auto_now_add=True, editable=True, null=True, blank=True)
+    created_at = models.DateTimeField(default=timezone.now, editable=True, null=True, blank=True)
     picture = models.FileField(upload_to=getNewsPath, null=True, blank=True)
     about = models.CharField(max_length=50, choices=product_types, null=True, blank=True)
     slug = models.SlugField(max_length=150, unique=True, blank=True, verbose_name="URL Slug")
@@ -129,8 +135,11 @@ class News(models.Model):
         self.slug = slugify(self.title_en, allow_unicode=True)
         super().save(*args, **kwargs)
 
-    def get_detail_url(self):
+    def get_absolute_url(self):
         return reverse('news-detail', args=[str(self.slug)])
+
+    # def get_detail_url(self):
+    #     return reverse('news-detail', args=[str(self.slug)])
 
     def __str__(self):
         return '%s' % (self.title)

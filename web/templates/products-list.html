@@ -12,8 +12,8 @@
                 {% endif %}
                 <div class="card-body d-flex flex-column">
                     <div class="mt-auto">
-                        <p>{{ obj.name }}</p>
-                        <a href="{{ obj.get_detail_url }}"
+                        <p><strong>{{ obj.name }}</strong></p>
+                        <a href="{{ obj.get_absolute_url }}"
                            class="btn btn-outline-success stretched-link">{% trans 'Get Detail' %}</a>
                     </div>
                 </div>

@@ -17,6 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.i18n import i18n_patterns
+from django.contrib.sitemaps.views import sitemap
+
+from web.sitemaps import ProductSitemap, NewsSitemap, IndexSitemap
+
+sitemaps = {
+    'products': ProductSitemap,
+    'learn-products': NewsSitemap,
+    'index': IndexSitemap,
+}
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
@@ -26,5 +35,6 @@ urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
     path('rosetta/', include('rosetta.urls')),
     path('', include('web.urls')),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
     prefix_default_language=False
 )

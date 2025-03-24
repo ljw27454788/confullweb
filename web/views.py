@@ -41,7 +41,8 @@ def index(request):
 
 def contact(request):
     hreflang_urls = get_hreflang_urls(request)
-    return render(request, 'contact.html', context={"hreflang_urls": hreflang_urls})
+    canonical_url = get_canonical(request)
+    return render(request, 'contact.html', context={"hreflang_urls": hreflang_urls, "canonical_url": canonical_url})
 
 # def company(request):
 #     return render(request, 'company.html', context={})

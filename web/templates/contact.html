@@ -1,21 +1,119 @@
 {% extends "base-general.html" %}
 {% load static %}
 {% load i18n %}
+{% load util %}
 
 {% block seo %}
-    {% for lang, url in hreflang_urls.items %}
-        <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">
-    {% endfor %}
-    <link rel="canonical" href="{{canonical_url}}">
+<title>{% trans 'Contact Us | Confull Electronics - Your Trusted Connector Supplier'%}</title>
+<meta name="description" content="{% trans 'Get in touch with Confull Electronics for high-quality pin headers, female headers, IDC cables, and custom connector solutions. We respond within 24 hours.' %}">
+<meta name="robots" content="index, follow">
+<meta name="author" content="{% trans 'Confull Electronics'%}">
+
+<meta property="og:title" content="{% trans 'Contact Us | Confull Electronics - Your Trusted Connector Supplier'%}">
+<meta property="og:description" content="{% trans 'Get in touch with Confull Electronics for high-quality pin headers, female headers, IDC cables, and custom connector solutions. We respond within 24 hours.'%}">
+<meta property="og:image" content="https://www.confull.com/static/img/confull-logo.png">
+<meta property="og:url" content="{{request.build_absolute_uri}}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="{{ ''|get_bcp:request.LANGUAGE_CODE }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% trans 'Contact Us | Confull Electronics - Your Trusted Connector Supplier'%}">
+<meta name="twitter:description" content="{% trans 'Get in touch with Confull Electronics for high-quality pin headers, female headers, IDC cables, and custom connector solutions. We respond within 24 hours.'%}">
+<meta name="twitter:image" content="https://www.confull.com/static/img/confull-logo.png">
+
+{% for lang, url in hreflang_urls.items %}
+<link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">
+{% endfor %}
+<link rel="canonical" href="{{canonical_url}}">
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "{% trans 'Contact Us - Confull Electronics'%}",
+        "description": "{% trans 'Contact Confull Electronics for your connector needs including pin headers, female headers, IDC cables, and custom connector solutions.'%}",
+        "url": "{{request.build_absolute_uri}}",
+        "inLanguage": "{{ request.LANGUAGE_CODE }}",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Confull Electronics",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.confull.com/static/img/confull-logo.png"
+            }
+        },
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Confull Electronics",
+            "alternateName": "超越世纪电子",
+            "url": "https://www.confull.com",
+            "logo": "https://www.confull.com/static/img/confull-logo.png",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+86-180-3805-9516",
+                "email": "contact@confull.com",
+                "contactType": "Customer Service",
+                "areaServed": "Worldwide",
+                "availableLanguage": ["en", "es", "de", "fr", "ru", "ja", "ko", "zh-Hans", "zh-Hant"],
+            }
+        },
+    }
+</script>
 {% endblock %}
 
 {% block content %}
 
 <nav aria-label="breadcrumb" class="bg-secondary-subtle">
     <ol class="breadcrumb justify-content-center">
-        <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}"><strong>{% trans 'Home' %}</strong></a></li>
-        <li class="breadcrumb-item active" aria-current="page"><strong>{%trans 'Contact Us'%}</strong></li>
+        <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}">{% trans 'Home' %}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{%trans 'Contact Us'%}</li>
     </ol>
 </nav>
 <br>
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-5 mb-4">
+            <h2 class="fw-bold mb-4"><i class="fa-solid fa-envelope-open-text me-2"></i>{% trans "Contact Us"%}</h2>
+            <p><i class="fa-solid fa-location-dot me-2 text-primary"></i><strong>{%trans "Address:"%}</strong> {% trans "Building B10, Hengfeng Industrial City, Baoan District, Shenzhen, 518100"%}</p>
+            <p><i class="fa-solid fa-phone me-2 text-primary"></i><strong>{%trans "Phone:"%}</strong> +86-180-3805-9516</p>
+            <p><i class="fa-solid fa-envelope me-2 text-primary"></i><strong>{% trans "Email:"%}</strong> contact@confull.com</p>
+            <p><i class="fa-brands fa-weixin me-2 text-success"></i><strong>{% trans "WeChat:"%}</strong></p>
+            <img src="{% static 'img/qr_jay.jpg' %}" alt="QR code for Jay">
+            <p>{% trans 'Jay Lyu' %}</p>
+            <img src="{% static 'img/qr_jenny.jpg' %}" alt="QR code for Jenny">
+            <p>{% trans 'Jenny Zhang' %}</p>
+        </div>
+    </div>
+</div>
+
+      <!-- 表单 -->
+      {% comment %} <div class="col-md-7">
+        <h2 class="fw-bold mb-4">
+          <i class="fa-solid fa-message me-2"></i>Send a Message
+        </h2>
+        <form method="post">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="name" class="form-label"><i class="fa-solid fa-user me-1"></i>Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label"><i class="fa-solid fa-envelope me-1"></i>Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label"><i class="fa-solid fa-tag me-1"></i>Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject or topic">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label"><i class="fa-solid fa-comment-dots me-1"></i>Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary px-4">
+            <i class="fa-solid fa-paper-plane me-1"></i>Send
+          </button>
+        </form>
+      </div>
+    </div> {% endcomment %}
+  {% comment %} </div> {% endcomment %}
 {% endblock %}

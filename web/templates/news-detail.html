@@ -1,8 +1,66 @@
 {% extends "base-general.html" %}
-{% block content %}
 {% load static %}
 {% load i18n %}
 {% load util %}
+
+{% block seo %}
+<title>{{ news.title }} | - {% trans "Confull Electronics" %}</title>
+<meta name="description" content="{{ news.seo_description }}">
+<meta name="robots" content="index, follow">
+<meta name="author" content="{% trans 'Confull Electronics' %}">
+
+<meta property="og:title" content="{{ news.name }} | {% trans 'Confull Electronics'%}">
+<meta property="og:description" content="{{ news.seo_description }}">
+<meta property="og:image" content="{{ news.picture.url }}">
+<meta property="og:url" content="{{request.build_absolute_uri}}">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="{{ ''|get_bcp:request.LANGUAGE_CODE }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ news.name }} | {% trans 'Confull Electronics'%}">
+<meta name="twitter:description" content="{{ news.seo_description }}">
+<meta name="twitter:image" content="{{ news.picture.url }}">
+{% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
+
+{% for lang, url in hreflang_urls.items %}
+<link rel="alternate" hreflang="{{ lang }}" href="{{ url }}">
+{% endfor %}
+<link rel="canonical" href="{{canonical_url}}">
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "{{ news.title }}",
+        "description": "{{ news.seo_description }}",
+        "image": "{{ news.picture.url }}",
+        "author": {
+            "@type": "Organization",
+            "name": "Confull Electronics",
+            "alternateName": "超越世纪电子",
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Confull Electronics",
+            "alternateName": "超越世纪电子",
+            "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.confull.com/static/img/confull-logo.png"
+            }
+        },
+        "datePublished": "{{ news.created_at|date:'Y-m-d' }}",
+        "dateModified": "{{ news.created_at|date:'Y-m-d' }}",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ request.build_absolute_uri }}"
+        },
+        "inLanguage": "{{ request.LANGUAGE_CODE }}"
+    }
+</script>
+
+{% endblock %}
+
+{% block content %}
 <nav aria-label="breadcrumb" class="bg-secondary-subtle">
     <ol class="breadcrumb justify-content-center">
         <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}">{% trans 'Home' %}</a></li>
@@ -15,7 +73,7 @@
 <br>
 <div class="container">
     <div class="card">
-        <p class="mt-2 text-center fs-2">{{news.title}}</p>
+        <h1 class="mt-2 text-center">{{news.title}}</h1>
         {%if news.picture%}
             <div class="row">
                 <div class="col-lg-5 col-md-4"></div>
