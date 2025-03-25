@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-25 00:33+0800\n"
-"PO-Revision-Date: 2025-03-25 00:44+0000\n"
-"Last-Translator:   <q@q.com>\n"
+"POT-Creation-Date: 2025-03-25 17:51+0800\n"
+"PO-Revision-Date: 2025-03-25 18:00+0000\n"
+"Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -97,7 +97,7 @@ msgstr "box header コネクタ, 2.54mmピッチ, PCB用コネクタ, Confull"
 #: .\web\templates\Ejector-Header.html:59 .\web\templates\FC-IDC-Cable.html:59
 #: .\web\templates\Female-Header.html:59 .\web\templates\IC-Socket.html:59
 #: .\web\templates\Machined-Female-Header.html:59
-#: .\web\templates\Machined-Pin-Header.html:59 .\web\templates\News.html:52
+#: .\web\templates\Machined-Pin-Header.html:59 .\web\templates\News.html:53
 #: .\web\templates\Pin-Header-Jumper.html:59
 #: .\web\templates\Pin-Header.html:60 .\web\templates\base-general.html:101
 #: .\web\templates\contact.html:68 .\web\templates\news-detail.html:67
@@ -174,7 +174,6 @@ msgstr "Edge Cardコネクタ"
 #: .\web\templates\Ejector-Header.html:7
 #: .\web\templates\Ejector-Header.html:13
 #: .\web\templates\Ejector-Header.html:21
-#| msgid "Box Header Connector | 2.54mm/2.0mm/1.27mm Pitch | Confull"
 msgid "Ejector Header Connector | 2.54/2.0/1.27mm | Confull"
 msgstr "イジェクターヘッダー | 2.54/2.0/1.27mm ピッチ | Confull"
 
@@ -189,9 +188,6 @@ msgstr ""
 "ロック付きイジェクターヘッダー（Ejector Header）。2.54mm、2.0mm、1.27mmピッチに対応し、IDCケーブルとの接続に最適。"
 
 #: .\web\templates\Ejector-Header.html:11
-#| msgid ""
-#| "box header connector, 2.54mm pitch, PCB connector, square pin header, "
-#| "Confull"
 msgid ""
 "ejector header, wire to board, locking header, 2.54mm connector, shrouded "
 "header, Confull"
@@ -204,445 +200,225 @@ msgstr "イジェクターヘッダー, ロック付きコネクタ, ピッチ2.
 msgid "Ejector Header"
 msgstr "イジェクターヘッダー"
 
-#: .\web\templates\FC-IDC-Cable.html:7
-msgid ""
-"IDC Connectors & Ribbon Cables | Wire-to-Board Solutions - Confull "
-"Electronics"
-msgstr ""
+#: .\web\templates\FC-IDC-Cable.html:7 .\web\templates\FC-IDC-Cable.html:13
+#: .\web\templates\FC-IDC-Cable.html:21
+msgid "IDC Connectors & Cable Assemblies | 2.54/2.0/1.27mm | Confull"
+msgstr "IDCコネクタ & フラットケーブル | 2.54/2.0/1.27mm | Confull"
 
-#: .\web\templates\FC-IDC-Cable.html:8
-msgid "Explore Confull Electronics"
-msgstr ""
+#: .\web\templates\FC-IDC-Cable.html:8 .\web\templates\FC-IDC-Cable.html:14
+#: .\web\templates\FC-IDC-Cable.html:22 .\web\templates\FC-IDC-Cable.html:40
+msgid ""
+"Reliable IDC connectors and flat ribbon cable assemblies for 2.54mm, 2.0mm, "
+"and 1.27mm pitch. Ideal for wire-to-board applications."
+msgstr "2.54mm・2.0mm・1.27mmピッチ対応のIDCコネクタとフラットケーブルアセンブリ。ワイヤー・ツー・ボード接続に最適。"
 
 #: .\web\templates\FC-IDC-Cable.html:11
 msgid ""
-"IDC connector, ribbon cable, wire-to-board cable, IDC cable assembly, 2.54mm"
-" IDC, 2.0mm IDC, 1.27mm IDC, flat cable, Confull Electronics"
-msgstr ""
-
-#: .\web\templates\FC-IDC-Cable.html:13
-msgid "IDC Connectors & Ribbon Cable Assemblies | Confull Electronics"
-msgstr ""
-
-#: .\web\templates\FC-IDC-Cable.html:14
-msgid ""
-"Confull offers high-quality IDC connectors and flat ribbon cables for wire-"
-"to-board applications. Customizable length, pitch, and connector type "
-"available."
-msgstr ""
-
-#: .\web\templates\FC-IDC-Cable.html:21
-msgid "IDC Connector & Ribbon Cable | Wire-to-Board PCB Solutions"
-msgstr ""
-
-#: .\web\templates\FC-IDC-Cable.html:22
-msgid ""
-"Find reliable IDC connectors and ribbon cables at Confull Electronics. Ideal"
-" for secure wire-to-board connections in industrial and consumer "
-"electronics."
-msgstr ""
-
-#: .\web\templates\FC-IDC-Cable.html:40
-msgid ""
-"Confull Electronics manufactures IDC connectors and flat ribbon cable "
-"assemblies for wire-to-board PCB applications. Available in 1.27mm and "
-"2.54mm pitch, customizable to your needs."
-msgstr ""
+"IDC connector, ribbon cable, flat cable assembly, 2.54mm pitch, wire to "
+"board, Confull"
+msgstr "idcコネクタ, フラットケーブル, フラットケーブル加工, ワイヤー接続, Confull エレクトロニクス"
 
 #: .\web\templates\FC-IDC-Cable.html:60 .\web\templates\FC-IDC-Cable.html:81
 #: .\web\templates\base-general.html:123 .\web\templates\index.html:153
 #: .\web\templates\products-sidebar.html:26
 msgid "IDC Connector & Cable"
-msgstr ""
+msgstr "DCコネクタ & フラットケーブル"
 
-#: .\web\templates\Female-Header.html:7
-msgid ""
-"Female Header Connectors | PCB Socket Manufacturer - Confull Electronics"
-msgstr ""
+#: .\web\templates\Female-Header.html:7 .\web\templates\Female-Header.html:13
+#: .\web\templates\Female-Header.html:21
+msgid "Female Header Connector | 2.54/2.0/1.27mm | Confull"
+msgstr "メスヘッダーコネクタ | 2.54/2.0/1.27mm ピッチ | Confull"
 
-#: .\web\templates\Female-Header.html:8
+#: .\web\templates\Female-Header.html:8 .\web\templates\Female-Header.html:14
+#: .\web\templates\Female-Header.html:22 .\web\templates\Female-Header.html:40
 msgid ""
-"Confull Electronics provides high-quality Female Header Connectors for PCB "
-"board-to-board and wire-to-board connections. Multiple pitches, rows, and "
-"customization options available."
-msgstr ""
+"Durable female header connectors with 2.54mm, 2.0mm, and 1.27mm pitch. "
+"Compatible with male headers for PCB stacking or wire-to-board."
+msgstr "2.54mm、2.0mm、1.27mmピッチ対応のメスヘッダー。ピンヘッダーと組み合わせてPCBやワイヤーボード接続に最適。"
 
 #: .\web\templates\Female-Header.html:11
 msgid ""
-"Female Header connector, PCB socket, pin header socket, board-to-board "
-"connector, wire-to-board connector, PCB connector, Confull Electronics"
-msgstr ""
-
-#: .\web\templates\Female-Header.html:13
-msgid "Female Header PCB Connectors | Confull Electronics"
-msgstr ""
-
-#: .\web\templates\Female-Header.html:14
-msgid ""
-"Explore reliable Female Header Connectors from Confull Electronics. Ideal "
-"for PCB sockets in board-to-board or wire-to-board applications. Available "
-"in various configurations."
-msgstr ""
-
-#: .\web\templates\Female-Header.html:21
-msgid "Female Header Connectors | PCB Socket Manufacturer"
-msgstr ""
-
-#: .\web\templates\Female-Header.html:22
-msgid ""
-"Confull Electronics offers durable and customizable Female Header connectors"
-" for PCB applications. Wide range of pitch and row options."
-msgstr ""
-
-#: .\web\templates\Female-Header.html:40
-msgid ""
-"Confull Electronics manufactures Female Header connectors for PCB board-to-"
-"board and wire-to-board connections. Multiple pitch, row, and plating "
-"options available."
-msgstr ""
+"female header, 2.54mm connector, PCB header, board to board, shrouded "
+"socket, Confull"
+msgstr "メスヘッダー, female header, ピッチ2.54mm, 基板用コネクタ, Confull エレクトロニクス"
 
 #: .\web\templates\Female-Header.html:60 .\web\templates\Female-Header.html:81
 #: .\web\templates\base-general.html:111 .\web\templates\index.html:93
 #: .\web\templates\products-sidebar.html:14
 msgid "Female Header"
-msgstr ""
+msgstr "メスヘッダーコネクタ"
 
 #: .\web\templates\Female-Header.html:99 .\web\templates\Pin-Header.html:103
 msgid "Row"
-msgstr ""
+msgstr "列数"
 
-#: .\web\templates\IC-Socket.html:7
-msgid ""
-"IC Sockets | DIP, PGA & Custom Chip Socket Manufacturer - Confull "
-"Electronics"
-msgstr ""
+#: .\web\templates\IC-Socket.html:7 .\web\templates\IC-Socket.html:13
+#: .\web\templates\IC-Socket.html:21
+msgid "IC Socket Connector | DIP 2.54/2.0/1.27mm | Confull"
+msgstr "ICソケット（DIP対応）| 2.54/2.0/1.27mm ピッチ | Confull"
 
-#: .\web\templates\IC-Socket.html:8
+#: .\web\templates\IC-Socket.html:8 .\web\templates\IC-Socket.html:14
+#: .\web\templates\IC-Socket.html:22 .\web\templates\IC-Socket.html:40
 msgid ""
-"Confull Electronics manufactures high-quality IC sockets including DIP, PGA,"
-" and custom chip sockets for secure and durable PCB connections. OEM/ODM "
-"available."
-msgstr ""
+"Durable IC socket connectors with 2.54mm, 2.0mm, 1.27mm pitch. Ideal for DIP"
+" IC installation, chip replacement, and PCB testing."
+msgstr "DIP IC用ICソケット。2.54mm、2.0mm、1.27mmピッチ対応。交換・テスト・実装に最適な高信頼コネクタ。"
 
 #: .\web\templates\IC-Socket.html:11
 msgid ""
-"IC socket, chip socket, DIP socket, PGA socket, PCB socket, through-hole "
-"socket, Confull Electronics"
-msgstr ""
-
-#: .\web\templates\IC-Socket.html:13
-msgid ""
-"IC Socket Connectors | DIP, PGA & Custom Chip Sockets - Confull Electronics"
-msgstr ""
-
-#: .\web\templates\IC-Socket.html:14
-msgid ""
-"Discover IC sockets from Confull Electronics for DIP, PGA, and custom IC "
-"packaging. High-reliability chip socket solutions for industrial PCB "
-"applications."
-msgstr ""
-
-#: .\web\templates\IC-Socket.html:21
-msgid "IC Socket Connectors | Confull Electronics"
-msgstr ""
-
-#: .\web\templates\IC-Socket.html:22
-msgid ""
-"Explore reliable IC sockets from Confull — DIP, PGA, and custom chip sockets"
-" for PCB designs. OEM and bulk solutions available."
-msgstr ""
-
-#: .\web\templates\IC-Socket.html:40
-msgid ""
-"Confull Electronics provides reliable IC sockets for DIP, PGA, and custom "
-"chip packages. Ideal for secure and durable IC mounting on PCB boards."
-msgstr ""
+"IC socket, DIP socket, chip connector, 2.54mm pitch, PCB socket, Confull"
+msgstr "ICソケット, DIPソケット, ピッチ2.54mm, チップソケット, Confull エレクトロニクス"
 
 #: .\web\templates\IC-Socket.html:60 .\web\templates\IC-Socket.html:81
 #: .\web\templates\base-general.html:125 .\web\templates\index.html:163
 #: .\web\templates\products-sidebar.html:35
 msgid "IC Socket"
-msgstr ""
+msgstr "ICソケット（DIP対応）"
 
 #: .\web\templates\Machined-Female-Header.html:7
-msgid ""
-"Machined Round Female Header | Precision Socket Connector - Confull "
-"Electronics"
-msgstr ""
+#: .\web\templates\Machined-Female-Header.html:13
+#: .\web\templates\Machined-Female-Header.html:21
+msgid "Machined Round Female Header | Precision Socket | Confull"
+msgstr "メス丸ピンソケット | 精密ICソケット | Confull"
 
 #: .\web\templates\Machined-Female-Header.html:8
+#: .\web\templates\Machined-Female-Header.html:14
+#: .\web\templates\Machined-Female-Header.html:22
+#: .\web\templates\Machined-Female-Header.html:40
 msgid ""
-"Confull Electronics manufactures machined round female headers with turned "
-"pins for high-precision PCB connections. Available in multiple row and pitch"
-" configurations with gold-plated contacts."
-msgstr ""
+"High-precision machined round female headers for ICs and gold-plated pin "
+"insertion. Ideal for reliable board-to-board connections."
+msgstr "高精度なメス丸ピンタイプソケット。2.54mm対応、ICや金メッキピンに最適な精密コネクタ。"
 
 #: .\web\templates\Machined-Female-Header.html:11
 msgid ""
-"machined female header, round female header, machined round socket, turned "
-"pin connector, precision socket, round PCB header, Confull Electronics"
-msgstr ""
-
-#: .\web\templates\Machined-Female-Header.html:13
-msgid ""
-"Machined Round Female Headers | Precision PCB Sockets - Confull Electronics"
-msgstr ""
-
-#: .\web\templates\Machined-Female-Header.html:14
-msgid ""
-"Explore machined round female headers from Confull Electronics, featuring "
-"turned pins for secure and precise PCB interconnects. Ideal for high-"
-"reliability board-to-board applications."
-msgstr ""
-
-#: .\web\templates\Machined-Female-Header.html:21
-msgid "Machined Round Female Headers | Precision Socket Manufacturer"
-msgstr ""
-
-#: .\web\templates\Machined-Female-Header.html:22
-msgid ""
-"High-quality machined round female headers with turned pins and gold "
-"plating. Ideal for precise, secure PCB connections in industrial "
-"applications."
-msgstr ""
-
-#: .\web\templates\Machined-Female-Header.html:40
-msgid ""
-"Confull Electronics provides precision machined female headers with turned "
-"pins and gold-plated contacts. Designed for high-reliability PCB "
-"interconnect solutions."
-msgstr ""
+"machined female header, round pin socket, precision IC socket, board-to-"
+"board, gold pin connector, Confull"
+msgstr "メスヘッダー, 丸ピンソケット, 精密ソケット, ICソケット, Confull エレクトロニクス"
 
 #: .\web\templates\Machined-Female-Header.html:60
 #: .\web\templates\Machined-Female-Header.html:81
 #: .\web\templates\base-general.html:119 .\web\templates\index.html:143
 #: .\web\templates\products-sidebar.html:32
 msgid "Machined Female Header"
-msgstr ""
+msgstr "メス丸ピンソケット"
 
 #: .\web\templates\Machined-Pin-Header.html:7
-msgid ""
-"Machined Round Pin Headers | Precision Male PCB Connectors - Confull "
-"Electronics"
-msgstr ""
+#: .\web\templates\Machined-Pin-Header.html:13
+#: .\web\templates\Machined-Pin-Header.html:21
+msgid "Machined Round Pin Header | Precision Connector | Confull"
+msgstr "丸ピンヘッダー | 精密コネクタ 2.54/2.0/1.27mm | Confull"
 
 #: .\web\templates\Machined-Pin-Header.html:8
-#, fuzzy
-#| msgid ""
-#| "High-quality machined round pin header, precision-turned contacts for stable"
-#| " and reliable PCB connections, available in various pin configurations, "
-#| "ideal for industrial electronics, aerospace, and high-density applications"
+#: .\web\templates\Machined-Pin-Header.html:14
+#: .\web\templates\Machined-Pin-Header.html:22
+#: .\web\templates\Machined-Pin-Header.html:40
 msgid ""
-"Confull Electronics offers machined round pin headers with precision-turned "
-"pins for reliable PCB connections. Available in various pitches, rows, and "
-"plating options for high-performance board-to-board interfaces."
-msgstr ""
-"高品質の丸ピンヘッダー、精密旋削コンタクトによる安定したPCB接続、さまざまなピン構成が可能、産業用電子機器、航空宇宙、高密度アプリケーションに最適"
+"High-precision machined round pin headers for reliable PCB connections. "
+"Supports 2.54mm, 2.0mm, and 1.27mm pitch. Durable gold-plated design."
+msgstr "精密加工された丸ピンヘッダー。2.54mm、2.0mm、1.27mmピッチに対応し、耐久性と高接触性を実現。"
 
 #: .\web\templates\Machined-Pin-Header.html:11
 msgid ""
-"machined pin header, round pin header, machined male connector, turned pin "
-"header, PCB header, precision pin header, Confull Electronics"
-msgstr ""
-
-#: .\web\templates\Machined-Pin-Header.html:13
-msgid ""
-"Machined Round Pin Headers | Turned Male PCB Connectors - Confull "
-"Electronics"
-msgstr ""
-
-#: .\web\templates\Machined-Pin-Header.html:14
-msgid ""
-"High-reliability machined round pin headers from Confull Electronics, "
-"featuring turned pins and gold-plated contacts. Ideal for precision PCB "
-"interconnect applications."
-msgstr ""
-
-#: .\web\templates\Machined-Pin-Header.html:21
-msgid "Machined Round Pin Headers | Precision PCB Male Connectors"
-msgstr ""
-
-#: .\web\templates\Machined-Pin-Header.html:22
-msgid ""
-"Confull Electronics manufactures machined round pin headers with turned "
-"contacts for secure and precise PCB board-to-board connections. Custom "
-"options available."
-msgstr ""
-
-#: .\web\templates\Machined-Pin-Header.html:40
-msgid ""
-"Confull Electronics manufactures precision machined round pin headers with "
-"turned contacts and gold plating. Ideal for high-density and high-"
-"reliability PCB applications."
-msgstr ""
+"machined pin header, round pin, precision header, 2.54mm pitch, gold plated "
+"pin, Confull"
+msgstr "丸ピンヘッダー, 精密ピンヘッダー, 2.54mmピッチ, 車製ピン, Confull エレクトロニクス"
 
 #: .\web\templates\Machined-Pin-Header.html:60
 #: .\web\templates\Machined-Pin-Header.html:80
 #: .\web\templates\base-general.html:117 .\web\templates\index.html:133
 #: .\web\templates\products-sidebar.html:29
 msgid "Machined Pin Header"
-msgstr ""
+msgstr "丸ピンヘッダー"
 
-#: .\web\templates\News.html:7
-msgid ""
-"Learn About PCB Connectors | Product Knowledge Center | Confull Electronics"
-msgstr ""
-
-#: .\web\templates\News.html:8
-msgid ""
-"Explore detailed knowledge of PCB connectors including Pin Header, Box "
-"Header, IDC Connectors and more. Learn from Confull Electronics to select "
-"the right connector for your application."
-msgstr ""
-
-#: .\web\templates\News.html:12
-msgid "Learn About PCB Connectors | Confull Electronics"
-msgstr ""
-
-#: .\web\templates\News.html:13
-msgid ""
-"Explore essential product knowledge on PCB connectors such as Pin Header, "
-"Female Header, IDC, and more. Enhance your understanding with Confull "
-"insights."
-msgstr ""
-
-#: .\web\templates\News.html:20
-msgid "Connector Knowledge Center | Confull Electronics"
-msgstr ""
-
+#: .\web\templates\News.html:7 .\web\templates\News.html:13
 #: .\web\templates\News.html:21
-msgid ""
-"Discover connector basics, design tips, and application guides. Learn from "
-"Confull’s 25+ years of experience in electronic connectors."
-msgstr ""
+msgid "Learn About Connectors | Product Guide & Types | Confull"
+msgstr "製品ガイド | コネクタの種類と用途 | Confull"
 
-#: .\web\templates\News.html:37
+#: .\web\templates\News.html:8 .\web\templates\News.html:14
+#: .\web\templates\News.html:22 .\web\templates\News.html:38
 msgid ""
-"Technical knowledge and insights about PCB connectors provided by Confull "
-"Electronics, covering Pin Headers, IDC connectors, and more."
-msgstr ""
+"Explore Confull connector types, features, and applications. Learn how to "
+"choose the right pin headers, sockets, and wire-to-board connectors."
+msgstr "コネクタの基礎を学ぶページ。ピンヘッダー、ソケット、IDC、ワイヤー・ツー・ボード等の種類と活用法を紹介。"
 
-#: .\web\templates\News.html:53 .\web\templates\News.html:59
+#: .\web\templates\News.html:11
+msgid ""
+"connector types, product guide, pin headers, sockets, wire-to-board, Confull"
+msgstr "コネクタ種類, 製品知識, ピンヘッダー, IDC, 基板接続, Confull エレクトロニクス"
+
+#: .\web\templates\News.html:54 .\web\templates\News.html:60
 #: .\web\templates\base-general.html:134 .\web\templates\index.html:183
 #: .\web\templates\news-detail.html:69
 msgid "Learn Products"
-msgstr ""
+msgstr "製品ガイド"
 
 #: .\web\templates\Pin-Header-Jumper.html:7
-msgid "Jumper Caps | Shorting Shunts for Pin Headers - Confull Electronics"
-msgstr ""
+#: .\web\templates\Pin-Header-Jumper.html:13
+#: .\web\templates\Pin-Header-Jumper.html:21
+msgid "Jumper Cap | 5.08/2.54/2.0/1.27mm Pitch | Confull"
+msgstr "ジャンパーキャップ | 5.08/2.54/2.0/1.27mm ピッチ | Confull"
 
 #: .\web\templates\Pin-Header-Jumper.html:8
+#: .\web\templates\Pin-Header-Jumper.html:14
+#: .\web\templates\Pin-Header-Jumper.html:22
+#: .\web\templates\Pin-Header-Jumper.html:40
 msgid ""
-"Confull Electronics supplies high-quality jumper caps for 2.54mm, 2.0mm and "
-"1.27mm pitch pin headers. Ideal for short-circuiting configurations on PCBs."
-" Available in various colors and styles."
-msgstr ""
+"High-quality jumper caps for 5.08mm, 2.54mm, 2.0mm, 1.27mm headers. Ideal "
+"for PCB shorting, pin setting, and circuit testing."
+msgstr "5.08〜1.27mmピッチに対応するジャンパーキャップ。基板設定、ピンショート、テスト用に最適。安定した接触性能。"
 
 #: .\web\templates\Pin-Header-Jumper.html:11
 msgid ""
-"jumper cap, PCB jumper, shorting cap, shunt, pin header jumper, 2.54mm "
-"jumper, 1.27mm jumper, Confull Electronics"
-msgstr ""
-
-#: .\web\templates\Pin-Header-Jumper.html:13
-msgid ""
-"Jumper Caps for Pin Headers | PCB Shorting Shunts - Confull Electronics"
-msgstr ""
-
-#: .\web\templates\Pin-Header-Jumper.html:14
-msgid ""
-"Reliable and compact jumper caps from Confull for 2.54mm, 2.0mm and 1.27mm "
-"pitch pin headers. Designed for easy shorting and configuration of PCB "
-"circuits."
-msgstr ""
-
-#: .\web\templates\Pin-Header-Jumper.html:21
-msgid "Jumper Caps | Shorting Shunts for Pin Headers"
-msgstr ""
-
-#: .\web\templates\Pin-Header-Jumper.html:22
-msgid ""
-"Confull offers PCB jumper caps for 2.54mm & 2.0mm & 1.27mm pitch headers. "
-"Perfect for configuring circuits with secure shorting. Various colors and "
-"packaging options available."
-msgstr ""
-
-#: .\web\templates\Pin-Header-Jumper.html:40
-msgid ""
-"Confull Electronics provides high-quality jumper caps (shorting shunts) for "
-"pin headers in 2.54mm, 2.0mm and 1.27mm pitch. Designed for reliable circuit"
-" configuration on PCBs."
-msgstr ""
+"jumper cap, shunt cap, 2.54mm jumper, 1.27mm pitch, PCB shorting, Confull"
+msgstr "ジャンパー, ショートキャップ, ピッチ2.54mm, PCB用ジャンパー, Confull エレクトロニクス"
 
 #: .\web\templates\Pin-Header-Jumper.html:60
 #: .\web\templates\Pin-Header-Jumper.html:80
 #: .\web\templates\base-general.html:121 .\web\templates\index.html:123
 #: .\web\templates\products-sidebar.html:23
 msgid "Pin Header Jumper"
-msgstr ""
+msgstr "ジャンパーキャップ"
 
-#: .\web\templates\Pin-Header.html:7
-msgid "Pin Headers | PCB Male Connectors Manufacturer - Confull Electronics"
-msgstr ""
+#: .\web\templates\Pin-Header.html:7 .\web\templates\Pin-Header.html:13
+#: .\web\templates\Pin-Header.html:21
+#| msgid "Box Header Connector | 2.54mm/2.0mm/1.27mm Pitch | Confull"
+msgid "Pin Header Connector | 5.08/2.54/2.0/1.27/1.0mm Pitch | Confull"
+msgstr "ピンヘッダーコネクタ | 5.08/2.54/2.0/1.27/1.0mm ピッチ | Confull"
 
-#: .\web\templates\Pin-Header.html:8
+#: .\web\templates\Pin-Header.html:8 .\web\templates\Pin-Header.html:14
+#: .\web\templates\Pin-Header.html:22 .\web\templates\Pin-Header.html:40
+#| msgid ""
+#| "High-quality jumper caps for 5.08mm, 2.54mm, 2.0mm, 1.27mm headers. Ideal "
+#| "for PCB shorting, pin setting, and circuit testing."
 msgid ""
-"Confull Electronics manufactures high-quality pin headers for PCB "
-"connections, available in 2.54mm, 2.00mm, 1.27mm pitch. Options include "
-"straight, right-angle, single-row, dual-row, and custom headers."
-msgstr ""
+"High-quality pin headers for 5.08mm, 2.54mm, 2.0mm, 1.27mm, 1.0mm pitch. "
+"Ideal for PCB connections and board-to-board interfaces."
+msgstr "5.08～1.0mmピッチに対応するピンヘッダー。基板接続、モジュール間の信号伝送に最適。カスタム仕様可能。"
 
 #: .\web\templates\Pin-Header.html:11
+#| msgid ""
+#| "female header, 2.54mm connector, PCB header, board to board, shrouded "
+#| "socket, Confull"
 msgid ""
-"pin header, male header, PCB connector, straight header, right-angle pin "
-"header, 2.54mm header, 2.0mm header, Confull Electronics"
-msgstr ""
-
-#: .\web\templates\Pin-Header.html:13
-msgid ""
-"Pin Header Connectors | Straight & Right-Angle Male Headers - Confull "
-"Electronics"
-msgstr ""
-
-#: .\web\templates\Pin-Header.html:14
-msgid ""
-"Explore a wide range of pin header connectors from Confull Electronics. "
-"Available in multiple pitches and configurations for board-to-board and "
-"wire-to-board applications."
-msgstr ""
-
-#: .\web\templates\Pin-Header.html:21
-msgid "Pin Headers | High-Precision Male PCB Connectors"
-msgstr ""
-
-#: .\web\templates\Pin-Header.html:22
-msgid ""
-"Confull offers high-quality pin headers for PCB applications. Straight and "
-"right-angle options with various pitches and rows available."
-msgstr ""
-
-#: .\web\templates\Pin-Header.html:40
-msgid ""
-"Confull Electronics provides reliable pin header connectors in 2.54mm, "
-"2.00mm, and 1.27mm pitch, with straight and right-angle designs. Ideal for "
-"board-to-board and module interfaces."
-msgstr ""
+"pin header, 2.54mm connector, PCB header, 1.27mm pitch, 5.08mm pin, Confull"
+msgstr "ピンヘッダー, 2.54mmコネクタ, 基板用ピン, 1.27mmピッチ, Confull エレクトロニクス"
 
 #: .\web\templates\Pin-Header.html:61 .\web\templates\Pin-Header.html:83
 #: .\web\templates\base-general.html:109 .\web\templates\index.html:83
 #: .\web\templates\products-sidebar.html:11
 msgid "Pin Header"
-msgstr ""
+msgstr "ピンヘッダーコネクタ"
 
 #: .\web\templates\base-general.html:93
 msgid "Menu"
-msgstr ""
+msgstr "メニュー"
 
 #: .\web\templates\base-general.html:131 .\web\templates\contact.html:69
 #: .\web\templates\contact.html:76
 msgid "Contact Us"
-msgstr ""
+msgstr "お問い合わせ"
 
 #: .\web\templates\base-general.html:151 .\web\templates\contact.html:77
 msgid "Address:"
@@ -869,6 +645,18 @@ msgstr ""
 #: .\web\templates\products-list.html:17
 msgid "Get Detail"
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "Confull Electronics offers machined round pin headers with precision-turned "
+#~ "pins for reliable PCB connections. Available in various pitches, rows, and "
+#~ "plating options for high-performance board-to-board interfaces."
+#~ msgstr ""
+#~ "高品質の丸ピンヘッダー、精密旋削コンタクトによる安定したPCB接続、さまざまなピン構成が可能、産業用電子機器、航空宇宙、高密度アプリケーションに最適"
+
+#, fuzzy
+#~ msgid "IC Socket Connector | 2.54/2.0/1.27mm DIP | Confull"
+#~ msgstr "メスヘッダーコネクタ | 2.54/2.0/1.27mm ピッチ | Confull"
 
 #, fuzzy
 #~ msgid ""

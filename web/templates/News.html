@@ -4,21 +4,22 @@
 {% load util %}
 
 {% block seo %}
-<title>{% trans 'Learn About PCB Connectors | Product Knowledge Center | Confull Electronics'%}</title>
-<meta name="description" content="{% trans 'Explore detailed knowledge of PCB connectors including Pin Header, Box Header, IDC Connectors and more. Learn from Confull Electronics to select the right connector for your application.' %}">
+<title>{% trans 'Learn About Connectors | Product Guide & Types | Confull'%}</title>
+<meta name="description" content="{% trans 'Explore Confull connector types, features, and applications. Learn how to choose the right pin headers, sockets, and wire-to-board connectors.' %}">
 <meta name="robots" content="index, follow">
 <meta name="author" content="{% trans 'Confull Electronics'%}">
+<meta name="keywords" content="{% trans 'connector types, product guide, pin headers, sockets, wire-to-board, Confull'%}">
 
-<meta property="og:title" content="{% trans 'Learn About PCB Connectors | Confull Electronics'%}">
-<meta property="og:description" content="{% trans 'Explore essential product knowledge on PCB connectors such as Pin Header, Female Header, IDC, and more. Enhance your understanding with Confull insights.'%}">
+<meta property="og:title" content="{% trans 'Learn About Connectors | Product Guide & Types | Confull'%}">
+<meta property="og:description" content="{% trans 'Explore Confull connector types, features, and applications. Learn how to choose the right pin headers, sockets, and wire-to-board connectors.'%}">
 <meta property="og:image" content="https://www.confull.com/static/img/confull-logo.png">
 <meta property="og:url" content="{{request.build_absolute_uri}}">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="{{ ''|get_bcp:request.LANGUAGE_CODE }}">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% trans 'Connector Knowledge Center | Confull Electronics'%}">
-<meta name="twitter:description" content="{% trans 'Discover connector basics, design tips, and application guides. Learn from Confull’s 25+ years of experience in electronic connectors.'%}">
+<meta name="twitter:title" content="{% trans 'Learn About Connectors | Product Guide & Types | Confull'%}">
+<meta name="twitter:description" content="{% trans 'Explore Confull connector types, features, and applications. Learn how to choose the right pin headers, sockets, and wire-to-board connectors.'%}">
 <meta name="twitter:image" content="https://www.confull.com/static/img/confull-logo.png">
 {% comment %} <meta name="twitter:site" content="@confull"> {% endcomment %}
 
@@ -33,7 +34,7 @@
       "@type": "CollectionPage",
       "name": "Connector Knowledge Center",
       "alternateName": ["连接器知识中心","コネクタ知識センター","커넥터 지식 센터","Центр знаний о разъёмах"],
-      "description": "{% trans 'Technical knowledge and insights about PCB connectors provided by Confull Electronics, covering Pin Headers, IDC connectors, and more.'%}",
+      "description": "{% trans 'Explore Confull connector types, features, and applications. Learn how to choose the right pin headers, sockets, and wire-to-board connectors.'%}",
       "url": "{{request.build_absolute_uri}}",
       "inLanguage": "{{ request.LANGUAGE_CODE }}",
       "publisher": {
