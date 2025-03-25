@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-24 18:11+0800\n"
-"PO-Revision-Date: 2025-03-18 10:56+0000\n"
-"Last-Translator:   <>\n"
+"POT-Creation-Date: 2025-03-25 00:33+0800\n"
+"PO-Revision-Date: 2025-03-25 00:40+0000\n"
+"Last-Translator:   <q@q.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -55,18 +55,19 @@ msgstr ""
 msgid "Korean"
 msgstr ""
 
-#: .\web\templates\Box-Header.html:7
-msgid ""
-"Box Header Connectors | Board-to-Board PCB Header Manufacturer - Confull "
-"Electronics"
-msgstr ""
+#: .\web\templates\Box-Header.html:7 .\web\templates\Box-Header.html:13
+#: .\web\templates\Box-Header.html:21
+msgid "Box Header Connector | 2.54mm/2.0mm/1.27mm Pitch | Confull"
+msgstr "Connecteur Box Header | Pas 2.54mm/2.0mm/1.27mm | Confull"
 
-#: .\web\templates\Box-Header.html:8
+#: .\web\templates\Box-Header.html:8 .\web\templates\Box-Header.html:14
+#: .\web\templates\Box-Header.html:22 .\web\templates\Box-Header.html:40
 msgid ""
-"Discover high-quality Box Header Connectors from Confull Electronics. "
-"Designed for board-to-board PCB applications with various pitches and "
-"configurations. OEM/ODM available."
+"High-quality Box Header connectors with 2.54mm, 2.0mm, and 1.27mm pitch. "
+"Ideal for PCB connection. Explore Confull Electronics solutions now."
 msgstr ""
+"Connecteurs Box Header de haute qualité avec pas de 2.54mm, 2.0mm et 1.27mm."
+" Idéal pour les connexions PCB. Découvrez Confull Électronique."
 
 #: .\web\templates\Box-Header.html:10
 #: .\web\templates\EDGE-Card-Connector.html:10
@@ -74,51 +75,22 @@ msgstr ""
 #: .\web\templates\Female-Header.html:10 .\web\templates\IC-Socket.html:10
 #: .\web\templates\Machined-Female-Header.html:10
 #: .\web\templates\Machined-Pin-Header.html:10 .\web\templates\News.html:10
-#: .\web\templates\Pin-Header-Jumper.html:10 .\web\templates\Pin-Header.html:10
-#: .\web\templates\contact.html:10 .\web\templates\index.html:10
-#: .\web\templates\news-detail.html:7 .\web\templates\news-detail.html:10
-#: .\web\templates\news-detail.html:12 .\web\templates\news-detail.html:20
-#: .\web\templates\products-detail.html:7
+#: .\web\templates\Pin-Header-Jumper.html:10
+#: .\web\templates\Pin-Header.html:10 .\web\templates\contact.html:10
+#: .\web\templates\index.html:10 .\web\templates\news-detail.html:7
+#: .\web\templates\news-detail.html:10 .\web\templates\news-detail.html:12
+#: .\web\templates\news-detail.html:20 .\web\templates\products-detail.html:7
 #: .\web\templates\products-detail.html:10
 #: .\web\templates\products-detail.html:12
 #: .\web\templates\products-detail.html:20
 msgid "Confull Electronics"
-msgstr ""
+msgstr "Confull Électronique"
 
 #: .\web\templates\Box-Header.html:11
 msgid ""
-"Box Header connector, PCB connector, board-to-board header, IDC header, pin "
-"header socket, PCB connection, Confull Electronics"
-msgstr ""
-
-#: .\web\templates\Box-Header.html:13
-msgid ""
-"Box Header PCB Connectors | Board-to-Board Solutions - Confull Electronics"
-msgstr ""
-
-#: .\web\templates\Box-Header.html:14
-msgid ""
-"Confull Electronics provides durable and customizable Box Header Connectors "
-"for PCB board-to-board applications. Wide range of pin counts and pitch "
-"options."
-msgstr ""
-
-#: .\web\templates\Box-Header.html:21
-msgid "Box Header Connectors | Confull Electronics"
-msgstr ""
-
-#: .\web\templates\Box-Header.html:22
-msgid ""
-"Explore board-to-board Box Header Connectors for PCB from Confull. High "
-"reliability, fast delivery, OEM/ODM support."
-msgstr ""
-
-#: .\web\templates\Box-Header.html:40
-msgid ""
-"Explore a wide range of Box Header connectors for PCB board-to-board "
-"connections, offered by Confull Electronics. Custom pitch, rows, and "
-"packaging available."
-msgstr ""
+"box header connector, 2.54mm pitch, PCB connector, square pin header, "
+"Confull"
+msgstr "connecteur box header, pas 2.54mm, connecteur PCB, Confull"
 
 #: .\web\templates\Box-Header.html:59
 #: .\web\templates\EDGE-Card-Connector.html:59
@@ -126,17 +98,18 @@ msgstr ""
 #: .\web\templates\Female-Header.html:59 .\web\templates\IC-Socket.html:59
 #: .\web\templates\Machined-Female-Header.html:59
 #: .\web\templates\Machined-Pin-Header.html:59 .\web\templates\News.html:52
-#: .\web\templates\Pin-Header-Jumper.html:59 .\web\templates\Pin-Header.html:60
-#: .\web\templates\base-general.html:101 .\web\templates\contact.html:68
-#: .\web\templates\news-detail.html:67 .\web\templates\products-detail.html:55
+#: .\web\templates\Pin-Header-Jumper.html:59
+#: .\web\templates\Pin-Header.html:60 .\web\templates\base-general.html:101
+#: .\web\templates\contact.html:68 .\web\templates\news-detail.html:67
+#: .\web\templates\products-detail.html:55
 msgid "Home"
-msgstr ""
+msgstr "Accueil"
 
 #: .\web\templates\Box-Header.html:60 .\web\templates\Box-Header.html:81
 #: .\web\templates\base-general.html:113 .\web\templates\index.html:103
 #: .\web\templates\products-sidebar.html:17
 msgid "Box Header"
-msgstr ""
+msgstr "Connecteur Box Header"
 
 #: .\web\templates\Box-Header.html:73
 #: .\web\templates\EDGE-Card-Connector.html:73
@@ -144,18 +117,20 @@ msgstr ""
 #: .\web\templates\Female-Header.html:73 .\web\templates\IC-Socket.html:73
 #: .\web\templates\Machined-Female-Header.html:73
 #: .\web\templates\Machined-Pin-Header.html:72
-#: .\web\templates\Pin-Header-Jumper.html:72 .\web\templates\Pin-Header.html:75
+#: .\web\templates\Pin-Header-Jumper.html:72
+#: .\web\templates\Pin-Header.html:75 .\web\templates\base-general.html:106
 #: .\web\templates\products-sidebar.html:5 .\web\templates\products.html:15
 msgid "Product List"
-msgstr ""
+msgstr "Liste des produits"
 
 #: .\web\templates\Box-Header.html:86 .\web\templates\Ejector-Header.html:86
 #: .\web\templates\FC-IDC-Cable.html:86 .\web\templates\Female-Header.html:86
 #: .\web\templates\Machined-Female-Header.html:86
 #: .\web\templates\Machined-Pin-Header.html:85
-#: .\web\templates\Pin-Header-Jumper.html:85 .\web\templates\Pin-Header.html:88
+#: .\web\templates\Pin-Header-Jumper.html:85
+#: .\web\templates\Pin-Header.html:88
 msgid "Pitch"
-msgstr ""
+msgstr "Pas"
 
 #: .\web\templates\Box-Header.html:99
 #: .\web\templates\EDGE-Card-Connector.html:86
@@ -165,124 +140,76 @@ msgstr ""
 #: .\web\templates\Machined-Pin-Header.html:98
 #: .\web\templates\Pin-Header.html:116
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: .\web\templates\EDGE-Card-Connector.html:7
-msgid ""
-"EDGE Card Connectors | High-Speed PCB Edge Connectors - Confull Electronics"
-msgstr ""
+#: .\web\templates\EDGE-Card-Connector.html:13
+#: .\web\templates\EDGE-Card-Connector.html:21
+msgid "Edge Card Connector | PCIe/Bus Gold Finger Slot | Confull"
+msgstr "Connecteur Edge Card | Fente PCIe / Bus | Confull"
 
 #: .\web\templates\EDGE-Card-Connector.html:8
+#: .\web\templates\EDGE-Card-Connector.html:14
+#: .\web\templates\EDGE-Card-Connector.html:22
+#: .\web\templates\EDGE-Card-Connector.html:40
 msgid ""
-"Discover high-performance EDGE Card Connectors from Confull Electronics. "
-"Ideal for PCI, PCIe, and high-speed backplane PCB connections. OEM & custom "
-"solutions available."
+"High-performance Edge Card Connectors for PCIe, gold finger, and bus slot "
+"applications. Discover durable solutions at Confull."
 msgstr ""
+"Connecteurs Edge Card fiables pour fentes PCIe, bus et doigts dorés. "
+"Solutions robustes proposées par Confull Électronique."
 
 #: .\web\templates\EDGE-Card-Connector.html:11
 msgid ""
-"EDGE card connector, PCB edge connector, PCIe connector, high-speed "
-"connector, board edge socket, gold finger connector, Confull Electronics"
+"edge card connector, gold finger connector, PCIe slot, bus connector, "
+"Confull"
 msgstr ""
-
-#: .\web\templates\EDGE-Card-Connector.html:13
-msgid ""
-"EDGE Card PCB Connectors | PCI/PCIe Gold Finger Solutions - Confull "
-"Electronics"
-msgstr ""
-
-#: .\web\templates\EDGE-Card-Connector.html:14
-msgid ""
-"Confull Electronics provides reliable EDGE card connectors for PCB "
-"applications, including PCI, PCIe, and custom backplane connections. High-"
-"speed, durable, and customizable."
-msgstr ""
-
-#: .\web\templates\EDGE-Card-Connector.html:21
-msgid "EDGE Card Connectors | High-Speed PCB Solutions - Confull Electronics"
-msgstr ""
-
-#: .\web\templates\EDGE-Card-Connector.html:22
-msgid ""
-"Explore high-speed PCB EDGE connectors from Confull, ideal for gold-finger "
-"card edge connections including PCI, PCIe, and custom designs."
-msgstr ""
-
-#: .\web\templates\EDGE-Card-Connector.html:40
-msgid ""
-"Explore high-quality EDGE card connectors for PCI, PCIe, and custom PCB "
-"applications. Confull Electronics offers high-speed, durable, and "
-"customizable card edge connectors."
-msgstr ""
+"connecteur edge card, fente PCIe, connecteur bus, doigt doré, Confull "
+"Électronique"
 
 #: .\web\templates\EDGE-Card-Connector.html:60
 #: .\web\templates\EDGE-Card-Connector.html:81
 #: .\web\templates\base-general.html:127 .\web\templates\index.html:173
 #: .\web\templates\products-sidebar.html:38
 msgid "EDGE Card Connector"
-msgstr ""
+msgstr "Connecteur Edge Card"
 
 #: .\web\templates\Ejector-Header.html:7
-msgid ""
-"Ejector Header Connectors | PCB Shrouded Header Manufacturer - Confull "
-"Electronics"
-msgstr ""
+#: .\web\templates\Ejector-Header.html:13
+#: .\web\templates\Ejector-Header.html:21
+#| msgid "Box Header Connector | 2.54mm/2.0mm/1.27mm Pitch | Confull"
+msgid "Ejector Header Connector | 2.54/2.0/1.27mm | Confull"
+msgstr "Connecteur à éjection | Pas 2.54/2.0/1.27mm | Confull"
 
 #: .\web\templates\Ejector-Header.html:8
-msgid ""
-"Confull Electronics offers high-quality Ejector Header Connectors for secure "
-"and reliable PCB connections. Ideal for IDC ribbon cable applications with "
-"ejector latches. OEM & custom designs supported."
-msgstr ""
-
-#: .\web\templates\Ejector-Header.html:11
-#, fuzzy
-#| msgid ""
-#| "Comprehensive guide to learning connectors, including pin headers, female "
-#| "headers, IDC connectors, board-to-board connectors, and wire-to-board "
-#| "connectors for electronic projects and PCB design"
-msgid ""
-"Ejector Header connector, shrouded header, IDC header, PCB connector, ribbon "
-"cable connector, board-to-board connector, Confull Electronics"
-msgstr ""
-"Guide complet pour apprendre les connecteurs, y compris les broches mâles, "
-"connecteurs femelles, connecteurs IDC, connecteurs carte-à-carte et câble-à-"
-"carte pour projets électroniques et conception PCB"
-
-#: .\web\templates\Ejector-Header.html:13
-msgid "Ejector Header Connectors | Shrouded IDC Headers - Confull Electronics"
-msgstr ""
-
 #: .\web\templates\Ejector-Header.html:14
-msgid ""
-"Explore Confull’s reliable Ejector Header Connectors with ejector latches "
-"for IDC ribbon cables. Designed for secure board-to-board and wire-to-board "
-"applications."
-msgstr ""
-
-#: .\web\templates\Ejector-Header.html:21
-msgid "Ejector Header Connectors | PCB Shrouded Header Manufacturer"
-msgstr ""
-
 #: .\web\templates\Ejector-Header.html:22
-msgid ""
-"Secure and durable Ejector Headers for IDC ribbon cable and PCB "
-"applications. Manufactured by Confull Electronics with custom options "
-"available."
-msgstr ""
-
 #: .\web\templates\Ejector-Header.html:40
 msgid ""
-"Confull Electronics offers high-reliability Ejector Header connectors for "
-"IDC ribbon cable and PCB interconnect applications. Ejector latch design "
-"ensures secure connection and easy removal."
+"Wire-to-board ejector header connectors with locking design, available in "
+"2.54mm, 2.0mm, and 1.27mm pitch. Durable and secure PCB connections."
 msgstr ""
+"Connecteurs à éjection pour connexions fil-à-carte. Versions 2.54mm, 2.0mm "
+"et 1.27mm avec verrouillage. Idéal pour connecteurs IDC et circuits "
+"imprimés."
+
+#: .\web\templates\Ejector-Header.html:11
+#| msgid ""
+#| "box header connector, 2.54mm pitch, PCB connector, square pin header, "
+#| "Confull"
+msgid ""
+"ejector header, wire to board, locking header, 2.54mm connector, shrouded "
+"header, Confull"
+msgstr ""
+"connecteur à éjection, connecteur IDC, fil à carte, pas 2.54mm, connecteur "
+"verrouillable, Confull Électronique"
 
 #: .\web\templates\Ejector-Header.html:60
-#: .\web\templates\Ejector-Header.html:81 .\web\templates\base-general.html:115
-#: .\web\templates\index.html:113 .\web\templates\products-sidebar.html:20
+#: .\web\templates\Ejector-Header.html:81
+#: .\web\templates\base-general.html:115 .\web\templates\index.html:113
+#: .\web\templates\products-sidebar.html:20
 msgid "Ejector Header"
-msgstr ""
+msgstr "Connecteur à éjection"
 
 #: .\web\templates\FC-IDC-Cable.html:7
 msgid ""
@@ -296,8 +223,8 @@ msgstr ""
 
 #: .\web\templates\FC-IDC-Cable.html:11
 msgid ""
-"IDC connector, ribbon cable, wire-to-board cable, IDC cable assembly, 2.54mm "
-"IDC, 2.0mm IDC, 1.27mm IDC, flat cable, Confull Electronics"
+"IDC connector, ribbon cable, wire-to-board cable, IDC cable assembly, 2.54mm"
+" IDC, 2.0mm IDC, 1.27mm IDC, flat cable, Confull Electronics"
 msgstr ""
 
 #: .\web\templates\FC-IDC-Cable.html:13
@@ -317,8 +244,9 @@ msgstr ""
 
 #: .\web\templates\FC-IDC-Cable.html:22
 msgid ""
-"Find reliable IDC connectors and ribbon cables at Confull Electronics. Ideal "
-"for secure wire-to-board connections in industrial and consumer electronics."
+"Find reliable IDC connectors and ribbon cables at Confull Electronics. Ideal"
+" for secure wire-to-board connections in industrial and consumer "
+"electronics."
 msgstr ""
 
 #: .\web\templates\FC-IDC-Cable.html:40
@@ -369,8 +297,8 @@ msgstr ""
 
 #: .\web\templates\Female-Header.html:22
 msgid ""
-"Confull Electronics offers durable and customizable Female Header connectors "
-"for PCB applications. Wide range of pitch and row options."
+"Confull Electronics offers durable and customizable Female Header connectors"
+" for PCB applications. Wide range of pitch and row options."
 msgstr ""
 
 #: .\web\templates\Female-Header.html:40
@@ -392,13 +320,14 @@ msgstr ""
 
 #: .\web\templates\IC-Socket.html:7
 msgid ""
-"IC Sockets | DIP, PGA & Custom Chip Socket Manufacturer - Confull Electronics"
+"IC Sockets | DIP, PGA & Custom Chip Socket Manufacturer - Confull "
+"Electronics"
 msgstr ""
 
 #: .\web\templates\IC-Socket.html:8
 msgid ""
-"Confull Electronics manufactures high-quality IC sockets including DIP, PGA, "
-"and custom chip sockets for secure and durable PCB connections. OEM/ODM "
+"Confull Electronics manufactures high-quality IC sockets including DIP, PGA,"
+" and custom chip sockets for secure and durable PCB connections. OEM/ODM "
 "available."
 msgstr ""
 
@@ -426,8 +355,8 @@ msgstr ""
 
 #: .\web\templates\IC-Socket.html:22
 msgid ""
-"Explore reliable IC sockets from Confull — DIP, PGA, and custom chip sockets "
-"for PCB designs. OEM and bulk solutions available."
+"Explore reliable IC sockets from Confull — DIP, PGA, and custom chip sockets"
+" for PCB designs. OEM and bulk solutions available."
 msgstr ""
 
 #: .\web\templates\IC-Socket.html:40
@@ -451,8 +380,8 @@ msgstr ""
 #: .\web\templates\Machined-Female-Header.html:8
 msgid ""
 "Confull Electronics manufactures machined round female headers with turned "
-"pins for high-precision PCB connections. Available in multiple row and pitch "
-"configurations with gold-plated contacts."
+"pins for high-precision PCB connections. Available in multiple row and pitch"
+" configurations with gold-plated contacts."
 msgstr ""
 
 #: .\web\templates\Machined-Female-Header.html:11
@@ -507,10 +436,9 @@ msgstr ""
 #: .\web\templates\Machined-Pin-Header.html:8
 #, fuzzy
 #| msgid ""
-#| "High-quality machined round pin header, precision-turned contacts for "
-#| "stable and reliable PCB connections, available in various pin "
-#| "configurations, ideal for industrial electronics, aerospace, and high-"
-#| "density applications"
+#| "High-quality machined round pin header, precision-turned contacts for stable"
+#| " and reliable PCB connections, available in various pin configurations, "
+#| "ideal for industrial electronics, aerospace, and high-density applications"
 msgid ""
 "Confull Electronics offers machined round pin headers with precision-turned "
 "pins for reliable PCB connections. Available in various pitches, rows, and "
@@ -518,8 +446,8 @@ msgid ""
 msgstr ""
 "Connecteur à broches rondes usinées de haute qualité, contacts tournés de "
 "précision pour une connexion stable et fiable sur PCB, disponible en "
-"plusieurs configurations de broches, idéal pour l'électronique industrielle, "
-"l'aérospatiale et les applications haute densité"
+"plusieurs configurations de broches, idéal pour l'électronique industrielle,"
+" l'aérospatiale et les applications haute densité"
 
 #: .\web\templates\Machined-Pin-Header.html:11
 msgid ""
@@ -529,7 +457,8 @@ msgstr ""
 
 #: .\web\templates\Machined-Pin-Header.html:13
 msgid ""
-"Machined Round Pin Headers | Turned Male PCB Connectors - Confull Electronics"
+"Machined Round Pin Headers | Turned Male PCB Connectors - Confull "
+"Electronics"
 msgstr ""
 
 #: .\web\templates\Machined-Pin-Header.html:14
@@ -616,8 +545,8 @@ msgstr ""
 #: .\web\templates\Pin-Header-Jumper.html:8
 msgid ""
 "Confull Electronics supplies high-quality jumper caps for 2.54mm, 2.0mm and "
-"1.27mm pitch pin headers. Ideal for short-circuiting configurations on PCBs. "
-"Available in various colors and styles."
+"1.27mm pitch pin headers. Ideal for short-circuiting configurations on PCBs."
+" Available in various colors and styles."
 msgstr ""
 
 #: .\web\templates\Pin-Header-Jumper.html:11
@@ -627,7 +556,8 @@ msgid ""
 msgstr ""
 
 #: .\web\templates\Pin-Header-Jumper.html:13
-msgid "Jumper Caps for Pin Headers | PCB Shorting Shunts - Confull Electronics"
+msgid ""
+"Jumper Caps for Pin Headers | PCB Shorting Shunts - Confull Electronics"
 msgstr ""
 
 #: .\web\templates\Pin-Header-Jumper.html:14
@@ -651,8 +581,8 @@ msgstr ""
 #: .\web\templates\Pin-Header-Jumper.html:40
 msgid ""
 "Confull Electronics provides high-quality jumper caps (shorting shunts) for "
-"pin headers in 2.54mm, 2.0mm and 1.27mm pitch. Designed for reliable circuit "
-"configuration on PCBs."
+"pin headers in 2.54mm, 2.0mm and 1.27mm pitch. Designed for reliable circuit"
+" configuration on PCBs."
 msgstr ""
 
 #: .\web\templates\Pin-Header-Jumper.html:60
@@ -688,8 +618,8 @@ msgstr ""
 #: .\web\templates\Pin-Header.html:14
 msgid ""
 "Explore a wide range of pin header connectors from Confull Electronics. "
-"Available in multiple pitches and configurations for board-to-board and wire-"
-"to-board applications."
+"Available in multiple pitches and configurations for board-to-board and "
+"wire-to-board applications."
 msgstr ""
 
 #: .\web\templates\Pin-Header.html:21
@@ -717,10 +647,6 @@ msgstr ""
 
 #: .\web\templates\base-general.html:93
 msgid "Menu"
-msgstr ""
-
-#: .\web\templates\base-general.html:106
-msgid "Products List"
 msgstr ""
 
 #: .\web\templates\base-general.html:131 .\web\templates\contact.html:69
@@ -782,7 +708,8 @@ msgstr ""
 
 #: .\web\templates\index.html:7
 msgid ""
-"Confull | Pin Header, Female Header, Box Header & EDGE Connector Manufacturer"
+"Confull | Pin Header, Female Header, Box Header & EDGE Connector "
+"Manufacturer"
 msgstr ""
 "Confull | Fabricant de connecteurs PCB: Pin Header, Female Header, Box "
 "Header & EDGE Connector"
@@ -796,8 +723,9 @@ msgstr ""
 
 #: .\web\templates\index.html:11
 msgid ""
-"connector, pin header, female header, box header, ejector header, IDC cable, "
-"IC socket, PCB connector, board-to-board, wire-to-board, Confull Electronics"
+"connector, pin header, female header, box header, ejector header, IDC cable,"
+" IC socket, PCB connector, board-to-board, wire-to-board, Confull "
+"Electronics"
 msgstr ""
 
 #: .\web\templates\index.html:13
@@ -813,8 +741,8 @@ msgstr ""
 #: .\web\templates\index.html:14 .\web\templates\index.html:41
 msgid ""
 "Confull Electronics specializes in Board-to-Board & Wire-to-Board "
-"Connectors, including Pin Header, Female Header, Box Header, Ejector Header, "
-"IC Socket, Jumper, IDC Connector, EDGE Connector, and Machined Connectors "
+"Connectors, including Pin Header, Female Header, Box Header, Ejector Header,"
+" IC Socket, Jumper, IDC Connector, EDGE Connector, and Machined Connectors "
 "for PCB applications."
 msgstr ""
 "Confull Electronics est spécialisé dans les connecteurs Board-to-Board et "
@@ -829,7 +757,8 @@ msgstr ""
 #: .\web\templates\index.html:22
 msgid ""
 "Leading supplier of Pin Header, Female Header, IDC Connector, EDGE "
-"Connector, and Board-to-Board & Wire-to-Board solutions for PCB applications."
+"Connector, and Board-to-Board & Wire-to-Board solutions for PCB "
+"applications."
 msgstr ""
 
 #: .\web\templates\index.html:61
@@ -850,13 +779,13 @@ msgstr ""
 
 #: .\web\templates\index.html:80
 msgid ""
-"Pin Header connector, durable and reliable for PCB connections, available in "
-"single-row and double-row options, used in electronic devices, industrial "
+"Pin Header connector, durable and reliable for PCB connections, available in"
+" single-row and double-row options, used in electronic devices, industrial "
 "applications, and automation systems"
 msgstr ""
-"Connecteur Pin Header, durable et fiable pour les connexions PCB, disponible "
-"en options à une ou deux rangées, utilisé dans les appareils électroniques, "
-"les applications industrielles et les systèmes d'automatisation"
+"Connecteur Pin Header, durable et fiable pour les connexions PCB, disponible"
+" en options à une ou deux rangées, utilisé dans les appareils électroniques,"
+" les applications industrielles et les systèmes d'automatisation"
 
 #: .\web\templates\index.html:90
 msgid ""
@@ -888,14 +817,14 @@ msgid ""
 msgstr ""
 "Connecteur Ejector Header de haute qualité pour PCB, avec mécanisme de "
 "verrouillage pour une connexion sécurisée et stable, idéal pour les câbles "
-"en nappe, utilisé dans l'automatisation industrielle, les systèmes embarqués "
-"et les appareils électroniques"
+"en nappe, utilisé dans l'automatisation industrielle, les systèmes embarqués"
+" et les appareils électroniques"
 
 #: .\web\templates\index.html:120
 msgid ""
 "High-quality Jumper cap for PCB circuit shorting, reliable electrical "
-"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used "
-"in electronic devices, DIY projects, and industrial control systems"
+"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used"
+" in electronic devices, DIY projects, and industrial control systems"
 msgstr ""
 "Jumper de haute qualité pour court-circuit de circuit imprimé, connexion "
 "électrique fiable, compatible avec des broches de 2,54mm et 1,27mm, "
@@ -904,14 +833,14 @@ msgstr ""
 
 #: .\web\templates\index.html:130
 msgid ""
-"High-quality machined round pin header, precision-turned contacts for stable "
-"and reliable PCB connections, available in various pin configurations, ideal "
-"for industrial electronics, aerospace, and high-density applications"
+"High-quality machined round pin header, precision-turned contacts for stable"
+" and reliable PCB connections, available in various pin configurations, "
+"ideal for industrial electronics, aerospace, and high-density applications"
 msgstr ""
 "Connecteur à broches rondes usinées de haute qualité, contacts tournés de "
 "précision pour une connexion stable et fiable sur PCB, disponible en "
-"plusieurs configurations de broches, idéal pour l'électronique industrielle, "
-"l'aérospatiale et les applications haute densité"
+"plusieurs configurations de broches, idéal pour l'électronique industrielle,"
+" l'aérospatiale et les applications haute densité"
 
 #: .\web\templates\index.html:140
 msgid ""
@@ -920,8 +849,8 @@ msgid ""
 "industrial electronics, aerospace, and high-density applications"
 msgstr ""
 "Connecteur femelle à broches rondes usinées de haute qualité, contacts "
-"tournés de précision pour une connexion stable et fiable sur PCB, compatible "
-"avec des broches rondes, idéal pour l'électronique industrielle, "
+"tournés de précision pour une connexion stable et fiable sur PCB, compatible"
+" avec des broches rondes, idéal pour l'électronique industrielle, "
 "l'aérospatiale et les applications haute densité"
 
 #: .\web\templates\index.html:150
@@ -982,11 +911,27 @@ msgstr ""
 msgid "Get Detail"
 msgstr ""
 
+#, fuzzy
+#~ msgid ""
+#~ "Ejector Header connector, shrouded header, IDC header, PCB connector, ribbon"
+#~ " cable connector, board-to-board connector, Confull Electronics"
+#~ msgstr ""
+#~ "Guide complet pour apprendre les connecteurs, y compris les broches mâles, "
+#~ "connecteurs femelles, connecteurs IDC, connecteurs carte-à-carte et câble-à-"
+#~ "carte pour projets électroniques et conception PCB"
+
+#~ msgid ""
+#~ "Box Header Connectors | Board-to-Board PCB Header Manufacturer - Confull "
+#~ "Electronics"
+#~ msgstr ""
+#~ "Connecteur Box Header à broches carrées | Pas 2.54mm / 2.0mm / 1.27mm | "
+#~ "Confull Électronique"
+
 #~ msgid ""
 #~ "Professional connector manufacturer - CONFULL, specializing in PCB "
-#~ "connectors, board-to-board, wire-to-board, IDC, pin headers, and "
-#~ "industrial connectors for reliable electronic solutions"
+#~ "connectors, board-to-board, wire-to-board, IDC, pin headers, and industrial "
+#~ "connectors for reliable electronic solutions"
 #~ msgstr ""
 #~ "Fabricant professionnel de connecteurs - CONFULL, spécialisé dans les "
-#~ "connecteurs PCB, board-to-board, wire-to-board, IDC, broches et "
-#~ "connecteurs industriels pour des solutions électroniques fiables"
+#~ "connecteurs PCB, board-to-board, wire-to-board, IDC, broches et connecteurs "
+#~ "industriels pour des solutions électroniques fiables"
