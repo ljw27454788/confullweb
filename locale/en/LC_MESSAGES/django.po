@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-25 17:51+0800\n"
+"POT-Creation-Date: 2025-03-25 22:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,7 +95,7 @@ msgstr ""
 #: .\web\templates\Machined-Female-Header.html:59
 #: .\web\templates\Machined-Pin-Header.html:59 .\web\templates\News.html:53
 #: .\web\templates\Pin-Header-Jumper.html:59 .\web\templates\Pin-Header.html:60
-#: .\web\templates\base-general.html:101 .\web\templates\contact.html:68
+#: .\web\templates\base-general.html:101 .\web\templates\contact.html:69
 #: .\web\templates\news-detail.html:67 .\web\templates\products-detail.html:55
 msgid "Home"
 msgstr ""
@@ -396,117 +396,94 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: .\web\templates\base-general.html:131 .\web\templates\contact.html:69
-#: .\web\templates\contact.html:76
+#: .\web\templates\base-general.html:131 .\web\templates\contact.html:70
+#: .\web\templates\contact.html:77
 msgid "Contact Us"
 msgstr ""
 
-#: .\web\templates\base-general.html:151 .\web\templates\contact.html:77
+#: .\web\templates\base-general.html:151 .\web\templates\contact.html:78
 msgid "Address:"
 msgstr ""
 
-#: .\web\templates\base-general.html:152 .\web\templates\contact.html:77
+#: .\web\templates\base-general.html:152 .\web\templates\contact.html:78
 msgid ""
 "Building B10, Hengfeng Industrial City, Baoan District, Shenzhen, 518100"
 msgstr ""
 
-#: .\web\templates\base-general.html:156 .\web\templates\contact.html:79
+#: .\web\templates\base-general.html:156 .\web\templates\contact.html:80
 msgid "Email:"
 msgstr ""
 
-#: .\web\templates\contact.html:7 .\web\templates\contact.html:12
-#: .\web\templates\contact.html:20
-msgid "Contact Us | Confull Electronics - Your Trusted Connector Supplier"
-msgstr ""
-
-#: .\web\templates\contact.html:8 .\web\templates\contact.html:13
+#: .\web\templates\contact.html:7 .\web\templates\contact.html:13
 #: .\web\templates\contact.html:21
-msgid ""
-"Get in touch with Confull Electronics for high-quality pin headers, female "
-"headers, IDC cables, and custom connector solutions. We respond within 24 "
-"hours."
+msgid "Contact Us | Confull Electronics - Connector Manufacturer in China"
 msgstr ""
 
-#: .\web\templates\contact.html:33
-msgid "Contact Us - Confull Electronics"
+#: .\web\templates\contact.html:8 .\web\templates\contact.html:14
+#: .\web\templates\contact.html:22 .\web\templates\contact.html:35
+msgid ""
+"Get in touch with Confull Electronics, your trusted connector supplier in "
+"China. We respond quickly to inquiries and support requests."
+msgstr ""
+
+#: .\web\templates\contact.html:11
+msgid ""
+"contact Confull, connector supplier China, connector manufacturer, get a "
+"quote, electronics support"
 msgstr ""
 
 #: .\web\templates\contact.html:34
-msgid ""
-"Contact Confull Electronics for your connector needs including pin headers, "
-"female headers, IDC cables, and custom connector solutions."
+msgid "Contact Us - Confull Electronics"
 msgstr ""
 
-#: .\web\templates\contact.html:78
+#: .\web\templates\contact.html:79
 msgid "Phone:"
 msgstr ""
 
-#: .\web\templates\contact.html:80
+#: .\web\templates\contact.html:81
 msgid "WeChat:"
 msgstr ""
 
-#: .\web\templates\contact.html:82
+#: .\web\templates\contact.html:83
 msgid "Jay Lyu"
 msgstr ""
 
-#: .\web\templates\contact.html:84
+#: .\web\templates\contact.html:85
 msgid "Jenny Zhang"
 msgstr ""
 
-#: .\web\templates\index.html:7
-msgid ""
-"Confull | Pin Header, Female Header, Box Header & EDGE Connector Manufacturer"
+#: .\web\templates\index.html:7 .\web\templates\index.html:13
+#: .\web\templates\index.html:21
+msgid "Confull Electronics | Professional Connector Manufacturer in China"
 msgstr ""
 
-#: .\web\templates\index.html:8
+#: .\web\templates\index.html:8 .\web\templates\index.html:14
+#: .\web\templates\index.html:22 .\web\templates\index.html:41
 msgid ""
-"Confull Electronics manufactures high-quality PCB connectors, including Pin "
-"Header, Female Header, IDC, and Board-to-Board solutions for industrial "
-"applications."
+"Confull Electronics is a leading connector manufacturer in China. We provide "
+"high-quality pin headers, sockets, IDC, wire-to-board connectors and more."
 msgstr ""
 
 #: .\web\templates\index.html:11
 msgid ""
-"connector, pin header, female header, box header, ejector header, IDC cable, "
-"IC socket, PCB connector, board-to-board, wire-to-board, Confull Electronics"
+"connector manufacturer, pin header, socket, IDC connector, PCB connectors, "
+"Confull Electronics"
 msgstr ""
 
-#: .\web\templates\index.html:13
-msgid "Confull Electronics | Pin Header, Female Header & PCB Connectors"
-msgstr ""
-
-#: .\web\templates\index.html:14 .\web\templates\index.html:41
-msgid ""
-"Confull Electronics specializes in Board-to-Board & Wire-to-Board "
-"Connectors, including Pin Header, Female Header, Box Header, Ejector Header, "
-"IC Socket, Jumper, IDC Connector, EDGE Connector, and Machined Connectors "
-"for PCB applications."
-msgstr ""
-
-#: .\web\templates\index.html:21 .\web\templates\index.html:60
-msgid "Confull Electronics | PCB Connector Manufacturer"
-msgstr ""
-
-#: .\web\templates\index.html:22
-msgid ""
-"Leading supplier of Pin Header, Female Header, IDC Connector, EDGE "
-"Connector, and Board-to-Board & Wire-to-Board solutions for PCB applications."
+#: .\web\templates\index.html:60 .\web\templates\index.html:69
+msgid "Confull Electronics | Professional PCB Connector Manufacturer"
 msgstr ""
 
 #: .\web\templates\index.html:61
-msgid "25+ Years of Expertise in Board Connector Solutions"
+msgid "25+ Years of Expertise in Connector Solutions"
 msgstr ""
 
 #: .\web\templates\index.html:62
-msgid "Precision in Every Pins"
+msgid "Precision in Every Pin"
 msgstr ""
 
 #: .\web\templates\index.html:64
 msgid "Check Products"
-msgstr ""
-
-#: .\web\templates\index.html:69
-msgid "Confull Electronics - PCB Connector Manufacturer"
 msgstr ""
 
 #: .\web\templates\index.html:80
@@ -596,6 +573,11 @@ msgstr ""
 
 #: .\web\templates\products-detail.html:86
 msgid "Contact to get Drawing without LOGO"
+msgstr ""
+
+#: .\web\templates\products-filter-message.html:5
+msgid ""
+"Any custom requirements? Contact us and we will get back to you right away!"
 msgstr ""
 
 #: .\web\templates\products-list.html:17

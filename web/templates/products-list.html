@@ -6,9 +6,9 @@
         <div class="box col-6 col-md-3 col-lg-3 py-2">
             <div class="card text-center h-100 bg-light zoom">
                 {% if obj.picture %}
-                    <img src="{{ obj.picture.url }}" class="img-fluid">
+                    <img src="{{ obj.picture.url }}" class="img-fluid" alt="{{obj.name}}">
                 {% else %}
-                    <img src="{% static 'img/cysjconn.png' %}" class="img-fluid">
+                    <img src="{% static 'img/cysjconn.png' %}" class="img-fluid" alt="{{obj.name}}">
                 {% endif %}
                 <div class="card-body d-flex flex-column">
                     <div class="mt-auto">

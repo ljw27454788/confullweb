@@ -90,10 +90,10 @@
                     <div class="col-lg-5 col-md-4"></div>
                     <div class="col-lg-2 col-md-4">
                         <div class="card">
-                            <img src="/static/img/{{ product_type }}.jpg" class="card-img-top" alt="...">
+                            <img src="/static/img/{{ product_type }}.jpg" class="card-img-top" alt="{{ product_type|get_general_name }}">
                             <a href="{% url ''|add:product_type %}" class="stretched-link"></a>
                             <div class="card-body">
-                                <p class="card-text fw-bolder text-center">{%trans "Check Our "%}{{ product_type|get_general_name }}</p>
+                                <p class="card-text fw-bolder text-center">{%trans "Check Our "%}-{{ product_type|get_general_name }}</p>
                             </div>
                         </div>
                     </div>

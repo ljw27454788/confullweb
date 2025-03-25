@@ -1,8 +1,7 @@
+{% load i18n %}
+<br>
+<hr>
 <div class="text-center">
-    aaa
-    {% comment %} {% if LANGUAGE_CODE == 'en' %}
-        <a class="nav-link" href="{% url 'contactus' %}">Can't find, Please contact us!</a>
-    {% else %}
-        <a class="nav-link" href="{% url 'contactus' %}">如找不到您要的产品类型，请联系我们！</a>
-    {% endif %} {% endcomment %}
+    <a href="{% url 'contact' %}">{% trans "Any custom requirements? Contact us and we will get back to you right away!" %}</a>
 </div>
+<hr>
