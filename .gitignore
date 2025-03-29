@@ -3,6 +3,8 @@ __pycache__/
 confullweb/db.sqlite3
 db.sqlite3
 
+confullweb/settings.py
+
 confullweb/confullweb/__init__.py
 confullweb/__init__.py
 __init__.py
