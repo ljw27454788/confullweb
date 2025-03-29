@@ -146,12 +146,12 @@ MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
 
 STATIC_URL = '/static/'
 
-if not DEBUG:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# if not DEBUG:
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static'),
+# ]
 
 # media 文件夹
 MEDIA_URL = '/media/'
