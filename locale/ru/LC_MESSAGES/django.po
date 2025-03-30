@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-25 22:36+0800\n"
+"POT-Creation-Date: 2025-03-30 15:43+0800\n"
 "PO-Revision-Date: 2025-03-25 22:37+0000\n"
 "Last-Translator:   <q@q.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,42 +16,44 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Translated-Using: django-rosetta 0.10.1\n"
 
-#: .\confullweb\settings.py:125
+#: .\confullweb\set_server.py:129 .\confullweb\settings.py:125
 msgid "English"
 msgstr ""
 
-#: .\confullweb\settings.py:126
+#: .\confullweb\set_server.py:130 .\confullweb\settings.py:126
 msgid "Simplified Chinese"
 msgstr ""
 
-#: .\confullweb\settings.py:127
+#: .\confullweb\set_server.py:131 .\confullweb\settings.py:127
 msgid "Traditional Chinese"
 msgstr ""
 
-#: .\confullweb\settings.py:128
+#: .\confullweb\set_server.py:132 .\confullweb\settings.py:128
 msgid "French"
 msgstr ""
 
-#: .\confullweb\settings.py:129
+#: .\confullweb\set_server.py:133 .\confullweb\settings.py:129
 msgid "Spanish"
 msgstr ""
 
-#: .\confullweb\settings.py:130
+#: .\confullweb\set_server.py:134 .\confullweb\settings.py:130
 msgid "German"
 msgstr ""
 
-#: .\confullweb\settings.py:131
+#: .\confullweb\set_server.py:135 .\confullweb\settings.py:131
 msgid "Russian"
 msgstr ""
 
-#: .\confullweb\settings.py:132
+#: .\confullweb\set_server.py:136 .\confullweb\settings.py:132
 msgid "Japanese"
 msgstr ""
 
-#: .\confullweb\settings.py:133
+#: .\confullweb\set_server.py:137 .\confullweb\settings.py:133
 msgid "Korean"
 msgstr ""
 
@@ -75,11 +77,11 @@ msgstr ""
 #: .\web\templates\Female-Header.html:10 .\web\templates\IC-Socket.html:10
 #: .\web\templates\Machined-Female-Header.html:10
 #: .\web\templates\Machined-Pin-Header.html:10 .\web\templates\News.html:10
-#: .\web\templates\Pin-Header-Jumper.html:10
-#: .\web\templates\Pin-Header.html:10 .\web\templates\contact.html:10
-#: .\web\templates\index.html:10 .\web\templates\news-detail.html:7
-#: .\web\templates\news-detail.html:10 .\web\templates\news-detail.html:12
-#: .\web\templates\news-detail.html:20 .\web\templates\products-detail.html:7
+#: .\web\templates\Pin-Header-Jumper.html:10 .\web\templates\Pin-Header.html:10
+#: .\web\templates\contact.html:10 .\web\templates\index.html:10
+#: .\web\templates\news-detail.html:7 .\web\templates\news-detail.html:10
+#: .\web\templates\news-detail.html:12 .\web\templates\news-detail.html:20
+#: .\web\templates\products-detail.html:7
 #: .\web\templates\products-detail.html:10
 #: .\web\templates\products-detail.html:12
 #: .\web\templates\products-detail.html:20
@@ -88,8 +90,7 @@ msgstr "Confull Электроникс"
 
 #: .\web\templates\Box-Header.html:11
 msgid ""
-"box header connector, 2.54mm pitch, PCB connector, square pin header, "
-"Confull"
+"box header connector, 2.54mm pitch, PCB connector, square pin header, Confull"
 msgstr "разъём box header, шаг 2.54мм, разъёмы для плат, Confull"
 
 #: .\web\templates\Box-Header.html:59
@@ -98,10 +99,9 @@ msgstr "разъём box header, шаг 2.54мм, разъёмы для плат
 #: .\web\templates\Female-Header.html:59 .\web\templates\IC-Socket.html:59
 #: .\web\templates\Machined-Female-Header.html:59
 #: .\web\templates\Machined-Pin-Header.html:59 .\web\templates\News.html:53
-#: .\web\templates\Pin-Header-Jumper.html:59
-#: .\web\templates\Pin-Header.html:60 .\web\templates\base-general.html:101
-#: .\web\templates\contact.html:69 .\web\templates\news-detail.html:67
-#: .\web\templates\products-detail.html:55
+#: .\web\templates\Pin-Header-Jumper.html:59 .\web\templates\Pin-Header.html:60
+#: .\web\templates\base-general.html:101 .\web\templates\contact.html:69
+#: .\web\templates\news-detail.html:67 .\web\templates\products-detail.html:55
 msgid "Home"
 msgstr "Главная"
 
@@ -117,8 +117,8 @@ msgstr "Разъём Box Header"
 #: .\web\templates\Female-Header.html:73 .\web\templates\IC-Socket.html:73
 #: .\web\templates\Machined-Female-Header.html:73
 #: .\web\templates\Machined-Pin-Header.html:72
-#: .\web\templates\Pin-Header-Jumper.html:72
-#: .\web\templates\Pin-Header.html:75 .\web\templates\base-general.html:106
+#: .\web\templates\Pin-Header-Jumper.html:72 .\web\templates\Pin-Header.html:75
+#: .\web\templates\base-general.html:106
 #: .\web\templates\products-sidebar.html:5 .\web\templates\products.html:15
 msgid "Product List"
 msgstr "Каталог продукции"
@@ -127,8 +127,7 @@ msgstr "Каталог продукции"
 #: .\web\templates\FC-IDC-Cable.html:86 .\web\templates\Female-Header.html:86
 #: .\web\templates\Machined-Female-Header.html:86
 #: .\web\templates\Machined-Pin-Header.html:85
-#: .\web\templates\Pin-Header-Jumper.html:85
-#: .\web\templates\Pin-Header.html:88
+#: .\web\templates\Pin-Header-Jumper.html:85 .\web\templates\Pin-Header.html:88
 msgid "Pitch"
 msgstr "Шаг"
 
@@ -161,8 +160,7 @@ msgstr ""
 
 #: .\web\templates\EDGE-Card-Connector.html:11
 msgid ""
-"edge card connector, gold finger connector, PCIe slot, bus connector, "
-"Confull"
+"edge card connector, gold finger connector, PCIe slot, bus connector, Confull"
 msgstr "разъём edge card, слот PCIe, шина, gold finger, Confull Электроникс"
 
 #: .\web\templates\EDGE-Card-Connector.html:60
@@ -172,14 +170,12 @@ msgstr "разъём edge card, слот PCIe, шина, gold finger, Confull Э
 msgid "EDGE Card Connector"
 msgstr "Разъём Edge Card"
 
-#: .\web\templates\Ejector-Header.html:7
-#: .\web\templates\Ejector-Header.html:13
+#: .\web\templates\Ejector-Header.html:7 .\web\templates\Ejector-Header.html:13
 #: .\web\templates\Ejector-Header.html:21
 msgid "Ejector Header Connector | 2.54/2.0/1.27mm | Confull"
 msgstr "Разъём с фиксацией | Шаг 2.54/2.0/1.27мм | Confull"
 
-#: .\web\templates\Ejector-Header.html:8
-#: .\web\templates\Ejector-Header.html:14
+#: .\web\templates\Ejector-Header.html:8 .\web\templates\Ejector-Header.html:14
 #: .\web\templates\Ejector-Header.html:22
 #: .\web\templates\Ejector-Header.html:40
 msgid ""
@@ -198,9 +194,8 @@ msgstr ""
 "Confull Электроникс"
 
 #: .\web\templates\Ejector-Header.html:60
-#: .\web\templates\Ejector-Header.html:81
-#: .\web\templates\base-general.html:115 .\web\templates\index.html:113
-#: .\web\templates\products-sidebar.html:20
+#: .\web\templates\Ejector-Header.html:81 .\web\templates\base-general.html:115
+#: .\web\templates\index.html:113 .\web\templates\products-sidebar.html:20
 msgid "Ejector Header"
 msgstr "Разъём с фиксацией"
 
@@ -271,8 +266,8 @@ msgstr "Разъём для ИС DIP | Шаг 2.54/2.0/1.27мм | Confull"
 #: .\web\templates\IC-Socket.html:8 .\web\templates\IC-Socket.html:14
 #: .\web\templates\IC-Socket.html:22 .\web\templates\IC-Socket.html:40
 msgid ""
-"Durable IC socket connectors with 2.54mm, 2.0mm, 1.27mm pitch. Ideal for DIP"
-" IC installation, chip replacement, and PCB testing."
+"Durable IC socket connectors with 2.54mm, 2.0mm, 1.27mm pitch. Ideal for DIP "
+"IC installation, chip replacement, and PCB testing."
 msgstr ""
 "Гнездовые разъёмы для микросхем DIP с шагом 2.54мм, 2.0мм, 1.27мм. Идеально "
 "подходят для установки и тестирования ИС."
@@ -507,8 +502,8 @@ msgstr "Confull Электроникс | Производитель разъём
 #: .\web\templates\index.html:8 .\web\templates\index.html:14
 #: .\web\templates\index.html:22 .\web\templates\index.html:41
 msgid ""
-"Confull Electronics is a leading connector manufacturer in China. We provide"
-" high-quality pin headers, sockets, IDC, wire-to-board connectors and more."
+"Confull Electronics is a leading connector manufacturer in China. We provide "
+"high-quality pin headers, sockets, IDC, wire-to-board connectors and more."
 msgstr ""
 "Confull предлагает качественные разъёмы: штыревые, IDC, для печатных плат. "
 "Прямые поставки с завода, поддержка OEM/ODM."
@@ -539,12 +534,12 @@ msgstr "Смотреть продукты"
 
 #: .\web\templates\index.html:80
 msgid ""
-"Pin Header connector, durable and reliable for PCB connections, available in"
-" single-row and double-row options, used in electronic devices, industrial "
+"Pin Header connector, durable and reliable for PCB connections, available in "
+"single-row and double-row options, used in electronic devices, industrial "
 "applications, and automation systems"
 msgstr ""
-"Разъём Pin Header, прочное и надежное соединение для PCB, доступен в одно- и"
-" двухрядных вариантах, используется в электронных устройствах, промышленных "
+"Разъём Pin Header, прочное и надежное соединение для PCB, доступен в одно- и "
+"двухрядных вариантах, используется в электронных устройствах, промышленных "
 "применениях и системах автоматизации"
 
 #: .\web\templates\index.html:90
@@ -554,8 +549,8 @@ msgid ""
 "industrial applications, and automation systems"
 msgstr ""
 "Разъём Female Header, надежное и долговечное соединение для PCB, доступен в "
-"одно- и двухрядных вариантах, широко используется в электронных устройствах,"
-" промышленных применениях и системах автоматизации"
+"одно- и двухрядных вариантах, широко используется в электронных устройствах, "
+"промышленных применениях и системах автоматизации"
 
 #: .\web\templates\index.html:100
 msgid ""
@@ -575,25 +570,25 @@ msgid ""
 msgstr ""
 "Высококачественный разъём Ejector Header для PCB, безопасное и стабильное "
 "соединение с механизмом фиксации, идеально подходит для ленточных кабелей, "
-"используется в промышленной автоматизации, встроенных системах и электронных"
-" устройствах"
+"используется в промышленной автоматизации, встроенных системах и электронных "
+"устройствах"
 
 #: .\web\templates\index.html:120
 msgid ""
 "High-quality Jumper cap for PCB circuit shorting, reliable electrical "
-"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used"
-" in electronic devices, DIY projects, and industrial control systems"
+"connection, compatible with 2.54mm and 1.27mm pitch pin headers, widely used "
+"in electronic devices, DIY projects, and industrial control systems"
 msgstr ""
 "Высококачественная перемычка Jumper для замыкания цепи на PCB, надежное "
 "электрическое соединение, совместима с шагом 2.54мм и 1.27мм, широко "
-"используется в электронных устройствах, DIY-проектах и промышленных системах"
-" управления"
+"используется в электронных устройствах, DIY-проектах и промышленных системах "
+"управления"
 
 #: .\web\templates\index.html:130
 msgid ""
-"High-quality machined round pin header, precision-turned contacts for stable"
-" and reliable PCB connections, available in various pin configurations, "
-"ideal for industrial electronics, aerospace, and high-density applications"
+"High-quality machined round pin header, precision-turned contacts for stable "
+"and reliable PCB connections, available in various pin configurations, ideal "
+"for industrial electronics, aerospace, and high-density applications"
 msgstr ""
 "Высококачественный круглый контактный разъём с механической обработкой, "
 "прецизионные токопроводящие контакты для стабильного и надёжного соединения "
@@ -607,8 +602,8 @@ msgid ""
 "industrial electronics, aerospace, and high-density applications"
 msgstr ""
 "Высококачественная круглая контактная гнездовая колодка с механической "
-"обработкой, прецизионные токопроводящие контакты для стабильного и надёжного"
-" соединения PCB, совместима с круглыми контактными разъёмами, идеально "
+"обработкой, прецизионные токопроводящие контакты для стабильного и надёжного "
+"соединения PCB, совместима с круглыми контактными разъёмами, идеально "
 "подходит для промышленной электроники, аэрокосмической отрасли и "
 "высокоплотных приложений"
 
@@ -618,8 +613,8 @@ msgid ""
 "connections, compatible with 2.54mm and 1.27mm pitch, widely used in "
 "industrial electronics, computers, and automation systems"
 msgstr ""
-"Высококачественный IDC-разъем и ленточный кабель для надежного подключения к"
-" PCB, совместим с шагом 2,54мм и 1,27мм, широко используется в промышленной "
+"Высококачественный IDC-разъем и ленточный кабель для надежного подключения к "
+"PCB, совместим с шагом 2,54мм и 1,27мм, широко используется в промышленной "
 "электронике, компьютерах и системах автоматизации"
 
 #: .\web\templates\index.html:160
@@ -639,8 +634,8 @@ msgid ""
 "communication, automation, and high-speed signal transmission"
 msgstr ""
 "Высококачественный разъём EDGE для надёжного соединения с PCB, совместим с "
-"PCIe, PCI и промышленными бэкплейн-системами, идеально подходит для передачи"
-" данных, автоматизации и высокоскоростной передачи сигналов"
+"PCIe, PCI и промышленными бэкплейн-системами, идеально подходит для передачи "
+"данных, автоматизации и высокоскоростной передачи сигналов"
 
 #: .\web\templates\index.html:180
 msgid ""
@@ -690,9 +685,9 @@ msgstr "Подробнее"
 
 #~ msgid ""
 #~ "Confull Electronics specializes in Board-to-Board & Wire-to-Board "
-#~ "Connectors, including Pin Header, Female Header, Box Header, Ejector Header,"
-#~ " IC Socket, Jumper, IDC Connector, EDGE Connector, and Machined Connectors "
-#~ "for PCB applications."
+#~ "Connectors, including Pin Header, Female Header, Box Header, Ejector "
+#~ "Header, IC Socket, Jumper, IDC Connector, EDGE Connector, and Machined "
+#~ "Connectors for PCB applications."
 #~ msgstr ""
 #~ "Confull Electronics специализируется на разъемах Board-to-Board и Wire-to-"
 #~ "Board, включая Pin Header, Female Header, Box Header, Ejector Header, IC "
@@ -701,14 +696,15 @@ msgstr "Подробнее"
 
 #, fuzzy
 #~ msgid ""
-#~ "Confull Electronics offers machined round pin headers with precision-turned "
-#~ "pins for reliable PCB connections. Available in various pitches, rows, and "
-#~ "plating options for high-performance board-to-board interfaces."
+#~ "Confull Electronics offers machined round pin headers with precision-"
+#~ "turned pins for reliable PCB connections. Available in various pitches, "
+#~ "rows, and plating options for high-performance board-to-board interfaces."
 #~ msgstr ""
 #~ "Высококачественный круглый контактный разъём с механической обработкой, "
-#~ "прецизионные токопроводящие контакты для стабильного и надёжного соединения "
-#~ "PCB, доступен в различных конфигурациях, идеально подходит для промышленной "
-#~ "электроники, аэрокосмической отрасли и высокоплотных приложений"
+#~ "прецизионные токопроводящие контакты для стабильного и надёжного "
+#~ "соединения PCB, доступен в различных конфигурациях, идеально подходит для "
+#~ "промышленной электроники, аэрокосмической отрасли и высокоплотных "
+#~ "приложений"
 
 #, fuzzy
 #~ msgid "IC Socket Connector | 2.54/2.0/1.27mm DIP | Confull"
@@ -716,9 +712,9 @@ msgstr "Подробнее"
 
 #~ msgid ""
 #~ "Professional connector manufacturer - CONFULL, specializing in PCB "
-#~ "connectors, board-to-board, wire-to-board, IDC, pin headers, and industrial "
-#~ "connectors for reliable electronic solutions"
+#~ "connectors, board-to-board, wire-to-board, IDC, pin headers, and "
+#~ "industrial connectors for reliable electronic solutions"
 #~ msgstr ""
-#~ "Профессиональный производитель разъемов - CONFULL, специализируется на PCB-"
-#~ "разъемах, board-to-board, wire-to-board, IDC, штырьковых разъемах и "
+#~ "Профессиональный производитель разъемов - CONFULL, специализируется на "
+#~ "PCB-разъемах, board-to-board, wire-to-board, IDC, штырьковых разъемах и "
 #~ "промышленных разъемах для надежных электронных решений"

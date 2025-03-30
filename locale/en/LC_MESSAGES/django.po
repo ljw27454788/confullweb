@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-25 22:36+0800\n"
+"POT-Creation-Date: 2025-03-30 15:43+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,39 +18,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\confullweb\settings.py:125
+#: .\confullweb\set_server.py:129 .\confullweb\settings.py:125
 msgid "English"
 msgstr ""
 
-#: .\confullweb\settings.py:126
+#: .\confullweb\set_server.py:130 .\confullweb\settings.py:126
 msgid "Simplified Chinese"
 msgstr ""
 
-#: .\confullweb\settings.py:127
+#: .\confullweb\set_server.py:131 .\confullweb\settings.py:127
 msgid "Traditional Chinese"
 msgstr ""
 
-#: .\confullweb\settings.py:128
+#: .\confullweb\set_server.py:132 .\confullweb\settings.py:128
 msgid "French"
 msgstr ""
 
-#: .\confullweb\settings.py:129
+#: .\confullweb\set_server.py:133 .\confullweb\settings.py:129
 msgid "Spanish"
 msgstr ""
 
-#: .\confullweb\settings.py:130
+#: .\confullweb\set_server.py:134 .\confullweb\settings.py:130
 msgid "German"
 msgstr ""
 
-#: .\confullweb\settings.py:131
+#: .\confullweb\set_server.py:135 .\confullweb\settings.py:131
 msgid "Russian"
 msgstr ""
 
-#: .\confullweb\settings.py:132
+#: .\confullweb\set_server.py:136 .\confullweb\settings.py:132
 msgid "Japanese"
 msgstr ""
 
-#: .\confullweb\settings.py:133
+#: .\confullweb\set_server.py:137 .\confullweb\settings.py:133
 msgid "Korean"
 msgstr ""
 
