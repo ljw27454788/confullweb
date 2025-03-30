@@ -165,3 +165,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://confull.com",
+    "https://confull.com",
+    "http://www.confull.com",
+    "https://www.confull.com",
+]
