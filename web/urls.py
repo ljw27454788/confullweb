@@ -29,7 +29,7 @@ urlpatterns = [
     re_path(r'^edge-card-connector/(?P<slug>[-\w]+)$', views.EdgeDetailView.as_view(), name='edge-detail'),
     re_path(r'^edge-card-connector$', views.EdgeListView.as_view(), name='edge'),
     re_path(r'^idc-connector-cable-fc/(?P<slug>[-\w]+)$', views.FcDetailView.as_view(), name='idc-cable-connector-detail'),
-    re_path(r'^idc-connector-cable-fc$', views.FcListView.as_view(), name='fc'),
+    re_path(r'^idc-connector-cable-fc$', views.FcListView.as_view(), name='idc-cable-connector'),
     re_path(r'^learn-products/(?P<slug>[-\w]+)$', views.NewsDetailView.as_view(), name='news-detail'),
     re_path(r'^learn-products$', views.NewsListView.as_view(), name='news'),
 

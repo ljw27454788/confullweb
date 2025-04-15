@@ -34,7 +34,7 @@ product_name = {
     'ejector-header': 'Ejector Header',
     'socket': 'RJ45',
     'jumper': 'Pin Header Jumper',
-    'fc': 'IDC Connector & Cable',
+    'idc-cable-connector': 'IDC Connector & Cable',
     'round-header': 'Machined Pin Header',
     'round-female_header': 'Machined Female Header',
     'ic-socket': 'IC Socket',
