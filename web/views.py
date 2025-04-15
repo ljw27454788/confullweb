@@ -370,7 +370,7 @@ class EdgeListView(generic.ListView):
     context_object_name = 'edge'
 
     def get_queryset(self):
-        return Product.objects.filter(product_type="edge")
+        return Product.objects.filter(product_type="edge-card-connector")
 
     def get_context_data(self, *args, **kwargs):
         context = super(EdgeListView, self).get_context_data(*args, **kwargs)
@@ -406,7 +406,7 @@ class FcListView(generic.ListView):
     context_object_name = 'fc'
 
     def get_queryset(self):
-        return Product.objects.filter(product_type="fc")
+        return Product.objects.filter(product_type="idc-cable-connector")
 
     def get_context_data(self, *args, **kwargs):
         context = super(FcListView, self).get_context_data(*args, **kwargs)
