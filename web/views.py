@@ -44,8 +44,10 @@ def contact(request):
     canonical_url = get_canonical(request)
     return render(request, 'contact.html', context={"hreflang_urls": hreflang_urls, "canonical_url": canonical_url})
 
-# def company(request):
-#     return render(request, 'company.html', context={})
+def company(request):
+    hreflang_urls = get_hreflang_urls(request)
+    canonical_url = get_canonical(request)
+    return render(request, 'company.html', context={"hreflang_urls": hreflang_urls, "canonical_url": canonical_url})
 
 # Products List
 class ProductListView(generic.ListView):

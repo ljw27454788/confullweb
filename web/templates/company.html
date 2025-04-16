@@ -1,6 +1,22 @@
-{% extends "base_general.html" %}
-{% block content %}
+{% extends "base-general.html" %}
 {% load static %}
 {% load i18n %}
+
+{% block seo %}
+
+{% endblock %}
+
+{% block content %}
+<nav aria-label="breadcrumb" class="bg-secondary-subtle">
+    <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a class="no-line" href="{% url 'index' %}">{% trans 'Home' %}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{%trans 'About Us' %}</li>
+    </ol>
+</nav>
+
+{% blocktrans %}
+Established in 2001, Confull specializes in manufacturing high-precision PCB connectors, offering reliable interconnection solutions globally. Our core products include pin headers, socket headers, box headers, IDC connectors, jumper caps, and more, widely used in consumer electronics, automotive systems, industrial machinery, telecommunications, and medical devices.
+With over two decades of expertise, we adhere to strict quality control (ISO 9001 certified) and provide customized designs with rapid response services, serving as a trusted partner for Fortune 500 companies. Committed to "Connecting Infinite Possibilities," Confull drives innovation in electronic connectivity through advanced technology and lean manufacturing.
+{% endblocktrans %}
 
 {% endblock %}

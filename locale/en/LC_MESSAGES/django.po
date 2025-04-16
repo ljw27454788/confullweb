@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-30 15:43+0800\n"
+"POT-Creation-Date: 2025-04-17 07:00+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,8 +95,9 @@ msgstr ""
 #: .\web\templates\Machined-Female-Header.html:59
 #: .\web\templates\Machined-Pin-Header.html:59 .\web\templates\News.html:53
 #: .\web\templates\Pin-Header-Jumper.html:59 .\web\templates\Pin-Header.html:60
-#: .\web\templates\base-general.html:101 .\web\templates\contact.html:69
-#: .\web\templates\news-detail.html:67 .\web\templates\products-detail.html:55
+#: .\web\templates\base-general.html:101 .\web\templates\company.html:12
+#: .\web\templates\contact.html:69 .\web\templates\news-detail.html:67
+#: .\web\templates\products-detail.html:55
 msgid "Home"
 msgstr ""
 
@@ -401,17 +402,36 @@ msgstr ""
 msgid "Contact Us"
 msgstr ""
 
-#: .\web\templates\base-general.html:151 .\web\templates\contact.html:78
+#: .\web\templates\base-general.html:137 .\web\templates\company.html:13
+msgid "About Us"
+msgstr ""
+
+#: .\web\templates\base-general.html:154 .\web\templates\contact.html:78
 msgid "Address:"
 msgstr ""
 
-#: .\web\templates\base-general.html:152 .\web\templates\contact.html:78
+#: .\web\templates\base-general.html:155 .\web\templates\contact.html:78
 msgid ""
 "Building B10, Hengfeng Industrial City, Baoan District, Shenzhen, 518100"
 msgstr ""
 
-#: .\web\templates\base-general.html:156 .\web\templates\contact.html:80
+#: .\web\templates\base-general.html:159 .\web\templates\contact.html:80
 msgid "Email:"
+msgstr ""
+
+#: .\web\templates\company.html:17
+msgid ""
+"\n"
+"Established in 2001, Confull specializes in manufacturing high-precision PCB "
+"connectors, offering reliable interconnection solutions globally. Our core "
+"products include pin headers, socket headers, box headers, IDC connectors, "
+"jumper caps, and more, widely used in consumer electronics, automotive "
+"systems, industrial machinery, telecommunications, and medical devices.\n"
+"With over two decades of expertise, we adhere to strict quality control (ISO "
+"9001 certified) and provide customized designs with rapid response services, "
+"serving as a trusted partner for Fortune 500 companies. Committed to "
+"\"Connecting Infinite Possibilities,\" Confull drives innovation in "
+"electronic connectivity through advanced technology and lean manufacturing.\n"
 msgstr ""
 
 #: .\web\templates\contact.html:7 .\web\templates\contact.html:13
